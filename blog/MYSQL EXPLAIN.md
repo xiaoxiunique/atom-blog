@@ -1,4 +1,3 @@
-## MYSQL EXPLAIN
 
 > MySQL EXPLAIN命令是查询性能优化不可缺少的一部分，该文主要讲解explain命令的使用及相关参数说明。
 

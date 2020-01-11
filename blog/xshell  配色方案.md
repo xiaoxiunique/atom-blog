@@ -1,4 +1,3 @@
-## Xshell 配色方案
 
 ### 文件名为：skycolor.xcs
 ```

@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: null
-heroText: A
+heroImage: /home.png
+heroText: null
 tagline: 欢迎光临, 我们一直在努力
 actionText: 博客 →
 actionLink: /blog/

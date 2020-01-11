@@ -1,4 +1,4 @@
-### centos 配置 vim 编辑器
+
 
 ```shell
 #!/bin/bash

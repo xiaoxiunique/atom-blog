@@ -1,4 +1,3 @@
-## Redis KeyGenerator Key 生成器
 
 ```java
 package com.lk.truck.service.config;

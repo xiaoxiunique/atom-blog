@@ -1,4 +1,3 @@
-### MybatisPlus 配置自动生成器
 
 ```java
 package ${package.Controller};

@@ -1,4 +1,3 @@
-### docker 安装 nexus
 
 - docker 查看 nexus
 
