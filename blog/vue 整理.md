@@ -47,13 +47,52 @@ requireComponent.keys().forEach(fileName => {
 import "@/components/componentRegister";
 ```
 
-现在基础组件就可实现自动导入, 无需再一个个`import` 导入了
+现在`/lk.*\w+\.(vue|js)$/` 可以匹配的基础组件就可实现自动导入, 无需再一个个`import` 导入了
 
-### 2. vue 高级组件封装 , 函数防抖和函数节流
+### 2. 配置自动导入方式二
+
+::: tip
+
+在第一方式中展现的自动导入配置的方式, 需要制定特定文件前缀, 下面的方式不需要指定, 所有的 Components 组件都可直接使用
+
+:::
+
+`@/components/index.js`
+
+```js
+import Vue from 'vue'
+import upperFirst from 'lodash/upperFirst'
+import camelCase from 'lodash/camelCase'
+
+const requireComponent = require.context(
+  '@/components', true, /\.vue$/
+)
+
+requireComponent.keys().forEach(fileName => {
+  const componentConfig = requireComponent(fileName)
+
+  const componentName = upperFirst(
+    camelCase(fileName.replace(/^\.\//, '').replace(/\.\w+$/, ''))
+  )
+
+  Vue.component(componentName, componentConfig.default || componentConfig)
+})
+
+```
+
+`main.js`
+
+```js
+import '@/components'
+```
+
+现在便可在 View 中使用 `文件夹-文件名` 的方式使用 , 无需引入, 提升开发效率
+
+### 3. vue 高级组件封装 , 函数防抖和函数节流
 
 **Throttle.js**
 
-```
+```js
 const throttle = function(fn, wait = 50, isDebounce, ctx) {
   let timer;
   let lastCall = 0;
@@ -89,7 +128,6 @@ export default {
     this.throttledMap = {};
   },
   render() {
-      debugger
     const vnode = this.$slots.default[0];
     this.eventKeys.forEach(key => {
       const target = vnode.data.on[key];
@@ -127,13 +165,13 @@ Vue.component("Throttle", Throttle);
 </Throttle>
 ```
 
-### 3. 重置 data 技巧
+### 4. 重置 data 技巧
 
 ```js
 Object.assign(this.$data, this.$options.data());
 ```
 
-### 4. 配置不同环境下不同的请求地址
+### 5. 配置不同环境下不同的请求地址
 
 - 创建对应环境的配置文件 `.env.dev`
 - 在配置文件中填写环境名 `NODE_ENV`
@@ -154,12 +192,12 @@ VUE_APP_TITLE = "prov1";
 
 - 修改`package.json`文件
 
-```
+```json
 "build-prov1": "vue-cli-service build --mode prov1",
 "build-dev": "vue-cli-service build --mode test1",
 ```
 
-### 5. lodash 合并数据
+### 6. lodash 合并数据
 
 ```js
 const map2 = _.keyBy(temp, "name");
@@ -170,7 +208,7 @@ const r = _(this.dataFlow)
   .value();
 ```
 
-### 6. 限制只能输入数字
+### 7. 限制只能输入数字
 
 ```js
 this.$nextTick(() => {
@@ -179,10 +217,10 @@ this.$nextTick(() => {
   }
 });
 
-oninput = "value=value.replace(/[^d.]/g,'')";
+oninput = "value=value.replace(/[^\-?\d.]/g,'')";
 ```
 
-### 7. VsCode 配置模板输入
+### 8. VsCode 配置模板输入
 
 ```vue
 {
