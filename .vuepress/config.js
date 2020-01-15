@@ -13,7 +13,7 @@ listBlogFiles = [['', '深度好文'], ...listBlogFiles];
 function getBlogSidebarList() {
   return [
     {
-      title: "博客",
+      title: "杂记",
       collapsable: false,
       sidebarDepth: 3,
       children: listBlogFiles
@@ -41,6 +41,46 @@ function getIdeaSidebar() {
   ];
 }
 
+// 读取devops 文件下的内容
+let listDevOpsFiles = fs
+.readdirSync(path.resolve(__dirname, '../devops/'))
+.filter(f => f !== "README.md")
+.map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
+.sort();
+
+listDevOpsFiles = [['', '介绍'], ...listDevOpsFiles];
+
+function getDevOpsSidebar() {
+  return [
+    {
+      title: "DevOps",
+      collapsable: false,
+      sidebarDepth: 3,
+      children: listDevOpsFiles
+    }
+  ];
+}
+
+// 读取web 文件下的内容
+let listWebFiles = fs
+.readdirSync(path.resolve(__dirname, '../web/'))
+.filter(f => f !== "README.md")
+.map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
+.sort();
+
+listWebFiles = [['', '介绍'], ...listWebFiles];
+
+function getWebSidebar() {
+  return [
+    {
+      title: "Web",
+      collapsable: false,
+      sidebarDepth: 3,
+      children: listWebFiles
+    }
+  ];
+}
+
 module.exports = {
   title: "tool-tips",
   description: "小西博客",
@@ -48,11 +88,15 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "IDEA", link: "/idea/" },
-      { text: "博客", link: "/blog/" }
+      { text: "DevOps", link: "/devops/"},
+      { text: "Web", link: "/web/"},
+      { text: "杂记", link: "/blog/" }
     ],
     sidebar: {
       "/idea/": getIdeaSidebar(),
-      "/blog/": getBlogSidebarList()
+      "/blog/": getBlogSidebarList(),
+      "/devops/": getDevOpsSidebar(),
+      "/web/": getWebSidebar()
     },
   }
 };
