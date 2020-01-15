@@ -14,4 +14,16 @@ deploy:
   on:
     branch: master
 after_success: 
-  - bash deploy.sh
+  set -e
+
+  npm run docs:build
+
+  cd .vuepress/dist
+
+  git init
+  git add -A
+  git commit -m 'deploy'
+
+  git push -f -q https://xiaoxiunique:$GITHUB_TOKEN@github.com:xiaoxiunique/xiaoxiunique.github.io.git master
+
+  cd -
