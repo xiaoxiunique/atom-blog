@@ -82,8 +82,8 @@ function getWebSidebar() {
 }
 
 module.exports = {
-  title: "tool-tips",
-  description: "小西博客",
+  title: "我的学习测试",
+  description: "我的学习测试",
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
