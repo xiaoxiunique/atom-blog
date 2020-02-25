@@ -1,3 +1,4 @@
+[[TOC]]
 
 ### @RequestParam
 
@@ -6,10 +7,12 @@
 `RequestParam`可以接受简单类型的属性，也可以接受对象类型。
 实质是将`Request.getParameter()` 中的`Key-Value`参数`Map`利用`Spring`的转化机制`ConversionService`配置，转化成参数接收对象或字段。
 
-> tip
-
+:::warning
 在`Content-Type: application/x-www-form-urlencoded`的请求中，
 `get` 方式中`queryString`的值，和`post`方式中 `body data`的值都会被`Servlet`接受到并转化到`Request.getParameter()`参数集中，所以`@RequestParam`可以获取的到。
+:::
+
+
 
 ### @RequestBody
 
