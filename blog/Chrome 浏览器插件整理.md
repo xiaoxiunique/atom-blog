@@ -19,3 +19,4 @@
 - Vimium
 - Autopagerize for Chrome
 - IDM Integration Module
+- 沙拉查词
