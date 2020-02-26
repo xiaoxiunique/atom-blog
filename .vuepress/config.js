@@ -80,6 +80,27 @@ function getWebSidebar() {
   ];
 }
 
+
+// 读取设计模式文件下的内容
+let listDesignPattern = fs
+  .readdirSync(path.resolve(__dirname, "../designPattern/"))
+  .filter(f => f !== "README.md")
+  .map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
+  .sort();
+
+listDesignPattern = [["", "设计原则"], ...listDesignPattern];
+
+function getDesignSidebar() {
+  return [
+    {
+      title: "设计模式",
+      collapsable: false,
+      sidebarDepth: 3,
+      children: listDesignPattern
+    }
+  ];
+}
+
 module.exports = {
   title: "我的学习测试",
   description: "我的学习测试",
@@ -89,13 +110,15 @@ module.exports = {
       { text: "IDEA", link: "/idea/" },
       { text: "DevOps", link: "/devops/" },
       { text: "Web", link: "/web/" },
+      { text: "设计模式", link: "/designPattern/" },
       { text: "杂记", link: "/blog/" }
     ],
     sidebar: {
       "/idea/": getIdeaSidebar(),
       "/blog/": getBlogSidebarList(),
       "/devops/": getDevOpsSidebar(),
-      "/web/": getWebSidebar()
+      "/web/": getWebSidebar(),
+      "/designPattern/": getDesignSidebar()
     }
   },
   markdown: {

@@ -23,3 +23,6 @@
 [Vue render](https://www.jianshu.com/p/7508d2a114d3)
 
 [VuePress 配置指南](https://segmentfault.com/a/1190000017953711)
+
+[JavaScript 实现装饰器模式](https://www.cnblogs.com/coolslider/p/8459729.html)
+
