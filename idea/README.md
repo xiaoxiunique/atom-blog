@@ -1,4 +1,4 @@
-![1576207211541](https://raw.githubusercontent.com/xiaoxiunique/Web-Tip/master/1576207211541.png)
+![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200226114101.png)
 
 ![](https://img.shields.io/github/stars/xiaoxiunique/tool-tips?style=social)![](https://img.shields.io/github/forks/xiaoxiunique/tool-tips?style=social)![](https://img.shields.io/github/watchers/xiaoxiunique/tool-tips?style=social)
 
@@ -36,83 +36,59 @@
 
 :five: ​[IDEA 你不知道的小技巧](https://github.com/xiaoxiunique/idea-tips/blob/master/IDEA%20%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7.md)
 
-### 条件断点 调试效率翻倍 :star::star::star::star::star:
+:six: [IDEA 这么好看的字体，不了解下吗？IDEA 配置 JetBrains Mono](http://www.atomblogs.com/idea/IDEA%20新字体%20JetBrainsMono.html)
 
-> 在选择断点后, 在断点处右键添加断点条件. 调试效率翻倍
+#### 条件断点 调试效率翻倍 :star::star::star::star::star:
 
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/debug-breakpoint.gif)
+在选择断点后, 在断点处右键添加断点条件. 调试效率翻倍 [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/debug-breakpoint.gif)
 
-### 超级好用的快捷键, 全局选中 ctrl + shift + alt + j :star::star::star::star::star:
+#### 超级好用的快捷键, 全局选中 ctrl + shift + alt + j :star::star::star::star::star:
 
-> 个人经常用在前后端对接接口时, 为前端提供 `swagger`接口时, 批量将实体注释转换为 `ApiModelProperty`
+个人经常用在前后端对接接口时, 为前端提供 `swagger`接口时, 批量将实体注释转换为 `ApiModelProperty` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_alt_shift_j.gif)
 
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_alt_shift_j.gif)
+#### 更加优雅的添加实体注释 :star::star::star::star:
 
-### 更加优雅的添加实体注释 :star::star::star::star:
+输入完实体后 `ctrl + alt + enter` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_alt_enter.gif)
 
-> 输入完实体后 `ctrl + alt + enter`
+#### 批量修改相同的内容 :star::star::star::star::star::star:
 
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_alt_enter.gif)
-
-### 批量修改相同的内容 :star::star::star::star::star::star:
-
-> 选中相同的元素 `alt + j`
-
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/alt_j_batch_update.gif)
+选中相同的元素 `alt + j` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/alt_j_batch_update.gif)
 
 #### 快速打开最近打开过的项目
 
-> `ctrl + shift + a` 输入 `open recent` , 输入项目名
-
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_shift_a_open_recent_project.gif)
+`ctrl + shift + a` 输入 `open recent` , 输入项目名 [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_shift_a_open_recent_project.gif)
 
 #### 快速克隆项目
 
-> `ctrl + shift +a` 输入 `git clone`
-
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_shift_a_git_clone.gif)
+`ctrl + shift +a` 输入 `git clone` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_shift_a_git_clone.gif)
 
 #### 快速找到当前类所在位置(90%的人不知道)
 
-> `alt + f1` 选择 `project view`
-
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_f1_class_position.gif)
+`alt + f1` 选择 `project view` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_f1_class_position.gif)
 
 #### 将当前操作类在文件夹中打开 (**超有用:cow::beer:**)
 
-> `alt + f1`选择 `show in explorer`
-
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_f1_show_in_explorer.gif)
+`alt + f1`选择 `show in explorer` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/ctrl_f1_show_in_explorer.gif)
 
 #### 快速进入 maven 设置页面
 
-> `ctrl + shift + a` 输入`maven setting`
-
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/fast-open-maven-setting.gif)
+`ctrl + shift + a` 输入`maven setting` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/fast-open-maven-setting.gif)
 
 #### 快速打开 maven 项目
 
-> `ctrl + shift + a` 输入 `add maven project`
-
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/fast-open-add-maven-project.gif)
+`ctrl + shift + a` 输入 `add maven project` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/fast-open-add-maven-project.gif)
 
 #### 快速进入 `plugins` 安装界面
 
-> `ctrl + shift + a`输入`plugins`
-
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/fast-open-plugins.gif)
+`ctrl + shift + a`输入`plugins` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/fast-open-plugins.gif)
 
 #### 快速导入导出 idea 设置
 
-> `ctrl + shift + a` 输入 `import setting` `export setting`
-
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/fast-import-setting-and-export-setting.gif)
+`ctrl + shift + a` 输入 `import setting` `export setting` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/fast-import-setting-and-export-setting.gif)
 
 #### 快速导出官方快捷键图片
 
-> `ctrl + shift + a` 输入 `key reference`
-
-[点击查看 GIF 动图](http://193.112.98.8/atomImg/key/fast-import-key-reference.gif)
+`ctrl + shift + a` 输入 `key reference` [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/fast-import-key-reference.gif)
 
 ### 网站软件篇 :cow::beer:
 

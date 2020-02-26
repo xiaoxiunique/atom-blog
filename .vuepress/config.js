@@ -1,14 +1,13 @@
-const { fs, path } = require('@vuepress/shared-utils')
-
+const { fs, path } = require("@vuepress/shared-utils");
 
 // 读取blog 文件目录下的内容
 let listBlogFiles = fs
-.readdirSync(path.resolve(__dirname, '../blog/'))
-.filter(f => f !== "README.md")
-.map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
-.sort();
+  .readdirSync(path.resolve(__dirname, "../blog/"))
+  .filter(f => f !== "README.md")
+  .map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
+  .sort();
 
-listBlogFiles = [['', '深度好文'], ...listBlogFiles];
+listBlogFiles = [["", "深度好文"], ...listBlogFiles];
 
 function getBlogSidebarList() {
   return [
@@ -23,12 +22,12 @@ function getBlogSidebarList() {
 
 // 读取idea 文件下的内容
 let listIdeaFiles = fs
-.readdirSync(path.resolve(__dirname, '../idea/'))
-.filter(f => f !== "README.md")
-.map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
-.sort();
+  .readdirSync(path.resolve(__dirname, "../idea/"))
+  .filter(f => f !== "README.md")
+  .map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
+  .sort();
 
-listIdeaFiles = [['', '开源项目'], ...listIdeaFiles];
+listIdeaFiles = [["", "开源项目"], ...listIdeaFiles];
 
 function getIdeaSidebar() {
   return [
@@ -43,12 +42,12 @@ function getIdeaSidebar() {
 
 // 读取devops 文件下的内容
 let listDevOpsFiles = fs
-.readdirSync(path.resolve(__dirname, '../devops/'))
-.filter(f => f !== "README.md")
-.map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
-.sort();
+  .readdirSync(path.resolve(__dirname, "../devops/"))
+  .filter(f => f !== "README.md")
+  .map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
+  .sort();
 
-listDevOpsFiles = [['', '介绍'], ...listDevOpsFiles];
+listDevOpsFiles = [["", "介绍"], ...listDevOpsFiles];
 
 function getDevOpsSidebar() {
   return [
@@ -63,12 +62,12 @@ function getDevOpsSidebar() {
 
 // 读取web 文件下的内容
 let listWebFiles = fs
-.readdirSync(path.resolve(__dirname, '../web/'))
-.filter(f => f !== "README.md")
-.map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
-.sort();
+  .readdirSync(path.resolve(__dirname, "../web/"))
+  .filter(f => f !== "README.md")
+  .map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
+  .sort();
 
-listWebFiles = [['', '介绍'], ...listWebFiles];
+listWebFiles = [["", "介绍"], ...listWebFiles];
 
 function getWebSidebar() {
   return [
@@ -88,8 +87,8 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "IDEA", link: "/idea/" },
-      { text: "DevOps", link: "/devops/"},
-      { text: "Web", link: "/web/"},
+      { text: "DevOps", link: "/devops/" },
+      { text: "Web", link: "/web/" },
       { text: "杂记", link: "/blog/" }
     ],
     sidebar: {
@@ -97,6 +96,9 @@ module.exports = {
       "/blog/": getBlogSidebarList(),
       "/devops/": getDevOpsSidebar(),
       "/web/": getWebSidebar()
-    },
+    }
+  },
+  markdown: {
+    toc: { includeLevel: [1, 2, 3] },
   }
 };
