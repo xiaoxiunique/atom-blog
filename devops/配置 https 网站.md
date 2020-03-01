@@ -1,4 +1,5 @@
 1. 安装基础工具
+
 ```
 yum update
 yum install -y git vim
@@ -13,12 +14,13 @@ git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
 最后，我们安装`nginx`作为我们的`web server`。`yum install -y nginx`。安装好之后，`systemctl start nginx`启动。默认情况下，`CentOS 7`只开放了`DHCP`和`SSH`的端口，我们需要手动把端口开放一下。
 
 ```
-firewall-cmd --permanent --add-service=http 
+firewall-cmd --permanent --add-service=http
 firewall-cmd --permanent --add-service=https
 firewall-cmd --reload
 ```
 
 #### 生成证书
+
 ```
 cd /opt/letsencrypt
 ./letsencrypt-auto certonly -a webroot --webroot-path=/usr/share/nginx/html -d www.atomblogs.com # 可以使用多个 -d 添加多个域名
@@ -26,7 +28,8 @@ cd /opt/letsencrypt
 
 会提示 输入邮箱
 
-#### 配置nginx
+#### 配置 nginx
+
 ```
 user root;
 #user  nobody;
@@ -62,8 +65,8 @@ http {
     server {
         listen       80;
         server_name www.atomblogs.com;
-		proxy_read_timeout 300;	
-			
+		proxy_read_timeout 300;
+
 		location ~ ^/(atomblog)/ {
 				proxy_pass http://localhost:8889;
 				proxy_redirect default;
@@ -74,7 +77,7 @@ http {
 		}
 
 		location / {
-				root /root/webserver/blog; 
+				root /root/webserver/blog;
 				proxy_set_header Host $host;
 				proxy_set_header X-Real-IP $remote_addr;
 				proxy_set_header REMOTE-HOST $remote_addr;
@@ -90,7 +93,7 @@ http {
 					proxy_pass http://localhost:8088;
 				}
     	}
-	
+
 	server {
         listen	80;
 				server_name web.atomblogs.com;
@@ -107,7 +110,7 @@ http {
 			proxy_pass http://localhost:8080;
 		}
 	}
-		
+
 	server {
 		listen 80;
 		server_name gitlab.atom.kim;
@@ -143,8 +146,8 @@ http {
 
   		ssl_certificate /etc/letsencrypt/live/www.atomblogs.com/fullchain.pem;
   		ssl_certificate_key /etc/letsencrypt/live/www.atomblogs.com/privkey.pem;
-		
-		
+
+
 		  location ~ ^/(atomblog)/ {
 				proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 				proxy_set_header Host $http_host;
@@ -156,9 +159,9 @@ http {
 				# note, there is not SSL here! plain HTTP is used
 				proxy_pass http://localhost:8889;
 		}
-		
+
 		location / {
-				root /root/webserver/blog; 
+				root /root/webserver/blog;
 				proxy_set_header Host $host;
 				proxy_set_header X-Real-IP $remote_addr;
 				proxy_set_header REMOTE-HOST $remote_addr;
