@@ -80,7 +80,6 @@ function getWebSidebar() {
   ];
 }
 
-
 // 读取设计模式文件下的内容
 let listDesignPattern = fs
   .readdirSync(path.resolve(__dirname, "../designPattern/"))
@@ -101,6 +100,26 @@ function getDesignSidebar() {
   ];
 }
 
+// 读取数据结构与算法文件下的内容
+let listAlgorithm = fs
+  .readdirSync(path.resolve(__dirname, "../algorithm/"))
+  .filter(f => f !== "README.md")
+  .map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
+  .sort();
+
+listAlgorithm = [["", "算法概览"], ...listAlgorithm];
+
+function getAlgorithmSidebar() {
+  return [
+    {
+      title: "数据结构与算法",
+      collapsable: false,
+      sidebarDepth: 3,
+      children: listAlgorithm
+    }
+  ];
+}
+
 module.exports = {
   title: "我的学习测试",
   description: "我的学习测试",
@@ -111,6 +130,7 @@ module.exports = {
       { text: "DevOps", link: "/devops/" },
       { text: "Web", link: "/web/" },
       { text: "设计模式", link: "/designPattern/" },
+      { text: "数据结构与算法", link: "/algorithm/" },
       { text: "杂记", link: "/blog/" }
     ],
     sidebar: {
@@ -118,10 +138,11 @@ module.exports = {
       "/blog/": getBlogSidebarList(),
       "/devops/": getDevOpsSidebar(),
       "/web/": getWebSidebar(),
-      "/designPattern/": getDesignSidebar()
+      "/designPattern/": getDesignSidebar(),
+      "/algorithm/": getAlgorithmSidebar()
     }
   },
   markdown: {
-    toc: { includeLevel: [1, 2, 3] },
+    toc: { includeLevel: [1, 2, 3] }
   }
 };
