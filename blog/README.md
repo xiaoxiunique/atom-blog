@@ -26,3 +26,5 @@
 
 [JavaScript 实现装饰器模式](https://www.cnblogs.com/coolslider/p/8459729.html)
 
+[ES6 Top Tips](https://gitee.com/-/ide/project/xiaoxiunique/atom-blog/edit/master/-/README.md)
+
