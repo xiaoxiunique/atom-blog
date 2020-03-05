@@ -120,6 +120,26 @@ function getAlgorithmSidebar() {
   ];
 }
 
+// 读取topTips文件下的内容
+let listTopTips = fs
+  .readdirSync(path.resolve(__dirname, "../toptips/"))
+  .filter(f => f !== "README.md")
+  .map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
+  .sort();
+
+listTopTips = [["", "TopTips"], ...listTopTips];
+
+function getTopTipsSidebar() {
+  return [
+    {
+      title: "TopTips",
+      collapsable: false,
+      sidebarDepth: 3,
+      children: listTopTips
+    }
+  ];
+}
+
 module.exports = {
   title: "我的学习测试",
   description: "我的学习测试",
@@ -131,6 +151,7 @@ module.exports = {
       { text: "Web", link: "/web/" },
       { text: "设计模式", link: "/designPattern/" },
       { text: "数据结构与算法", link: "/algorithm/" },
+      { text: "TopTips", link: "/toptips/" },
       { text: "杂记", link: "/blog/" }
     ],
     sidebar: {
@@ -139,7 +160,8 @@ module.exports = {
       "/devops/": getDevOpsSidebar(),
       "/web/": getWebSidebar(),
       "/designPattern/": getDesignSidebar(),
-      "/algorithm/": getAlgorithmSidebar()
+      "/algorithm/": getAlgorithmSidebar(),
+      "/toptips/": getTopTipsSidebar()
     }
   },
   markdown: {
