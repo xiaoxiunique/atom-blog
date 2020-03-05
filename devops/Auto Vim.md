@@ -1,4 +1,6 @@
 
+通过脚本自动配置 Vim 编辑器，保存为 `auto.sh`文件 执行 `sh auto.sh`
+等待一会，Vim 便配置完成
 
 ```shell
 #!/bin/bash

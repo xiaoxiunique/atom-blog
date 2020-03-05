@@ -11,8 +11,6 @@
 	```
 
 
-
-
 ### Docker 安装 Jenkins
 
 - docker pull jenkins/jenkins:lts
@@ -38,12 +36,10 @@
 	```
 
 	
-
 - 启动容器
 
-	```shell
-	docker stop jenkins; docker rm jenkins; docker run -d -p 18080:8080 -p 50000:50000 --restart=always --privileged=true -v /www/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker):$(which docker) --name jenkins b6b6cd
-	
+```shell
+docker stop jenkins; docker rm jenkins; docker run -d -p 18080:8080 -p 50000:50000 --restart=always --privileged=true -v /www/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker):$(which docker) --name jenkins b6b6cd
 ```
 	
 	
