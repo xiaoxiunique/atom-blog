@@ -29,3 +29,7 @@
 [ES6 Top Tips](https://gitee.com/-/ide/project/xiaoxiunique/atom-blog/edit/master/-/README.md)
 
 [Vue 的26个技巧](https://michaelnthiessen.com/26-time-saving-tips/)
+
+[给老婆解释，什么是Restful Api](https://zhuanlan.zhihu.com/p/30396391)
+
+[RESTful API 设计指南](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)

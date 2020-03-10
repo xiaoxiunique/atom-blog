@@ -31,7 +31,7 @@ var maxArea = function(height) {
 
 
 
-2020年3月9日12:49:52
+第二次 2020年3月9日12:49:52
 
 ```javascript
 var maxArea = function(height) {
@@ -50,5 +50,40 @@ var maxArea = function(height) {
   }
   return m;
 };
+```
+
+
+
+第三次 2020年3月10日09:43:37
+
+```javascript
+/*
+ * @lc app=leetcode.cn id=11 lang=javascript
+ *
+ * [11] 盛最多水的容器
+ */
+
+// @lc code=start
+/**
+ * @param {number[]} height
+ * @return {number}
+ */
+var maxArea = function(height) {
+  let l = 0,
+    r = height.length - 1,
+    m = 0;
+
+  while (l < r) {
+    m = Math.max(m, Math.min(height[l], height[r]) * (r - l));
+    if (height[l] < height[r]) {
+      l++;
+    } else {
+      r--;
+    }
+  }
+  return m;
+};
+// @lc code=end
+
 ```
 
