@@ -1,8 +1,21 @@
-LeetCode 三数之和
+[题目地址](https://leetcode-cn.com/problems/3sum/submissions/)
 
-2020年3月9日00:37:14
 
-https://leetcode-cn.com/problems/3sum/submissions/
+
+- :cry: 第一次刷题 2020年3月9日 
+- 😒 第二次刷题 2020年3月10日
+
+
+
+### 利用双指针
+
+:::warning
+
+正常人都想不到的解法，直接看题解 👻
+
+:::
+
+
 
 ```javascript
 /**
