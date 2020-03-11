@@ -119,52 +119,46 @@ docker rmi [imagename]
 docker container run -p 8881:80 --name nginx -v /root/webserver/:/www -v /usr/local/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v /usr/local/nginx/logs/:/wwwlogs -d nginx
 ```
 
+### docker-compose
 
+1.docker-compose的使用非常类似于docker命令的使用，但是需要注意的是大部分的compose命令都需要到docker-compose.yml文件所在的目录下才能执行。
 
+**docker-compose up**
 
-### docker安装 tomcat
-- 创建tomcat 本地挂载文件
-```
-mkdir -p /usr/local/atom.hu/tomcat/webapps
-```
-- 拉取镜像
-```
-docker pull tomcat
-```
-- 启动镜像
-```
-docker run --name tomcat -p 80:8080 -v /usr/local/atom.hu/tomcat/webapps:/usr/local/tomcat/webapps -d tomcat
+【命令解释】 命令聚合每个容器的输出，命令退出时，所有容器都将停止。
 
--p 主机与容器端口
--v 挂载文件
---name 给容器命名
-```
+**docker-compose up -d**
 
+【命令解释】 在后台启动容器并使它们保持运行。
 
+**docker-compose logs -f**
 
-### docker安装 jenkins
-- 创建jenkins 文件,并修改文件权限
-```
-mkdir -p /usr/local/atom.hu/jenkins
-chown -R 1000:1000 /usr/loca/atom.hu/jenkins
-```
-- 拉取镜像
-```
-docker pull jenkins
-```
-- 启动镜像
-```
-docker run -p 8080:8080 -p 50000:50000 --name jenkins --privileged=true -v /usr/local/atom.hu/jenkins/:/var/jenkins_home -d jenkins
-```
-- 稍作等待
-![](https://ws1.sinaimg.cn/large/0066iHyhgy1g0jn6kraqjj315d0wg40r.jpg)
+【命令解释】 查看该容器的启动的日志打印(日志从头打印)。
 
-- 进入目录查看密码
-```
-[root@localhost secrets]# cat initialAdminPassword 
-9ca7368042fe45be8b693ab43e7797d1
-```
+**docker logs -f container_id**
 
-**jenkins 容器中的公钥私钥**
+【命令解释】 查看某一容器的启动的日志打印(日志从头打印)。 
 
-很常用的 `jenkins` 构建操作有：在 `Execute shell` 步骤中用 `ssh` 的方式远程登录上其他服务器，服务器上面的执行 `shell` 脚本。 `ssh` 方式需要用到的 `public key` 和 `private key` 也是可以用 `-v` 参数挂载到 `/var/jenkins_home/.ssh` 目录中。注意，这里不挂载到容器的 `/root/.ssh` 目录，因为整个 `jenkins` 容器是以 `jenkins` 用户来运行的。
+**docker logs -f --tail 数量词 container_id**
+
+【命令解释】 查看某一容器的启动的日志打印(查看最后n条日志打印)。 例：docker logs -f --tail 50 44b 
+
+**docker-compose stop**
+
+【命令解释】 停止compose服务。
+
+**docker-compose restart**
+
+【命令解释】 重启compose服务。
+
+**docker-compose kill**
+
+【命令解释】 kill compose服务。
+
+**docker-compose ps**
+
+【命令解释】查看compose服务状态。
+
+**docker-compose rm**
+
+【命令解释】删除compose服务。
