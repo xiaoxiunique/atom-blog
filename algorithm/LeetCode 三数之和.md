@@ -70,7 +70,7 @@ var threeSum = function(nums) {
 
 - for 循环终止条件写成 `nums.length` 正确应是 `nums.length - 1` 粗心导致 :grimacing:
 
-  ![image-20200311093442183](.\..\.vuepress\public\image-20200311093442183.png)
+  ![image-20200311093442183](../.vuepress/public/image-20200311093442183.png)
 
 - 找到满足条件的结果，添加到结果数组时`没有写数组` 粗心导致 :grimacing:
 
