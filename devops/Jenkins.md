@@ -376,12 +376,3 @@ esac
 ```
 
 
-## 13.0 Jenkins 搭建 Pipeline
-
-
-
-
-
-
-
-
