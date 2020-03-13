@@ -1,17 +1,13 @@
 [题目地址](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
 
-- 💃🏻 第一次练习 2020年3月13日 看题解
+- 💃🏻 第一次练习 2020年3月13日 看题解，只希望自己能坚持下去，坚持下去就是胜利
 
   
 
 
 ###  迭代解法
 
-::: tip
-
 链表的题，是真的难。可能还是练习太少了
-
-:::
 
 ```javascript
 /**
@@ -56,6 +52,70 @@ var deleteDuplicates = function(head) {
 
     return cur.next;
 
+};
+```
+
+
+
+### 双指针解法
+
+:warning: 看了人家的代码，还是没有理解到。等到后面的时候再回过头来看吧
+
+```javascript
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var deleteDuplicates = function(head) {
+    // double pointer
+    let dummyHead = new ListNode(-1);
+    dummyHead.next = head;
+
+    let slow = dummyHead;
+    let fast = head;
+
+    while(fast != null && fast.next != null) {
+        if (fast.val != fast.next.val) {
+            if (slow.next == fast) {
+                slow = fast;
+            } else {
+                slow.next = fast.next;
+            }
+        }
+        fast = fast.next;
+    }
+    if (slow.next != fast) {
+        slow.next = fast.next;
+    }
+    return dummyHead.next;
+
+};
+```
+
+
+
+### 递归解法
+
+递归写法，我惊了:ox::beers:
+
+```javascript
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var deleteDuplicates = function(head) {
+    if (head == null) {
+        return head;
+    }
+    if (head.next != null && head.val == head.next.val) {
+        while(head.next != null && head.val == head.next.val) {
+            head = head.next;
+        }
+        return deleteDuplicates(head.next);
+    } else {
+        head.next = deleteDuplicates(head.next);
+    }
+    return head;
 };
 ```
 
