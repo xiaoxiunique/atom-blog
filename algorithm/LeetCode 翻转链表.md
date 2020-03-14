@@ -3,6 +3,7 @@
 
 
 - 🤬 第一次练习 2020年3月10日
+- :smiley: 第二次练习 2020年3月14日 第一次练习还是很懵的，参考了人家的[题解](https://github.com/labuladong/fucking-algorithm/blob/master/%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E7%B3%BB%E5%88%97/k%E4%B8%AA%E4%B8%80%E7%BB%84%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)，加上反复练习，终于还是比较清晰了
 
 
 
@@ -15,13 +16,6 @@
 :::
 
 ```javascript
-/*
- * @lc app=leetcode.cn id=206 lang=javascript
- *
- * [206] 反转链表
- */
-
-// @lc code=start
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -34,20 +28,25 @@
  * @return {ListNode}
  */
 var reverseList = function(head) {
-  if (head == null) {
-    return null;
-  }
+    /**
+     * 定义三个变量  prev, cur, next
+     * prev 执行已经翻转的链表部分
+     * cur, next 指向即将要翻转链表部分的头节点
+     * loop next = cur.next; cur.next = prev; // 翻转链表之后
+     * 更新指针, prev, cur 都向前移动
+     * prev = cur;
+     * cur = next;
+     **/
 
-  let prev = null;
-  let curr = head;
+     let prev = null, cur = head, next = head;
+     while(cur != null) {
+         next = cur.next;
+         cur.next = prev;
+         prev = cur;
+         cur = next;
+     }
 
-  while (curr != null) {
-    let nextTemp = curr.next;
-    curr.next = prev;
-    prev = curr;
-    curr = nextTemp;
-  }
-  return prev;
+     return prev;
 };
 ```
 
