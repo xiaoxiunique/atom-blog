@@ -1,6 +1,20 @@
 
 
+如果拿汽车来做比:
+
+- Docker好比汽车引擎，
+- Dockerfile相当于汽车蓝图，
+- Docker image(镜像)就是汽车样板，
+- Docker container(容器)类似于汽车的零部件，
+- Docker Registry可以看作是4s店，
+- Docker Compose就像老司机,
+- Docker Volume就像是汽车的油箱, 如果把容器间内的io数据流比喻成汽油,
+- Docker Swarm(或者K8s)就是交通枢纽。
+
+
+
 ### 安装 ifconfig 命令, 虚拟机
+
 ```shell
 yum install net-tools
 ```
