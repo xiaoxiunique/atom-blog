@@ -3,6 +3,7 @@
 
 
 - :sob: 第一次练习 2020年3月10 太难了
+- :joy: 第二次练习 2020年3月14 看了人家的题解，感觉懂了那么一点点意思，又感觉没懂。后面再接着练习几次吧。
 
 
 
@@ -15,13 +16,6 @@
 
 
 ```javascript
-/*
- * @lc app=leetcode.cn id=25 lang=javascript
- *
- * [25] K 个一组翻转链表
- */
-
-// @lc code=start
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -35,45 +29,44 @@
  * @return {ListNode}
  */
 var reverseKGroup = function(head, k) {
-  let dummyNode = new ListNode(-1);
-  dummyNode.next = head;
+   
+   /**
+    * 这是一个大问题，需要借助小问题的解来分解答案。
+    * 每次翻转 k 的元素，而后后面又是一条链表，这是一个天然的递归结构。
+    * 递归的最小子问题就是，如果节点不是k的整数倍，那么剩余的节点就保持原来的顺序
+    */
 
-  let pre = dummyNode;
-  let end = dummyNode;
-
-  while (end.next != null) {
-    for (let i = 0; i < k && end != null; i++) {
-      end = end.next;
+    if (head == null) {
+        return null;
     }
-    if (end == null) {
-      break;
-    }
+    let l = head, r = head;
 
-    let start = pre.next;
-    let next = end.next;
-    end.next = null;
-    pre.next = reverse(start);
-    start.next = next;
-    pre = start;
-    end = pre;
-  }
-  return dummyNode.next;
+    // 循环判断是否满足k个节点
+    for (let i = 0 ; i < k ; i ++) {
+        // 表示剩余节点不足k的元素
+        if (r == null) 
+            return head;
+        r = r.next;
+    }
+    
+    // 翻转 a - b 之间的链表
+    let newNode = reverse(l, r);
+    l.next = reverseKGroup(r, k);
+    return newNode;
 };
 
-var reverse = function(head) {
-  let pre = null;
-  let cur = head;
-
-  while (cur != null) {
-    let next = cur.next;
-    cur.next = pre;
-    pre = cur;
-    cur = next;
-  }
-  return pre;
-};
-
-// @lc code=end
-
+/**
+ * 翻转节点a 到节点 b的链表
+ */
+var reverse = function(a, b) {
+    let prev = null, cur = a, next = a;
+    while(cur != b) {
+        next = cur.next;
+        cur.next = prev;
+        prev = cur;
+        cur = next;
+    }
+    return prev;
+}
 ```
 
