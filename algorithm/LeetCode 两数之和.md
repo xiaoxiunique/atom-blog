@@ -4,6 +4,7 @@
 
 - 😨 第一次刷题 2020年3月10日
 - 😜 第二次刷题 2020年3月11日
+- :grin: 第三次刷题 2020年3月17日 还是能记住，现在，知道思路基本就有解。
 
 
 
@@ -16,11 +17,6 @@
 :::
 
 ```javascript
-/*
- * @lc app=leetcode.cn id=1 lang=javascript
- *
- * [1] 两数之和
- */
 
 // @lc code=start
 /**
@@ -29,21 +25,17 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-  // loop -> i, nums[i] - target
   let map = new Map();
-
   for (let i = 0; i < nums.length; i++) {
-    if (map.has(target - nums[i])) {
-      return [map.get(target - nums[i]), i];
+    if (map.has(nums[i])) {
+      return [map.get(nums[i]), i];
     }
 
-    map.set(nums[i], i);
+    map.set(target - nums[i], i);
   }
 
-  return null;
+  return [];
 };
-// @lc code=end
-
 ```
 
 

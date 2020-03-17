@@ -4,6 +4,7 @@
 
 - 🤬 第一次练习 2020年3月10日
 - :smiley: 第二次练习 2020年3月14日 第一次练习还是很懵的，参考了人家的[题解](https://github.com/labuladong/fucking-algorithm/blob/master/%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E7%B3%BB%E5%88%97/k%E4%B8%AA%E4%B8%80%E7%BB%84%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)，加上反复练习，终于还是比较清晰了
+- :+1: 第三次练习 2020年3月17日 差点忘记，最后记起双指针，才写出来。
 
 
 
