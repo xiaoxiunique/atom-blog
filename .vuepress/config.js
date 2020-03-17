@@ -144,15 +144,15 @@ module.exports = {
   title: "我的学习测试",
   description: "我的学习测试",
   themeConfig: {
-    nav: [
+    nav: [  
       { text: "Home", link: "/" },
-      { text: "IDEA", link: "/idea/" },
-      { text: "DevOps", link: "/devops/" },
-      { text: "Web", link: "/web/" },
-      { text: "设计模式", link: "/designPattern/" },
-      { text: "数据结构与算法", link: "/algorithm/" },
-      { text: "TopTips", link: "/toptips/" },
-      { text: "杂记", link: "/blog/" }
+      { text: "IDEA😁", link: "/idea/" },
+      { text: "DevOps📜", link: "/devops/" },
+      { text: "Web📃", link: "/web/" },
+      { text: "设计模式📄", link: "/designPattern/" },
+      { text: "数据结构与算法📑", link: "/algorithm/" },
+      { text: "TopTips🧻", link: "/toptips/" },
+      { text: "杂记📚", link: "/blog/" }
     ],
     sidebar: {
       "/idea/": getIdeaSidebar(),
