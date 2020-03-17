@@ -141,8 +141,8 @@ function getTopTipsSidebar() {
 }
 
 module.exports = {
-  title: "我的学习测试",
-  description: "我的学习测试",
+  title: "⚽️ 🏀 🏈 ⚾️ 🥎 🏐 🏉",
+  description: "⚽️ 🏀 🏈 ⚾️ 🥎 🏐 🏉",
   themeConfig: {
     nav: [  
       { text: "Home", link: "/" },
