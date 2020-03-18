@@ -37,3 +37,5 @@
 [emoji 表情展示网站😎](https://getemoji.com/)
 
 [markdown 表情代码展示地址](https://www.webfx.com/tools/emoji-cheat-sheet/)
+
+[面试最常考的20个链表问题](https://www.geeksforgeeks.org/top-20-linked-list-interview-question/)
