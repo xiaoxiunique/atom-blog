@@ -39,3 +39,7 @@
 [markdown 表情代码展示地址](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
 [面试最常考的20个链表问题](https://www.geeksforgeeks.org/top-20-linked-list-interview-question/)
+
+[微博计数器设计](https://blog.cydu.net/weidesign/2012/09/09/weibo-counter-service-design-2/)
+
+[MongoDB 索引](https://zhuanlan.zhihu.com/p/77971681)
