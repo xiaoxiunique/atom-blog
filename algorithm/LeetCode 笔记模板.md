@@ -13,7 +13,7 @@
 
 解题代码
 
-```javascript
+```java
 
 ```
 
