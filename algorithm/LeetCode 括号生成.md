@@ -5,7 +5,7 @@
 - :slightly_smiling_face: 第一次练习 2020年3月29日 这个是听了课之后再做的，这时候思路还是比较清晰，这种递归性质的可以参考递归模板进行求解
 - :shit: 第二次练习 
 
-![image-20200329023623771](C:\Users\atom.hu\AppData\Roaming\Typora\typora-user-images\image-20200329023623771.png)
+![image-20200329023623771](https://gitee.com/xiaoxiunique/picgo-image/raw/master/image-20200329023623771.png)
 
 ### 递归
 
