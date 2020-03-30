@@ -284,7 +284,7 @@ npm install @alicloud/agenthub -g
 
 ```shell
 npm i nodeinstall -g
-nodeinstall --install-alinode ^3
+nodeinstall --install-alinode ^5
 ```
 
 
