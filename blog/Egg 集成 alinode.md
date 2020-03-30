@@ -1,6 +1,6 @@
 :::warning
 
-以下所有的操作都在 linux 上操作，不能再windows 上做实验
+以下所有的操作都在 linux 上操作，不能再windows 上做实验 :shit:
 
 :::
 
@@ -265,9 +265,18 @@ npm install @alicloud/agenthub -g
 ```shell
 {
   "appid": "<YOUR APPID>",
-  "secret": "<YOUR SECRET>"
+  "secret": "<YOUR SECRET>",
+  "packages": [''] // 配置 package.json 的位置
 }
 ```
+
+启动
+
+`agenthub start config.json`
+
+停止
+
+`agenthub stop all`
 
 
 

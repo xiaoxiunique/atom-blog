@@ -144,7 +144,7 @@ module.exports = {
   title: "⚽️ 🏀 🏈 ⚾️ 🥎 🏐 🏉",
   description: "⚽️ 🏀 🏈 ⚾️ 🥎 🏐 🏉",
   themeConfig: {
-    nav: [  
+    nav: [
       { text: "Home", link: "/" },
       { text: "IDEA😁", link: "/idea/" },
       { text: "DevOps📜", link: "/devops/" },
@@ -162,9 +162,16 @@ module.exports = {
       "/designPattern/": getDesignSidebar(),
       "/algorithm/": getAlgorithmSidebar(),
       "/toptips/": getTopTipsSidebar()
-    }
+    },
+    lastUpdated: "最后编辑时间"
   },
   markdown: {
     toc: { includeLevel: [1, 2, 3] }
-  }
+  },
+  plugins: [
+    "@vuepress/back-to-top",
+    "vuepress-plugin-code-copy",
+    "img-lazy",
+    "reading-progress"
+  ]
 };
