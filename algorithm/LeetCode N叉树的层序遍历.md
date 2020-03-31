@@ -1,4 +1,4 @@
-[题目地址](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/solution/)
+[jav题目地址](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/solution/)
 
 
 
@@ -7,9 +7,9 @@
 
 
 
-### 利用队列进行层序遍历
+### 利用队列
 
-解题代码
+解题代码 - 官方题解
 
 ```java
 public List<List<Integer>> levelOrder(Node root) {
@@ -36,6 +36,8 @@ public List<List<Integer>> levelOrder(Node root) {
     return retList;
 }
 ```
+
+
 
 
 
