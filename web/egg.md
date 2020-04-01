@@ -1,3 +1,158 @@
+## egg 集成 apollo
+
+------
+
+### 安装
+
+```shell
+cnpm i @zijin-m/egg-apollo --save
+```
+
+### plugin
+
+```js
+exports.apollo = {
+  enable: false,
+  package: '@zijin-m/egg-apollo',
+};
+```
+
+### config.default.js
+
+```js
+ config.apollo = {
+    host: '<host>', // 配置中心地址
+    appId: 'app id', // appId
+    namespaces: ['application'], // 默认命名空间
+    cachePath: '/tmp/apollo_cache', // 默认缓存目录
+    enableUpdateNotification: true, // 默认开启推送更新
+    enableFetch: true, // 默认开启定时拉取
+    fetchInterval: 5 * 60 * 1000, // 定时拉取间隔
+    retry: 10, // 初始化重试次数
+    mergeNamespace: 'application', // 将特定namespace合入本地配置默认不做
+    mountConfig: true, // 将namespaces挂载到本地配置 默认开启
+  };
+```
+
+后续配置就可以在 config 中读取到
+
+
+
+## egg 集成 socket.io
+
+------
+
+#### 安装
+
+```shell
+cnpm i egg-socket --save
+```
+
+#### plugin
+
+```js
+exports.io = {
+  enable: true,
+  package: 'egg-socket.io',
+};
+```
+
+#### config.default.js
+
+connectionMiddleware 连接中间件，所有的连接都会通过这里指定的中间件
+
+```js
+  config.io = {
+    init: {}, // passed to engine.io
+    namespace: {
+      '/': {
+        connectionMiddleware: ['connection'],
+        packetMiddleware: ['packet'],
+      },
+      '/example': {
+        connectionMiddleware: [],
+        packetMiddleware: [],
+      },
+    },
+    redis: {
+      port: process.env.EGG_REDIS_HOST || 6379, // Redis port
+      host: process.env.EGG_REDIS_PORT || '192.168.99.100', // Redis host
+      password: process.env.EGG_REDIS_PASSWORD || '',
+      db: process.env.EGG_REDIS_DB || 2,
+    },
+  };
+```
+
+
+
+#### 使用
+
+向前端发送消息
+
+```js
+this.app.io.of("/").emit("topic", "data");
+```
+
+
+
+#### Vue 中使用 Socket.io
+
+安装
+
+```shell
+cnpm i vue-socket.io --save
+```
+
+main.js
+
+```js
+// vue-socket.io
+import VueSocketIo from "vue-socket.io";
+Vue.use(
+  new VueSocketIo({
+    debug: true,
+    connection: "http://127.0.0.1:7005/"
+  })
+);
+```
+
+App.vue
+
+下面的 taskCreate 是一个 topic
+
+```js
+mounted() {
+    // 连接 websocket
+    this.$socket.emit("connect", 1);
+    // 订阅主题
+    this.$socket.emit("taskCreate", { subscribe: true });
+},
+sockets: {
+    users(data) {
+        console.info("在线人数" + data);
+    },
+    receive_message(data) {
+        console.log("接收数据" + data);
+    },
+    transferMessage(data) {
+        console.log("发送消息", data);
+    },
+    reconnect(data) {
+        console.log("重新连接");
+        this.$socket.emit("connect", 1);
+    },
+    taskCreate(data) {
+        console.log("接收数据" + data);
+    }
+},
+```
+
+
+
+## egg 集成 alinode
+
+------
+
 :::warning
 
 以下所有的操作都在 linux 上操作，不能再windows 上做实验 :shit:
@@ -287,4 +442,8 @@ npm i nodeinstall -g
 nodeinstall --install-alinode ^5
 ```
 
+添加特殊启动参数
 
+
+
+而后启动后，就可以在 alinode 添加了
