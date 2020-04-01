@@ -1,9 +1,61 @@
 ---
 home: true
-heroImage: /home.png
+heroImage:
 heroText: null
-tagline: 😀 😁 😂 🤣 😃 😄 😅
-actionText: 我的学习笔记 →
+tagline:
+actionText:
 actionLink: /blog/
-footer: 蜀ICP备20000813号
+footer:
 ---
+
+# 个人简历
+
+1. 精通 java 研发，比较熟悉 python、shell 研发，熟悉 c，web前端（HTML、css、js、angular等）,android研发，教了解 C++、R、PHP、IOS 研发。精通常见设计模式、集合、多线程开发，线程安全、五种 IO 模型，精通JVM的结构和原理。
+
+2. 精通 Spring、SpringMVC、Spring Boot、Spring Cloud、SpringData jps、Mybatis、hibernate等开源框架。
+
+3. 精通 restful 风格的接口、dubbo 风格的接口设计和编写。
+
+4. 有过报表，定时任务。自己实现单点登录，基于CAS企业级的单点登录，定制化视图，动换，傻瓜式部署开发经验。
+
+5. 熟悉 Storm、Hadoop原理，Tomcat集群，Nginx 高可用，fastdfs集群，redis 集群， solr 集群，apache配置及部署；
+
+6. 熟悉常见的Linux命令，熟悉高并发分布式架构设计，熟悉云计算相关业务和运维。
+
+7. 熟悉 redis、memcache、mongodb、kafak中间间的原理及使用；
+
+8. 互联网亿级电商架构及研发经验。
+
+9. 可以自己写一个RPC框架
+
+10. 可以自己写一个Mybatis框架
+
+11. 可以自己写一个Tomcat框架
+
+12. 可以自己写一个SpringMvc框架
+
+13. 可以自己写一个JDBC框架
+
+14. 可以自己写一个Dubbo框架
+
+15. 可以自己写一个Netty框架
+
+16. 深入研究过编译器底层原理及源码，非常熟悉词法分析，可从事编译器的研发
+
+17. 深入研究过Linux操作系统内核底层原理及源码，系统调用、内存分布算法、进程间关系等，可以从事操作系统内核的研发
+
+18. 可以手动写一个正则表达式引擎
+
+19. 研究过大数据：hadoop、hdfs、hive、pig、hbase、spark、flink、storm等框架，有一定的实战经验，可以从事大数据开发
+
+20. 可以手写一个Spring事务机制
+
+21. 深入研究过sql server、mysql的底层架构（命令分析器、查询优化器、查询执行器、访问方法、缓存区管理）
+
+22. 对AI、机器学习、深度学习的模型建立、训练数据集、测试数据集、监督算法、无监督算法及整个算法流程有过深入的理解
+
+23. 研究过网络安全、对xss、csrf、sql注入、ddos攻击、dns劫持、arp等有深入的理解；对密码学有较深入的研究，精通web登录的流程及底层原理；熟悉网络攻击工具
+
+24. 对算法（递归、动态规划、贪心算法、分治、回溯、DFS、BFS）及数据结构（数组、链表、堆栈、B类书、二叉树、红黑树、优先队列）有较深入的了解
+
+    

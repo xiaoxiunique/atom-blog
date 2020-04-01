@@ -141,8 +141,8 @@ function getTopTipsSidebar() {
 }
 
 module.exports = {
-  title: "⚽️ 🏀 🏈 ⚾️ 🥎 🏐 🏉",
-  description: "⚽️ 🏀 🏈 ⚾️ 🥎 🏐 🏉",
+  title: "atips",
+  description: "atips",
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
@@ -168,10 +168,5 @@ module.exports = {
   markdown: {
     toc: { includeLevel: [1, 2, 3] }
   },
-  plugins: [
-    "@vuepress/back-to-top",
-    "vuepress-plugin-code-copy",
-    "img-lazy",
-    "reading-progress"
-  ]
+  plugins: ["@vuepress/back-to-top", "img-lazy", "reading-progress"]
 };
