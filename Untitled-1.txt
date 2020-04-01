@@ -1,0 +1,20 @@
+{
+    left : 0,         //左键
+    right : 1,        //右键
+    up : 2,           //上键
+    down : 3,         //下键
+    ok : 4,           //确认键
+    home : 5,         //主页键
+    back : 6,         //返回键
+    volumeUp : 7,     //音量加键
+    volumeDown : 8,   //音量减键
+    menu : 9,         //菜单键
+    focusLeft : 10,   //调焦远(部分设备不支持)
+    focusRight : 11,  //调焦近(部分设备不支持)
+    turnOff : 12,     //关机键
+    threeD : 13,      //一键3D(部分设备不支持)
+    function : 14,     //功能快捷键
+    //
+    shutDown : 116, // 关机按键
+    shortcutMenu : 251 // 快捷菜单按键
+}
