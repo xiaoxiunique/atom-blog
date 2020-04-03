@@ -4,7 +4,7 @@
 
 - :slightly_smiling_face: 第一次练习 2020年4月3日 这个题的话，就直接记住吧，也是属于一种贪心
 
-	![è¿·æé¸­](../.vuepress/public/LeetCode  分发饼干/005J4OU5ly1gdddq9fpd9j301w01w74b.jpg)
+	<img src="../.vuepress/public/ceeb653ely1fpwht346ksg206o06otao.gif" alt="ceeb653ely1fpwht346ksg206o06otao" style="zoom:50%;" />
 
 - :smile: 第二次练习 
 

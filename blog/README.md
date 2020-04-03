@@ -1,3 +1,9 @@
+[彻底搞懂epoll高效运行的原理](https://www.jianshu.com/p/31cdfd6f5a48)
+
+[一次Java线程池误用引发的血案和总结](https://blog.csdn.net/jiankunking/article/details/79253053)
+
+[一篇文章搞定Github API 调用 (v3）](https://segmentfault.com/a/1190000015144126)
+
 [leetcode 解题教程](http://lucifer.ren/leetcode/)
 
 [LeetCode 教程](https://liweiwei1419.gitee.io/leetcode-algo/)
