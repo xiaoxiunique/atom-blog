@@ -1,3 +1,5 @@
+[算法套路解析 labuladong](https://labuladong.gitbook.io)
+
 [彻底搞懂epoll高效运行的原理](https://www.jianshu.com/p/31cdfd6f5a48)
 
 [一次Java线程池误用引发的血案和总结](https://blog.csdn.net/jiankunking/article/details/79253053)
