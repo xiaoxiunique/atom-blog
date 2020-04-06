@@ -127,12 +127,12 @@ let listjava = fs
   .map(filename => [filename.slice(0, -3), filename.slice(0, -3)])
   .sort();
 
-listjava = [["", "java"], ...listjava];
+listjava = [["", "知识预览"], ...listjava];
 
 function getjavaSidebar() {
   return [
     {
-      title: "java",
+      title: "Java",
       collapsable: false,
       sidebarDepth: 3,
       children: listjava
