@@ -16,7 +16,7 @@
 
 ### Java 虚拟机堆划分
 
-![img](../.vuepress/public/2cc29b8de676d3747416416a3523e4e5.png)
+<img src="../.vuepress/public/2cc29b8de676d3747416416a3523e4e5.png" alt="img" style="zoom:80%;" />
 
 
 
@@ -28,7 +28,7 @@
 
 **第一种是清除（sweep）**，即把死亡对象所占据的内存标记为空闲内存，并记录在一个空闲列表（free list）之中。当需要新建对象时，内存管理模块便会从该空闲列表中寻找空闲内存，并划分给新建的对象。
 
-![img](../.vuepress/public/f225126be24826658ca5a899fcff5003.png)
+<img src="../.vuepress/public/f225126be24826658ca5a899fcff5003.png" alt="img" style="zoom:80%;" />
 
 清除这种回收方式的原理及其简单，但是有两个缺点。一是会造成内存碎片。由于 Java 虚拟机的堆中对象必须是连续分布的，因此可能出现总空闲内存足够，但是无法分配的极端情况。
 
@@ -38,10 +38,10 @@
 
 **第二种是压缩（compact）**，即把存活的对象聚集到内存区域的起始位置，从而留下一段连续的内存空间。这种做法能够解决内存碎片化的问题，但代价是压缩算法的性能开销。
 
-![img](../.vuepress/public/415ee8e4aef12ff076b42e41660dad39.png)
+<img src="../.vuepress/public/415ee8e4aef12ff076b42e41660dad39.png" alt="img" style="zoom:80%;" />
 
 
 
 **第三种则是复制（copy）**，即把内存区域分为两等分，分别用两个指针 from 和 to 来维护，并且只是用 from 指针指向的内存区域来分配内存。当发生垃圾回收时，便把存活的对象复制到 to 指针指向的内存区域中，并且交换 from 指针和 to 指针的内容。复制这种回收方式同样能够解决内存碎片化的问题，但是它的缺点也极其明显，即堆空间的使用效率极其低下。
 
-![img](../.vuepress/public/4749cad235deb1542d4ca3b232ebf261.png)
+<img src="../.vuepress/public/4749cad235deb1542d4ca3b232ebf261.png" alt="img" style="zoom:80%;" />
