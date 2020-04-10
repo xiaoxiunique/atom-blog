@@ -1,3 +1,5 @@
+[Java 面试](https://segmentfault.com/a/1190000016172470)
+
 [算法套路解析 labuladong](https://labuladong.gitbook.io)
 
 [彻底搞懂epoll高效运行的原理](https://www.jianshu.com/p/31cdfd6f5a48)
@@ -57,3 +59,5 @@
 [MongoDB 索引](https://zhuanlan.zhihu.com/p/77971681)
 
 [算法动画演示](https://visualgo.net/zh)
+
+[MSDN 下载](https://msdn.itellyou.cn/)
