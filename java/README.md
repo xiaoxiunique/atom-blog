@@ -14,8 +14,6 @@
 
 
 
-<<<<<<< HEAD
-=======
 ### Java 虚拟机堆划分
 
 <img src="../.vuepress/public/2cc29b8de676d3747416416a3523e4e5.png" alt="img" style="zoom:80%;" />
@@ -47,4 +45,4 @@
 **第三种则是复制（copy）**，即把内存区域分为两等分，分别用两个指针 from 和 to 来维护，并且只是用 from 指针指向的内存区域来分配内存。当发生垃圾回收时，便把存活的对象复制到 to 指针指向的内存区域中，并且交换 from 指针和 to 指针的内容。复制这种回收方式同样能够解决内存碎片化的问题，但是它的缺点也极其明显，即堆空间的使用效率极其低下。
 
 <img src="../.vuepress/public/4749cad235deb1542d4ca3b232ebf261.png" alt="img" style="zoom:80%;" />
->>>>>>> 6276efb8b560fb477c163043fa7c7c3ba4f7e624
+
