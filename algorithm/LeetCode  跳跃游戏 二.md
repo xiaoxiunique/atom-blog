@@ -3,7 +3,7 @@
 
 
 - :slightly_smiling_face: 第一次练习 2020年4月4日 感觉解法只是在 [跳跃游戏](https://leetcode-cn.com/problems/jump-game/) 基础上做了一下小的改变。先记住吧
-- :smile: 第二次练习 
+- :smile: 第二次练习 2020年4月12日 算是理解了
 
 
 
