@@ -1,10 +1,6 @@
 [[TOC]]
 
-
-
-**LeetCode 300 +**
-
-
+<img src="../.vuepress/public/image-20200412182849046.png" alt="image-20200412182849046" style="zoom:80%;" />
 
 ### 五毒神掌 :ox::beers:
 

@@ -1,5 +1,7 @@
 [[TOC]]
 
+<img src="../.vuepress/public/9150e4e5gy1g7so2ls2j2j20tn0vzq5t.jpg" alt="è¿è°è®¾è®¡ç" style="zoom: 33%;" />
+
 ### 设计原则指导思想
 
 
