@@ -1,6 +1,7 @@
 - 😮 第一次刷题 2020年3月9日 
 - :shit: 第二次刷题 2020年3月11日 相对来说还可以，下一次可以尝试一下老师的三个变量的操作方法。
 - :sweat_smile: 第三次刷题 2020年3月29日 记得到了，不过还是没有用三个变量的方法，可能还是因为懒吧。
+- :smile: 第二次刷题 2020年4月18日 一个月后再次遇到这个题，成功三个变量的方式，以前用这种方式还有点绕，现在感觉很简单了，可能这就是在进步吧。
 
 
 
@@ -53,17 +54,20 @@ var climbStairs = function(n) {
 
 
 
-2020年3月9日12:52:42
+### 保存中间变量求解
 
-```javascript
-var climbStairs = function(n) {
-  let arr = [1, 2];
+```java
+public int climbStairs(int n) {
+    if (n <= 2)
+        return n;
 
-  for (let i = 2; i < n; i++) {
-    arr.push(arr[i - 1] + arr[i - 2]);
-  }
-
-  return arr[n - 1];
-};
+    int i = 1, j = 2, cur = 0;
+    for(int k = 2; k < n ; k ++) {
+        cur = i + j;
+        i = j;
+        j = cur;
+    }
+    return cur;
+}
 ```
 
