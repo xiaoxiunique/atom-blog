@@ -4,11 +4,13 @@
 
 - :slightly_smiling_face: 第一次练习 2020年4月3日 这个没有思路，直接看的题解。我丢。。。。
 
-	理解了题解之后，讲一下自己的思路
+  理解了题解之后，讲一下自己的思路
 
-	- 我们需要得到 amount 所需要的的最小的硬币数，其实可以换一个角度，我们想要得到 amount 所需硬币数，我们只需要得到 amount - 1的硬币数 + 1 就能得到我们需要的结果。
+  - 我们需要得到 amount 所需要的的最小的硬币数，其实可以换一个角度，我们想要得到 amount 所需硬币数，我们只需要得到 amount - 1的硬币数 + 1 就能得到我们需要的结果。
 
-- :smile: 第二次练习 
+    
+
+- :smile: 第二次练习 2020年4月20日 这个题不能算理解了，错误太多了。。。。
 
 ### 题解
 
@@ -29,27 +31,19 @@
 解题代码
 
 ```java
-public int coinChange(int[] coins, int amount) {
-    // 自底向上的动态规划
-    if (coins.length == 0) {
-        return -1;
-    }
+    public int coinChange(int[] coins, int amount) {
+        int max = amount + 1;
+        int[] dp = new int[amount + 1];
+        Arrays.fill(dp, max);
+        dp[0] = 0;
 
-    // memo[n] 的值： 表示的凑成总金额为n所需要的最小的硬币的个数
-    int[] memo = new int[amount + 1];
-    memo[0] = 0;
-    for (int i = 1, i < amount ; i ++) {
-        int min = Integer.MAX_VALUE;
-        for (int j = 0; j < coins.length ; j ++) {
-            if (i - coins[j] >= 0 && memo[i - coins[j]] < min) {
-                min = memo[i - coins[j]] + 1;
-            }
-        }
-        memo[i] = min;
-    }
+        for (int amt = 1; amt <= amount; amt++)
+            for (int coin : coins)
+                if (coin <= amt)
+                    dp[amt] = Math.min(dp[amt], dp[amt - coin] + 1);
 
-    return memo[amount] == Integer.MAX_VALUE ? -1 : memo[amount];
-}
+        return dp[amount] > amount ? -1 : dp[amount];
+    }
 ```
 
 

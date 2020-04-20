@@ -322,3 +322,24 @@ mongodump -h 127.0.0.1 -d <dbname> -o filepath
 mongorestore -h 127.0.0.1 -d 导入的数据库库名称
 ```
 
+
+
+### Model Virtual
+
+:::tip
+
+mongoose 的 virtual 需要配合  populate 使用，有奇效
+
+:::
+
+```js
+  
+Task.virtual('comment', {
+    ref: 'Comment',
+    localField: '_id',
+    foreignField: 'task',
+    justOne: false,
+    count: true,
+});
+```
+
