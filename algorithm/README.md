@@ -30,25 +30,7 @@
   - 位运算 Bitwise，布隆过滤器 BloomFilter
   - LRU Cache
 
-### 算法
 
-#### 常见算法
-
-- 搜索 Search：深度优先搜索 Depth first search，广度优先搜索 Breadth first search
-
-- 动态规划 Dynamic Programming
-
-- 二分查找 Binary Search
-
-- 贪心算法 Greedy
-
-- 数据 Math
-
-- 几何 Geometry
-
-刻意练习，弱点的地方。练习弱项
-
-误区，做 `LeetCode` 只做一次
 
 #### 切题四件套
 
@@ -56,6 +38,20 @@
 - 想所有可能的解法 Possible solutions
 - Coding （多写）
 - Test cases (测试样例)
+
+
+
+### 编程技巧
+
+- 判断一个数字是否为奇数
+
+  ```java
+  if ((num & 1) == 1) {
+  	// is odd
+  }
+  ```
+
+  
 
 
 
