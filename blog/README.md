@@ -31,6 +31,8 @@
 
 ## Chrome 插件
 
+<img src="../.vuepress/public/fe82edfd-c2db-441e-848b-1929ca833967-3417312.jpg" alt="img" style="zoom:50%;" />
+
 - 广告终结者
 - 开发工具箱
 - Wappalyzer
@@ -55,3 +57,120 @@
 - Cliboard History Pro
 - JSON Formatter
 - 增强复制
+
+
+
+### VsCode 扩展
+
+<img src="../.vuepress/public/0a225895-9544-44c2-8510-232e691ddc5b-3417312.jpg" alt="img" style="zoom:50%;" />
+
+- aiXcoder
+- Alibaba Cloud Toolkit
+- any-rule
+- Auto Close Tag
+- Auto Rename Tag
+- Awesome Flutter Snippets
+- Beautify
+- Bracket Pair Colorizer
+- CodeIf
+- Color Highlight
+- Console Log
+- Debugger for Chrome
+- Docker
+- Document This
+- EditorConfig for VS Code
+- ESLint
+- Form Generator Plugin
+- Git Blame
+- Git History
+- GitLens
+- Gulp Snippets
+- Gulp Tasks
+- Js Refactor
+- LeetCode
+- Local History
+- Lodash
+- Lodash Snippets
+- Markdown all in one
+- npm intellisense
+- Open file From Path
+- Path Autocomplate
+- Prettier
+- Settings Sysc
+- SFTP
+- stylus
+- todo
+- TODO Highlight
+- TODO Tree
+- Vetur
+- Vue2 Snippets
+- Code Runner
+
+
+
+### Github stars
+
+<img src="../.vuepress/public/c99cbc22-da3f-40f1-b2e2-4eef62557465-3417312.jpg" alt="img" style="zoom:50%;" />
+
+- nprogress
+- clipboard
+- vuetify
+- element-ui
+- lodash
+- moment
+- goaccess
+- arthas
+- hutool
+- ramda
+- minio
+- docker
+- k8s
+- draw.io
+- arya 在线 markdown 编辑器
+- form-generator
+- clean -code-js
+- clean-code-javascript
+- xxl-job
+- You-Dont-Know-JS
+- [nginxconfig.io](http://nginxconfig.io/)
+- 12306
+- JustAuth
+- AnotherRedisDesktopManager
+- learn-regex
+- Daily-Interview-Question
+- git-tips
+- PicGo
+- node-in-debugging
+- nodebestpractices
+  node 的最佳实践
+-  litemall
+  spring boot + vue 商城项目
+
+
+
+### IDEA 插件
+
+<img src="../.vuepress/public/4ff32078-2790-4839-9f0d-e989ef85fdcd-3417312.jpg" alt="img" style="zoom: 33%;" />
+
+- Alibaba Cloud ToolKit
+- Alibaba Java Coding Guidelines
+- Translation
+- Free Mybatis Plugin
+- IntelliJ Lombok plugin
+- GenAllSetter
+- GenDaoCode
+- CodeGlance
+- RestfulToolkit
+- Grep Console
+- MyBatis Log Plugin
+- GsonFormat
+- VisualVm Launcher
+- jclasslib bytecode viewer
+- Codota
+- Auto filling Java call arguments
+- Rainbow Brackets
+- SequenceDiagram
+- Java Stream Debugger
+- Arthas Idea
+- easy code
+- AceJump
