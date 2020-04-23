@@ -7,7 +7,13 @@
 
 
 
+[背包问题](https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lie/bei-bao-wen-ti)，这是个，记笔记
+
 ### 动态规划
+
+`dp[i][w]` 的定义如下：对于前 i 个物品，当前背包的容量为 `w`，这种情况下可以装下的最大价值是 `dp[i][w]`
+
+比如说，如果`dp[3][5] = 6`, 其含义为：对于给定的一系列物品中，若只对前三个物品进行选择，当容量为 5 时，最多可以装下价值为 6
 
 解题代码
 
@@ -26,7 +32,7 @@ public int waysToChange(int n) {
     for (int i = 1; i < 4; i++) {
         for (int j = 1; j <= n; j++) {
             if (j >= coins[i]) {
-                dp[i][j] =(dp[i - 1][j] + dp[i][j - coins[i]]) % 1000000007;
+                dp[i][j] = (dp[i - 1][j] + dp[i][j - coins[i]]) % 1000000007;
             } else {
                 dp[i][j] = dp[i - 1][j];
             }
