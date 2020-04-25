@@ -1,11 +1,7 @@
 [题目地址](https://leetcode-cn.com/problems/the-masseuse-lcci/)
 
-
-
-- 😣 第一次练习 2020年3月24日 整理思路还是有的，知道是动态规划问题，不过编码上确实有点问题
-- :shit: 第二次练习 
-
-
+- 😣 第一次练习 2020 年 3 月 24 日 整理思路还是有的，知道是动态规划问题，不过编码上确实有点问题
+- :shit: 第二次练习
 
 ### 动态规划
 
@@ -31,8 +27,6 @@ class Solution {
 }
 ```
 
-
-
 更加精妙的做法
 
 ```java
@@ -49,18 +43,14 @@ class Solution {
 }
 ```
 
-
-
 ### 易错点
 
 - loop 的终结条件是 nums.length 而不是 nums.length - 1
 
 - 求解 Max 时，也需要注意
 
-  ```hava
+  ```java
   for (int i = 2; i < nums.length; i ++) {
-  	dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i]);
+   dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i]);
   }
   ```
-
-  

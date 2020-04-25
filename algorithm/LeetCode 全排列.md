@@ -2,36 +2,44 @@
 
 
 
-- :smile: 第一次练习 2020年3月29日 排列其实和组合差不多，都需要用到回溯的思想
-- :shit: 第二次练习 
+- :slightly_smiling_face: 第一次练习 2020.04.25 这个题目给我的感觉是非常的熟悉，但是还是没有想起来，这就是五毒没有做的原因吧。
+
+  [优秀题解](https://leetcode-cn.com/problems/permutations/solution/hui-su-suan-fa-xiang-jie-by-labuladong-2/)
+
+- :smile: 第二次练习 
 
 
 
-### 回溯
+### 回溯算法
 
 解题代码
 
 ```java
-private List<List<Integer>> retList;
+List<List<Integer>> retList = new LinkedList<>();
+
 public List<List<Integer>> permute(int[] nums) {
-    retList = new LinkedList<>();
-    backtrack(nums, new LinkedList<Integer>());
+    LinkedList<Integer> track = new LinkedList<>();
+    backtrack(track, nums);
     return retList;
 }
 
-private void backtrack(int[] nums, LinkedList<Integer> curList) {
-    if (curList.size() == nums.length) {
-        retList.add(new LinkedList<>(curList));
+private void backtrack(LinkedList<Integer> track, int[] nums) {
+    if (track.size() == nums.length) {
+        retList.add(new LinkedList<>(track));
         return;
     }
 
     for (int i = 0; i < nums.length; i++) {
-        if (curList.contains(nums[i]))
+        // 排除不合法的选择
+        if (track.contains(nums[i])) {
             continue;
-
-        curList.add(nums[i]);
-        backtrack(nums, curList);
-        curList.removeLast();
+        }
+        // 做选择
+        track.add(nums[i]);
+        // 进入下一层
+        backtrack(track, nums);
+        // 取消选择
+        track.removeLast();
     }
 }
 
@@ -41,11 +49,4 @@ private void backtrack(int[] nums, LinkedList<Integer> curList) {
 
 ### 易错点
 
-- 需要注意，排重情况
-
-	```java
-	if (curList.contains(nums[i]))
-		continue;
-	```
-
-	
+- 需要注意，最后元素满的时候，是 `new LinkedList<>(track)` 
