@@ -12,7 +12,7 @@
 
 - list
 
-  <img src="../.vuepress/public/1645918c2cdf772e" alt="img" style="zoom:80%;" />
+  <!-- <img src="../.vuepress/public/1645918c2cdf772e" alt="img" style="zoom:80%;" /> -->
 
 - set
 
@@ -67,6 +67,4 @@ public static String getData(String key) throws InterruptedException {
 
 ### Redis 淘汰策略
 
-
-![img](../.vuepress/public/17197e16bca956bb)
-=======
+# ![img](../.vuepress/public/17197e16bca956bb)
