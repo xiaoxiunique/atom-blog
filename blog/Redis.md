@@ -67,4 +67,3 @@ public static String getData(String key) throws InterruptedException {
 
 ### Redis 淘汰策略
 
-# ![img](../.vuepress/public/17197e16bca956bb)
