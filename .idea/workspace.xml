@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb6a6a1a-6533-42aa-a569-0ffa5856d049" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/位运算.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/位运算.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/Redis.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/Redis.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +49,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585792140562</updated>
       <workItem from="1585792143973" duration="3000" />
-      <workItem from="1588005820011" duration="69000" />
+      <workItem from="1588005820011" duration="671000" />
+      <workItem from="1588162518342" duration="362000" />
     </task>
     <servers />
   </component>
@@ -69,9 +66,9 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="411" y="92" width="617" height="735" key="find.popup/0.0.1440.920@0.0.1440.920" timestamp="1588005859796" />
-    <state x="383" y="209" width="672" height="678" key="search.everywhere.popup" timestamp="1588005856874">
+    <state x="383" y="209" width="672" height="678" key="search.everywhere.popup" timestamp="1588162625779">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="383" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1440.920@0.0.1440.920" timestamp="1588005856874" />
+    <state x="383" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1440.920@0.0.1440.920" timestamp="1588162625779" />
   </component>
 </project>
