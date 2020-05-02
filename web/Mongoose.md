@@ -311,7 +311,7 @@ Model.findOneAndUpdate(filter, update, [options], [callback]);
 导出
 
 ```shell
-mongodump -h 127.0.0.1 -d <dbname> -o filepath
+mongodump --archive=egg_xgimi_app.gz --gzip --db=egg_xgimi_app
 ```
 
 
@@ -320,6 +320,8 @@ mongodump -h 127.0.0.1 -d <dbname> -o filepath
 
 ```shell
 mongorestore -h 127.0.0.1 -d 导入的数据库库名称
+
+mongorestore --gzip --archive=<filename>.agz --db test -u <username> -p <password> --authenticationDatabase 'admin' --port 27000 --host <hostname>
 ```
 
 
