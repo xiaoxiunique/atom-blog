@@ -20,6 +20,7 @@
 ## 网站
 
 - [Squoosh](https://squoosh.app/)
+- [Java](https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html)
 
 ## 工具软件
 

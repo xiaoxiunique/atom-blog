@@ -168,5 +168,20 @@ module.exports = {
   markdown: {
     toc: { includeLevel: [1, 2, 3] },
   },
-  plugins: ["@vuepress/back-to-top", "img-lazy", "reading-progress"],
+  plugins: [
+    ["@vuepress/back-to-top"],
+    ["img-lazy"],
+    ["reading-progress"],
+    [
+      "vuepress-plugin-medium-zoom",
+      {
+        selector: ".my-wrapper .my-img",
+        delay: 1000,
+        options: {
+          bgColor: "black",
+          zIndex: 10000,
+        },
+      },
+    ],
+  ],
 };
