@@ -118,3 +118,36 @@ alt + ~ + 4
 
 ![git-version.png](http://193.112.98.8/atomImg/git/git-version.png)
 
+
+
+
+
+### Stash
+
+应用场景
+
+- 我在本地修改好后，发现远程分支已经被改动了，此时我本地也被改动了就造成了冲突，无法push或者pull。此时可以使用git stash
+
+  ```shell
+  1 git stash //把本地的改动暂存起来
+  2 git pull  //拉取远端分支（此时本地分支会回滚到上次commit的情况，新的改动都存在了stash中）
+  3 git stash pop // 将栈顶改动重新加回本地分支，就可以继续修改了，当然，如果改好了就是add,commit,push啥的。。
+  ```
+
+  
+
+- 不小心改动了其他分支，例如忘记切换，直接在master分支上做改动，这里假设我的分支是test分支
+
+  ```shell
+  git stash          //把本地当前改动暂存起来，此时master分支就恢复到了上次拉取时的状态
+  git checkout test  //切换到需要改动的分支
+  git stash pop　　　 //将改动pop到自己当前的分支
+  ```
+
+
+
+Idea 将现在本地的修改存储在 Stash 中
+
+`alt + ~`加 `9`
+
+<img src="../.vuepress/public/image-20200506195626175.png" alt="image-20200506195626175" style="zoom: 101%;" />

@@ -41,3 +41,26 @@ use test
 db.auth(name, pwd);
 ```
 
+
+
+:::tip
+
+错误解决：如果出现以下错误
+
+```shell
+Error: couldn’t add user: Use of SCRAM-SHA-256 requires undigested passwords
+```
+
+:::
+
+则使用以下方式进行添加
+
+```shell
+db.createUser({ 
+    user: "admin", 
+    pwd: "xxx", 
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ], 
+    mechanisms : ["SCRAM-SHA-1"] 
+})
+```
+
