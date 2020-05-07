@@ -175,7 +175,7 @@ module.exports = {
     [
       "vuepress-plugin-medium-zoom",
       {
-        selector: ".my-wrapper .my-img",
+        selector: ".theme-default-content img",
         delay: 1000,
         options: {
           bgColor: "black",
