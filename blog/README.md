@@ -14,6 +14,7 @@
 | [RESTful API 设计指南](http://www.ruanyifeng.com/blog/2014/05/restful_api.html) | [emoji 表情展示网站😎](https://getemoji.com/)                 | [markdown 表情代码展示地址](https://www.webfx.com/tools/emoji-cheat-sheet/) |
 | [面试最常考的20个链表问题](https://www.geeksforgeeks.org/top-20-linked-list-interview-question/) | [微博计数器设计](https://blog.cydu.net/weidesign/2012/09/09/weibo-counter-service-design-2/) | [MongoDB 索引](https://zhuanlan.zhihu.com/p/77971681)        |
 | [算法动画演示](https://visualgo.net/zh)                      | [MSDN 下载](https://msdn.itellyou.cn/)                       | [设计模式](https://refactoringguru.cn/)                      |
+| [Git 规范](https://juejin.im/post/5b4328bbf265da0fa21a6820#heading-4) |                                                              |                                                              |
 
 
 
