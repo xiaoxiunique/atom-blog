@@ -1,6 +1,8 @@
 ### 编辑器配色
 
-<img src="../.vuepress/public/Xshell/image-20200504021150611.png" alt="image-20200504021150611" style="zoom:80%;" />
+
+
+<img src="../.vuepress/public/image-20200507090735297.png" alt="image-20200507090735297" style="zoom:101%;" />
 
 保存文件名位 `skycolor.xcs`
 
