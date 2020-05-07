@@ -30,3 +30,12 @@ name0=skycolor
 count=1
 ```
 
+
+
+### 打开快速命令集
+
+<img src="../.vuepress/public/image-20200507085812643.png" alt="image-20200507085812643" style="zoom:101%;" />
+
+配置好后，就是这个样子，点击可以执行相应的命令
+
+<img src="../.vuepress/public/image-20200507090003987.png" alt="image-20200507090003987" style="zoom:101%;" />

@@ -120,8 +120,6 @@ alt + ~ + 4
 
 
 
-
-
 ### Stash
 
 应用场景
@@ -151,3 +149,14 @@ Idea 将现在本地的修改存储在 Stash 中
 `alt + ~`加 `9`
 
 <img src="../.vuepress/public/image-20200506195626175.png" alt="image-20200506195626175" style="zoom: 101%;" />
+
+将 Stash 中的代码还原
+
+<img src="../.vuepress/public/image-20200506202108277.png" alt="image-20200506202108277" style="zoom:101%;" />
+
+
+
+### Check Out
+
+将本地修改的代码还原对应命令 `git checkout <file>`
+
