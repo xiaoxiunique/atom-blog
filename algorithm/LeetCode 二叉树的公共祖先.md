@@ -3,7 +3,7 @@
 
 
 - 😣 第一次练习 2020年3月29日 不太会做，没有什么思路。五毒神功
-- :shit: 第二次练习 
+- :shit: 第二次练习 2020.05.10 思路还是懂了一些。还是要持续练习才行
 
 
 
@@ -92,6 +92,62 @@ class Solution {
     }
 
 }
+```
+
+
+
+### 递归
+
+- 如果给定的两个节点的值都小于根节点的值，那么最近的共同祖先一定在左子树
+- 如果给定的两个节点的值都大于根节点的值，那么最近的共同祖先一定在右子树
+- 如果一个大于等于、一个小于等于根节点的值，那么当前根节点就是最近的共同祖先了
+
+```java
+public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    if (root == p || root == q) {
+        return root;
+    }
+
+    Stack<TreeNode> stack = new Stack<TreeNode>();
+
+    // 中序遍历，判断两个节点是否在左子树
+    TreeNode cur = root.left;
+    boolean pLeft = false;
+    boolean qLeft = false;
+    while (cur != null || !stack.isEmpty()) {
+        while(cur != null) {
+            stack.push(cur);
+            cur = cur.left;
+        }
+
+        // 节点位空就出栈
+        cur = stack.pop();
+        // 判断是否等于 p 节点
+        if (cur == p) {
+            pLeft = true;
+        }
+        // 判断是否等于 q 节点
+        if (cur == q) {
+            qLeft = true;
+        }
+        if (pLeft && qLeft) {
+            break;
+        }
+
+        // 考虑右子树
+        cur = cur.right;
+    }
+
+    // 两个节点都在左子树
+    if (pLeft && qLeft) {
+        return lowestCommonAncestor(root.left, p, q);
+    } else if (!pLeft && !qLeft) {
+        return lowestCommonAncestor(root.right, p, q);
+    }
+
+    return root;
+}
+
 ```
 
 
