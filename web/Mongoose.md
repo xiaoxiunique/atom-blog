@@ -30,6 +30,20 @@ console.info(model.name); // model.name
 
 
 
+### lean
+
+上方的两个问题 _id 比较， 和 toObject 出现的根本原因是通过mongooses 查询出来的对象还不能算是一个JavaScript 还是一个 Mongoose 的对象，查询出来的对象是可以进行 update, create, delete 等一系列的操作的。
+
+这个时候我们可以用 查询的 lean 方法，手动的将查询出来的 mongoose 对象转换为 JavaScript 对象 这个时候就不会有上面的问题了
+
+```javascript
+this.ctx.model.user.find().lean();
+```
+
+
+
+
+
 ### 字段递增、递减
 
 递增
