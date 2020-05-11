@@ -12,23 +12,33 @@
 
 ### 2. rebase简介
 
-rebase的作用简要概括为：可以对某一段线性提交历史进行编辑、删除、复制、粘贴；因此，合理使用rebase命令可以使我们的提交历史干净、简洁！
+rebase 的作用简要概括为：可以对某一段线性提交历史进行编辑、删除、复制、粘贴；
+
+因此，合理使用 rebase 命令可以使我们的提交历史干净、简洁！
 
 但是需要注意的是：
-> 不要通过rebase对任何已经提交到公共仓库中的commit进行修改（你自己一个人玩的分支除外）
+
+::: warning
+
+不要通过 rebase 对任何已经提交到公共仓库中的 commit 进行修改（你自己一个人玩的分支除外）
+
+:::
 
 
 
 ### 3. 反面例子
 
-新建一个repo `rebase-test`；新建开发分支`dev`；在开发分支是`commit`了三次然后`merge`到`master`分支；然后`git log `或者`git log --oneline`；可以发现`dev`分支上的每次`commit `都体现到了`master`上
+- 新建一个repo `rebase-test`；
 
-```
+- 新建开发分支`dev`；在开发分支是`commit`了三次然后`merge`到`master`分支；
+- 然后`git log `或者`git log --oneline`；
+- 可以发现`dev`分支上的每次`commit `都体现到了`master`上
+
+```shell
 fb28c8d (HEAD -> master, origin/master, origin/dev, origin/HEAD, dev) fix: 第三次提交
 47971f6 fix: 第二次提交
 d2cf1f9 fix: 第一次提交
 26bac61 Initial commit
-
 ```
 
 > 如果用`git log `可以按`s`向下翻`log`
