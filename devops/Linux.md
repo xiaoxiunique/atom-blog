@@ -10,7 +10,13 @@
 
 **`Ctrl + W`** 删除光标左侧的一个“单词”，这里的“单词”指的是用空格隔开的一个字符串。例如 -a 就是一个“单词”；
 
-### Grep 搜索日志技巧
+### Watch 定时执行命令
+
+```shell
+watch -n 1 ls
+```
+
+
 
 ### 其他
 **`du -sh`** 查看文件夹的总大小
@@ -20,7 +26,7 @@
 
 
 编辑 `crontab`
-```
+```shell
 crontab -e
 ```
 
@@ -29,7 +35,7 @@ crontab -e
 crontab -l
 ```
 
-追加内容
+追加内容shell
 ```
 >>
 ```
@@ -80,7 +86,7 @@ cd $menderyWorkspace
 echo $(pwd)
 
 # 查找文件
-```shell
+​```shell
 find ~ -iname "wenjian"
 ```
 
