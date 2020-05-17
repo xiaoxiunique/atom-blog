@@ -139,21 +139,43 @@ Lombok pom.xml 文件配置
 
 一键生成 `dao` `xml` `service`
 
+
+
 ### CodeGlance
 
 在右侧生成代码地图
 
+
+
+
+
 ### RestfulToolkit
 
-`RequestMapping搜索神器`
+一套 Restful 服务开发辅助工具
+
+- 1.根据 URL 直接跳转到对应的方法定义 ( Ctrl \ or Ctrl Alt N );
+- 2.提供了一个 Services tree 的显示窗口;
+- 3.一个简单的 http 请求工具;
+- 4.在请求方法上添加了有用功能: 复制生成 URL;,复制方法参数...
+- 5.其他功能: java 类上添加 Convert to JSON 功能，格式化 json 数据 ( Windows: Ctrl + Enter; Mac: Command + Enter )。
+
+
 
 ### Grep Console
 
 高亮`log`不同级别日志，看日志的时候一目了然。
 
+
+
+
+
 ### MyBatis Log Plugin
 
 把 `Mybatis` 输出的`sql`日志还原成完整的`sql`语句，看起来更直观。
+
+
+
+
 
 ### GsonFormat
 
