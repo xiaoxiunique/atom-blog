@@ -3,7 +3,7 @@
 
 
 - :grin: 第一次练习  2020年3月17日 五毒神掌
-- :shit: 第二次练习 
+- :shit: 第二次练习 2020年5月12日 过了一个月，思路还是记得，以前是用 JavaScript 做的 现在用 Java 实现，不过需要注意Java 有 equals 问题。 两次入栈法也用 Java 实现了一次
 
 
 
@@ -14,69 +14,40 @@
 查看上图，需要理解当 Stack 中入栈元素为 `5、6、4、2、7、9、1、3` 最小栈中对应元素为 `5、4、2、1`
 
 ```javascript
-/**
- * initialize your data structure here.
- */
-var MinStack = function() {
-    this.stack = [];
-    this.minStack = [];
-};
-
-/** 
- * @param {number} x
- * @return {void}
- */
-MinStack.prototype.push = function(x) {
-    this.stack.push(x);
-    if (this.minStack.length === 0 || this.minStack[this.minStack.length - 1] >= x) {
-        this.minStack.push(x);
+class MinStack {
+    private Stack<Integer> stack;
+    private Stack<Integer> minStack;
+    /** initialize your data structure here. */
+    public MinStack() {
+        stack = new Stack<>();
+        minStack = new Stack<>();
     }
-};
-
-/**
- * @return {void}
- */
-MinStack.prototype.pop = function() {
-    if (this.stack.length === 0) {
-        throw Error("Stack is Empty");
+    
+    public void push(int x) {
+        stack.push(x);
+        if (minStack.isEmpty() || minStack.peek() >= x) {
+            minStack.push(x);
+        }
     }
+    
+    public void pop() {
+        if (stack.isEmpty()) {
+            return;
+        }
 
-    let e = this.stack.pop();
-    if (this.minStack.length !== 0 && this.minStack[this.minStack.length - 1] === e) {
-        this.minStack.pop();
+        if (stack.pop().equals(minStack.peek())) {
+            minStack.pop();
+        }
     }
-};
-
-/**
- * @return {number}
- */
-MinStack.prototype.top = function() {
-    if (this.stack.length === 0) {
-        return null;
+    
+    public int top() {
+        return stack.peek();
     }
-
-    return this.stack[this.stack.length - 1];
-};
-
-/**
- * @return {number}
- */
-MinStack.prototype.getMin = function() {
-    if (this.minStack.length === 0) {
-        return null;
+    
+    public int getMin() {
+        return minStack.peek();
     }
-
-    return this.minStack[this.minStack.length - 1];
-};
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * var obj = new MinStack()
- * obj.push(x)
- * obj.pop()
- * var param_3 = obj.top()
- * var param_4 = obj.getMin()
- */
+}
 ```
 
 
@@ -86,62 +57,41 @@ MinStack.prototype.getMin = function() {
 通过变量 min 存储当前最小的元素 `Number.MAX_VALUE` ，每次入栈的时候，如果发现当前元素比 `min` 小，就先将 min 入栈，而后在将元素入栈，这样在最小元素出栈的时候就出两次栈，这样就可以保证 `min` 变量存储的始终是最小的元素
 
 ```javascript
-/**
- * initialize your data structure here.
- */
-var MinStack = function() {
-    this.stack = [];
-    this.min = Number.MAX_VALUE;
-};
-
-/** 
- * @param {number} x
- * @return {void}
- */
-MinStack.prototype.push = function(x) {
-    if (x <= this.min) {
-        this.stack.push(this.min);
-        this.min = x;
+class MinStack {
+    private Stack<Integer> stack;
+    private Integer min;
+    /** initialize your data structure here. */
+    public MinStack() {
+        stack = new Stack<>();
+        min = Integer.MAX_VALUE;
     }
     
-    this.stack.push(x);
-};
-
-/**
- * @return {void}
- */
-MinStack.prototype.pop = function() {
-    if (this.stack.pop() === this.min) {
-        this.min = this.stack.pop();
+    public void push(int x) {
+        if (x <= min) {
+            this.stack.push(min);
+            min = x;
+        }
+        this.stack.push(x);
     }
-};
+    
+    public void pop() {
+        if (stack.isEmpty()) {
+            return;
+        }
 
-/**
- * @return {number}
- */
-MinStack.prototype.top = function() {
-    if (this.stack.length === 0) {
-        return null;
+        if (stack.pop().equals(min)) {
+            min = stack.pop();
+        }
     }
-
-    return this.stack[this.stack.length - 1];
-};
-
-/**
- * @return {number}
- */
-MinStack.prototype.getMin = function() {
-    return this.min;
-};
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * var obj = new MinStack()
- * obj.push(x)
- * obj.pop()
- * var param_3 = obj.top()
- * var param_4 = obj.getMin()
- */
+    
+    public int top() {
+        return stack.peek();
+    }
+    
+    public int getMin() {
+        return this.min;
+    }
+}
 ```
 
 

@@ -4,6 +4,7 @@
 
 - :slightly_smiling_face: 第一次练习 2020年5月6日 像这种最值问题一看就需要用动态规划的办法来解决。就没有然后了。。。。我丢。。。 [优秀题解](https://leetcode-cn.com/problems/minimum-cost-for-tickets/solution/java-dong-tai-gui-hua-si-lu-bu-zou-cong-hou-xiang-/)
 - :smile: 第二次练习 2020年5月8日 今天学习了另外一种自底向上的写法， 感觉更加容易理解一些
+- :cowboy_hat_face: 第三次练习 2020年5月11日 5月每日一题，这个题目可以多练习几遍， 需要处理的细节还是挺多的 练习两次
 
 
 
