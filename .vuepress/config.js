@@ -191,7 +191,7 @@ module.exports = {
           enable: true,
           // 模型名称(default: hibiki)>>>取值请参考：
           // https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA
-          model: "miku",
+          model: "wanko",
           display: {
             position: "right", // 显示位置：left/right(default: 'right')
             width: 135, // 模型的长度(default: 135)
