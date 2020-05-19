@@ -173,6 +173,16 @@ module.exports = {
     ["img-lazy"],
     ["reading-progress"],
     [
+      "vuepress-plugin-code-copy",
+      {
+        // selector: String,
+        align: "top",
+        // backgroundTransition: Boolean,
+        // backgroundColor: String,
+        // successText: String,
+      },
+    ],
+    [
       "vuepress-plugin-medium-zoom",
       {
         selector: ".theme-default-content img",
