@@ -7,36 +7,62 @@
 ### 安装
 
 ```shell
-cnpm i @zijin-m/egg-apollo --save
+npm i egg-apollojs --save
 ```
 
 ### plugin
 
 ```js
-exports.apollo = {
-  enable: false,
-  package: '@zijin-m/egg-apollo',
+exports.apollojs = {
+  enable: true,
+  package: 'egg-apollojs',
 };
 ```
 
-### config.default.js
+### app/config/apollo.js
 
 ```js
- config.apollo = {
-    host: '<host>', // 配置中心地址
-    appId: 'app id', // appId
-    namespaces: ['application'], // 默认命名空间
-    cachePath: '/tmp/apollo_cache', // 默认缓存目录
-    enableUpdateNotification: true, // 默认开启推送更新
-    enableFetch: true, // 默认开启定时拉取
-    fetchInterval: 5 * 60 * 1000, // 定时拉取间隔
-    retry: 10, // 初始化重试次数
-    mergeNamespace: 'application', // 将特定namespace合入本地配置默认不做
-    mountConfig: true, // 将namespaces挂载到本地配置 默认开启
-  };
+module.exports = {
+  configServerUrl: <configServerUrl>, // 配置中心地址
+  appId: [appId], // appId
+  clusterName: "default",
+  namespaceName: 'application'
+};
+
 ```
 
-后续配置就可以在 config 中读取到
+注意，namespaceName 不要写错了，这个写错了，会导致服务不可达
+
+### {app_root} / preload.js
+
+```js
+require('egg-apollojs').init(__dirname + '/config/apollo.js');
+```
+
+
+
+### app/config/config.default.js
+
+```js
+// {app_root}/config/config.default.js
+'use strict';
+ 
+// 加载process.env
+require('egg-apollojs').apollo.setEnv(); 
+ 
+module.exports = appInfo => {
+  const config = {};
+  config.test1 = process.env.test1;
+}
+```
+
+
+
+### package.json
+
+```shell
+configServerUrl=http://127.0.0.1:8084 node preload.js && configServerUrl=http://127.0.0.1:8084 egg-bin dev
+```
 
 
 
