@@ -258,8 +258,16 @@ git branch -m old_branch new_branch
 
 ----
 
-
 ## 代码合并
+
+<img src="../.vuepress/public/640.gif" alt="img" style="zoom:100%;" />
+
+
+
+合并代码，处理冲突
+
+<img src="../.vuepress/public/640-1589974729329.gif" alt="img" style="zoom:100%;" />
+
 ```bash
 # 两步法, 将 feature/v1.0.0 分支代码合并到 develop
 git checkout develop
@@ -337,8 +345,12 @@ git push -f
 
 ----
 
-
 ## 拉取最新内容
+
+<img src="../.vuepress/public/640-1589975149166.gif" alt="img" style="zoom:100%;" />
+
+<img src="../.vuepress/public/640-1589975215579.gif" alt="img" style="zoom:100%;" />
+
 ```bash
 # 推荐，因为不会做自动合并
 git fetch origin master
@@ -389,6 +401,14 @@ git reset --hard 'commit id'
 # 回滚版本是不保存在 git log，如果想查看使用
 git reflog
 ```
+
+
+
+
+
+
+
+
 
 ----
 
@@ -479,14 +499,35 @@ git rebase --continue
 
 
 
+git rebase 会将当前分支的提交复制到指定的分支之上。
 
+<img src="../.vuepress/public/640-1589974849302.gif" alt="img" style="zoom:100%;" />
 
+交互式变基（Interactive Rebase）
 
+在为提交执行变基之前，我们可以修改它们！我们可以使用交互式变基来完成这一任务。交互式变基在你当前开发的分支上以及想要修改某些提交时会很有用。
 
+在我们正在 rebase 的提交上，我们可以执行以下 6 个动作：
+
+- reword：修改提交信息；
+- edit：修改此提交；
+- squash：将提交融合到前一个提交中；
+- fixup：将提交融合到前一个提交中，不保留该提交的日志消息；
+- exec：在每个提交上运行我们想要 rebase 的命令；
+- drop：移除该提交。
+
+很棒！这样我们就能完全控制我们的提交了。如果你想要移除一个提交，只需 drop 即可。
+
+<img src="../.vuepress/public/640-1589974978612.gif" alt="img" style="zoom:100%;" />
+
+如果你想把多个提交融合到一起以便得到清晰的提交历史，那也没有问题！
+
+<img src="../.vuepress/public/640-1589975005127.gif" alt="img" style="zoom:100%;" />
 
 
 
 ## GitFlow
+
 Git Flow 不是内置命令，需要单独安装
 
 **初始化** 每个仓库都必须初始化一次
@@ -609,6 +650,22 @@ git push -f origin develop
 
 
 
+
+## Reflog
+
+每个人都会犯错，但犯错其实没啥！有时候你可能感觉你把 git repo 完全搞坏了，让你想完全删了了事。
+
+
+
+git reflog 是一个非常有用的命令，可以展示已经执行过的所有动作的日志。包括合并、重置、还原，基本上包含你对你的分支所做的任何修改。
+
+<img src="../.vuepress/public/640-1589975754710.gif" alt="img" style="zoom:100%;" />
+
+如果你犯了错，你可以根据 reflog 提供的信息通过重置 HEAD 来轻松地重做！
+
+假设我们实际上并不需要合并原有分支。当我们执行 git reflog 命令时，我们可以看到这个 repo 的状态在合并前位于 HEAD@{1}。那我们就执行一次 git reset，将 HEAD 重新指向在 HEAD@{1} 的位置。
+
+<img src="../.vuepress/public/640-1589975776044.gif" alt="img" style="zoom:100%;" />
 
 
 
