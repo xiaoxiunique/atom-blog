@@ -1,6 +1,15 @@
-### 通过链表实现
+[题目地址](https://leetcode-cn.com/problems/lru-cache/)
+
+- :slightly_smiling_face: 第一次练习 2020.05.25 很早之前就一直想实现一下 LRU 了,现在 趁着做题 自己熟悉一下. 这一边做的还是挺认真的. 等后面再来熟悉一下
+- :smile: 第二次练习 
 
 
+
+### Hash 表 + 双链表
+
+参考 [优秀题解](https://leetcode-cn.com/problems/lru-cache/solution/lru-ce-lue-xiang-jie-he-shi-xian-by-labuladong/)
+
+解题代码
 
 ```java
 class LRUCache {
@@ -153,3 +162,8 @@ class LRUCache {
 }
 ```
 
+
+
+### 易错点
+
+- 易错项 1 
