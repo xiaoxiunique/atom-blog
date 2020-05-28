@@ -30,4 +30,4 @@ public int subarraysDivByK(int[] A, int K) {
 
 ### 易错点
 
-- 易错项 1 
+- 易错项 1 

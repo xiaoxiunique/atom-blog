@@ -73,6 +73,15 @@
   }
   ```
 
+
+
+
+- Java 实现 repeat 方法
+
+  ```java
+  new String(new char[cur_multi]).replace("\0", res)
+  ```
+
   
 
 
