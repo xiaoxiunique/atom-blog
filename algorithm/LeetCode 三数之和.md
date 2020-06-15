@@ -5,6 +5,7 @@
 - :cry: 第一次刷题 2020年3月9日 
 - 😒 第二次刷题 2020年3月10日
 - :joy: 第三次刷题 2020年3月11日 整体思路有了，不过写代码太粗心，代码错误太多了
+- 🙄 第四次刷题 2020年 6 月 11 还是比较熟悉 只是比较。。
 
 
 
@@ -18,50 +19,53 @@
 
 
 
-```javascript
-/**
- * @param {number[]} nums
- * @return {number[][]}
- */
-var threeSum = function(nums) {
-    let result = [];
+```java
+    public static List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> retList = new ArrayList<>();
 
-    if (nums.length < 3) 
-        return result;
-
-    nums.sort((x, y) => x - y);
-    for (let i = 0; i < nums.length - 1; i ++) {
-        if (nums[i] > 0) 
-            break;
-
-        if (i > 0 && nums[i] == nums[i - 1])
-            continue;
-
-        let l = i + 1, r = nums.length - 1;
-
-        while(l < r) {
-            let sum = nums[l] + nums[r] + nums[i];
-
-            if (sum == 0) {
-                result.push([nums[i], nums[l], nums[r]]);
-                
-                while(l < r && nums[l] == nums[l + 1])
-                    l ++;
-                while(l < r && nums[r] == nums[r - 1])
-                    r --;
-                l ++;
-                r --;
-            } else if (sum > 0) 
-                r --;
-            else if (sum < 0) 
-                l ++;
+        if(nums.length < 3) {
+            return retList;
         }
+        Arrays.sort(nums);
 
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > 0) {
+                break;
+            }
+
+            if (i > 0 &&  nums[i] == nums[i - 1]) {
+                continue;
+            }
+            int left = i + 1;
+            int right = nums.length - 1;
+            while(left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+                if (sum == 0) {
+                    ArrayList<Integer> sublist = new ArrayList<>();
+                    sublist.add(i);
+                    sublist.add(left);
+                    sublist.add(right);
+                    retList.add(sublist);
+
+                    while(left < right && nums[left] == nums[left + 1]) {
+                        left ++;
+                    }
+                    while(left < right && nums[right] == nums[right - 1]) {
+                        right --;
+                    }
+
+                    left ++;
+                    right --;
+                } else if (sum > 0) {
+                    right --;
+                }  else if (sum < 0) {
+                    left ++;
+                }
+            }
+        }
+        return retList;
     }
 
-    return result;
-
-};
 ```
 
 
