@@ -51,6 +51,15 @@
 
 
 
+### 算法开源项目汇总
+
+- [leetcode](https://github.com/azl397985856/leetcode)
+- [LeetCodeAnimation](https://github.com/MisterBooo/LeetCodeAnimation)
+- [fucking-algorithm](https://github.com/labuladong/fucking-algorithm)
+- [awesome-java-leetcode](https://github.com/Blankj/awesome-java-leetcode)
+
+
+
 ### 问题汇总
 
 - 什么是背包问题？
