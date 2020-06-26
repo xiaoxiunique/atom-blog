@@ -1,8 +1,6 @@
 [题目地址](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 
-
-
-- :slightly_smiling_face: 第一次练习 2020年4月5日 这个是二分查找的升级版，但是需要注意的点还是挺多的。细心一点。
+- :slightly_smiling_face: 第一次练习 2020 年 4 月 5 日 这个是二分查找的升级版，但是需要注意的点还是挺多的。细心一点。
 - :smile: 第二次练习 2020.04.27 第二次联系这个题目，看了一个题解感觉写的挺好的 .
 
 ```
@@ -12,7 +10,6 @@
 第二类 6 7 1 2 3 4 5 这种，也就是 nums[start] > nums[mid]。此例子中就是 6 > 2。
 这种情况下，后半部分有序。因此如果 nums[mid] <target<=nums[end]，则在后半部分找，否则去前半部分找。
 ```
-
 
 ### 二分查找
 
@@ -51,11 +48,9 @@ class Solution {
 }
 ```
 
-
-
 记录一下大佬的牛逼[解法](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/ji-jian-solution-by-lukelee/)
 
-```
+```c++
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
@@ -70,10 +65,8 @@ public:
         return lo == hi && nums[lo] == target ? lo : -1;
     }
 };
-```c++
-
-
+```
 
 ### 易错点
 
-- 易错项 1 
+- 易错项 1
