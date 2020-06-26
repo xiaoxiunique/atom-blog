@@ -50,7 +50,7 @@ class Solution {
 
 记录一下大佬的牛逼[解法](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/ji-jian-solution-by-lukelee/)
 
-```c++
+```
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
