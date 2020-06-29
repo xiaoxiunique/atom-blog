@@ -376,3 +376,70 @@ esac
 ```
 
 
+
+### 13.0 pipeline script
+
+```json
+pipeline {
+    agent {
+        docker { image 'node' }
+    }
+    stages {
+        stage ('pull project') {
+            steps {
+                git credentialsId: 'xiaoxiunique', url : "https://gitee.com/xiaoxiunique/atom-blog.git"
+            }
+        }
+        stage ("install denpendency and build project") {
+            steps {
+                sh "npm install --registry http://r.cnpmjs.org/"
+                sh "npm run docs:build"
+            }
+        }
+        stage ("build image") {
+            steps {
+                script {
+                    try {
+                        sh "docker stop atomblog"
+                        sh "docker rm atomblog"
+                    } catch(exec) {
+                        echo "container not found"
+                    }
+                }
+                script {
+                    try {
+                        sh "docker rmi atomblog"
+                    } catch(exec) {
+                        echo "docker image not found"
+                    }
+                }
+                sh "docker build -t atomblog:latest ."
+            }
+        }
+        stage ("create container and run container") {
+            steps {
+                script {
+                    try {
+                        sh "docker stop atomblog"
+                        sh "docker rm atomblog"
+                    } catch(exec) {
+                        echo "container not found"
+                    }
+                }
+                sh "docker run --name atomblog -p 8080:80 -d atomblog" 
+            }
+        }
+        stage ("deploy xiaoxiunique@github.io") {
+            steps {
+                script {
+                    try {
+                    } catch(exec) {
+                        echo "deploy fail for xiaoxiunqiue.github.io"
+                    }
+                }
+            }
+        }
+    }
+}
+```
+

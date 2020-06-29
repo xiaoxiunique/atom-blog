@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="bb6a6a1a-6533-42aa-a569-0ffa5856d049" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode .md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode .md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/插件模型.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/插件模型.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/Jenkins.md" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Jenkins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idea/IDEA Window转Mac 快速入门.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/idea/宏录制.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +44,9 @@
       </list>
     </option>
   </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -53,17 +62,58 @@
       <workItem from="1588162518342" duration="362000" />
       <workItem from="1589726739781" duration="4000" />
       <workItem from="1589727090756" duration="16000" />
+      <workItem from="1593392579238" duration="239000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="249" y="277" width="902" height="349" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1588005852367">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="249" y="277" width="902" height="349" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1440.920@0.0.1440.920" timestamp="1588005852367" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593392797821">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593392797821" />
     <state x="411" y="92" width="617" height="735" key="find.popup" timestamp="1588005859796">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
