@@ -57,6 +57,7 @@
       <workItem from="1589726739781" duration="4000" />
       <workItem from="1589727090756" duration="16000" />
       <workItem from="1593392579238" duration="1739000" />
+      <workItem from="1593939293408" duration="220000" />
     </task>
     <servers />
   </component>
@@ -91,6 +92,11 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_TABS">
@@ -100,23 +106,28 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="572" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593939502426">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="572" y="329" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939502426" />
     <state x="249" y="277" width="902" height="349" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1588005852367">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="249" y="277" width="902" height="349" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1440.920@0.0.1440.920" timestamp="1588005852367" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593392797821">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593939366088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593392797821" />
-    <state x="411" y="92" width="617" height="735" key="find.popup" timestamp="1588005859796">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939366088" />
+    <state x="548" y="104" width="823" height="831" key="find.popup" timestamp="1593939470664">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="411" y="92" width="617" height="735" key="find.popup/0.0.1440.920@0.0.1440.920" timestamp="1588005859796" />
-    <state x="511" y="236" width="896" height="767" key="search.everywhere.popup" timestamp="1593393134960">
+    <state x="548" y="104" width="823" height="831" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939470664" />
+    <state x="511" y="236" width="896" height="767" key="search.everywhere.popup" timestamp="1593939500789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="383" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1440.920/0.-1440.2048.1112@0.0.1440.920" timestamp="1589727102131" />
     <state x="383" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1440.920@0.0.1440.920" timestamp="1588162625779" />
-    <state x="511" y="236" width="896" height="767" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593393134960" />
+    <state x="511" y="236" width="896" height="767" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939500789" />
   </component>
 </project>
