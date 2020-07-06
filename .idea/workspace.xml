@@ -25,6 +25,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -57,7 +58,7 @@
       <workItem from="1589726739781" duration="4000" />
       <workItem from="1589727090756" duration="16000" />
       <workItem from="1593392579238" duration="1739000" />
-      <workItem from="1593939293408" duration="220000" />
+      <workItem from="1593939293408" duration="924000" />
     </task>
     <servers />
   </component>
