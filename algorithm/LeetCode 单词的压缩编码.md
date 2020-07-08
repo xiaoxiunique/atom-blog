@@ -11,19 +11,17 @@
 
 - 将所有的字符串存入 HashSet 中
 
-	<img src="C:\Users\atom.hu\AppData\Roaming\Typora\typora-user-images\image-20200328115449840.png" alt="image-20200328115449840" style="zoom: 50%;" />
+	
 
 - 利用 HashSet 的特性进行去重
 
-	<img src="C:\Users\atom.hu\AppData\Roaming\Typora\typora-user-images\image-20200328120011870.png" alt="image-20200328120011870" style="zoom:50%;" />
+	
 
 - 循环现有字符串集合，挨个去重。
 
-	<img src="C:\Users\atom.hu\AppData\Roaming\Typora\typora-user-images\image-20200328120326913.png" alt="image-20200328120326913" style="zoom:50%;" />
+	
 
 	如图中 ime、me 存在于 time 中，ell 存在于 dell 所以都会移除。移除后计算总和
-
-	<img src="C:\Users\atom.hu\AppData\Roaming\Typora\typora-user-images\image-20200328120441734.png" alt="image-20200328120441734" style="zoom:50%;" />
 
 	
 

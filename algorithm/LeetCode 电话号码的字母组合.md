@@ -9,7 +9,7 @@
 
 ### 递归求解
 
-![image-20200329214149550](https://gitee.com/xiaoxiunique/picgo-image/raw/master/image-20200329214149550.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/image-20200329214149550.png" alt="image-20200329214149550" style="zoom:80%;" />
 
 解题代码
 
