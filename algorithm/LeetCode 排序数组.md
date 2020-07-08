@@ -36,7 +36,7 @@ class Solution {
 
 ### 选择排序
 
-![image-20200331085836615](../.vuepress/public/image-20200331085836615.png)
+<img src="../.vuepress/public/image-20200331085836615.png" alt="image-20200331085836615" style="zoom:80%;" />
 
 勉强可过, 但是排序的知识已经忘得差不多了，还要恶补一下才行。
 

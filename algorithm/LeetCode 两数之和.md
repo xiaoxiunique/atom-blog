@@ -42,8 +42,8 @@ var twoSum = function(nums, target) {
 
 ### 问题集锦
 
-- 在每次的向 Hash 表中添加元素时，不需要再 else 中的逻辑写。直接在 循环的最后写就好![code](../.vuepress/public/code.png)
+- 在每次的向 Hash 表中添加元素时，不需要再 else 中的逻辑写。直接在 循环的最后写就好<img src="../.vuepress/public/code.png" alt="code" style="zoom:80%;" />
 
   **推荐写法**
 
-  ![double_sum](../.vuepress/public/double_sum.png)
+  <img src="../.vuepress/public/double_sum.png" alt="double_sum" style="zoom:80%;" />

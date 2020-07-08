@@ -74,8 +74,8 @@
 
 - for 循环终止条件写成 `nums.length` 正确应是 `nums.length - 1` 粗心导致 :grimacing:
 
-  ![image-20200311093442183](../.vuepress/public/image-20200311093442183.png)
+  <img src="../.vuepress/public/image-20200311093442183.png" alt="image-20200311093442183" style="zoom:67%;" />
 
 - 找到满足条件的结果，添加到结果数组时`没有写数组` 粗心导致 :grimacing:
 
-  ![code](../.vuepress/public/err_01.png)
+  <img src="../.vuepress/public/err_01.png" alt="code" style="zoom:67%;" />

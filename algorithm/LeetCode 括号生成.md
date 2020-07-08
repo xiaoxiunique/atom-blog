@@ -6,7 +6,7 @@
 - :smile: 第二次练习 2020年4月1日 第二次做的时候，还是忘记了很多了，不过整体看了一下以前写的，还是能够很快回顾过来。孰能生巧
 - :smile: 第三次练习 2020年4月9日 完全会做了，二分钟编码，100% 正确
 
-![image-20200329023623771](https://gitee.com/xiaoxiunique/picgo-image/raw/master/image-20200329023623771.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/image-20200329023623771.png" alt="image-20200329023623771" style="zoom:80%;" />
 
 ### 递归
 
