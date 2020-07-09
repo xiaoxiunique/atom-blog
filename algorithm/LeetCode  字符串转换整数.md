@@ -4,7 +4,7 @@
 
 - :slightly_smiling_face: 第一次练习 2020年4月3日 查看提交记录，这个题。在两年前最开始学习数据结构的时候就做过。叼。。。。
 
-  ![asdfasdf](../.vuepress/public/ceeb653ely1g08lm6t8xwg20dc0abmxe.gif)
+  <img src="../.vuepress/public/ceeb653ely1g08lm6t8xwg20dc0abmxe.gif" alt="asdfasdf" style="zoom:80%;" />
 
 - :smile: 第二次练习 
 

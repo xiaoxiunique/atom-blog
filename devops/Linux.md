@@ -61,14 +61,12 @@ awk 命令
 awk -F ',' '{print $1, $2}'
 ```
 
-![](https://raw.githubusercontent.com/xiaoxiunique/Web-Tip/master/20190607234714.png)
 
 
 **sed**
-![](https://raw.githubusercontent.com/xiaoxiunique/Web-Tip/master/20190607235457.png)
 
 **java 如何加载.class字节码文件**
-![](https://raw.githubusercontent.com/xiaoxiunique/Web-Tip/master/20190608002306.png)
+
 
 
 自动启动脚本

@@ -25,7 +25,7 @@ docker pull jenkins
 docker run -p 8080:8080 -p 50000:50000 --name jenkins --privileged=true -v /usr/local/atom.hu/jenkins/:/var/jenkins_home -d jenkins
 ```
 - 稍作等待
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112727.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112727.png" style="zoom:80%;" />
 
 - 进入目录查看密码
 ```shell
@@ -39,7 +39,7 @@ docker run -p 8080:8080 -p 50000:50000 --name jenkins --privileged=true -v /usr/
 
 在[jenkins官网](https://jenkins.io/download/)中下载war包
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112835.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112835.png" style="zoom:80%;" />
 
 可以直接右键复制软件地址, 使用 wget 命令进行下载
 ```shell
@@ -88,7 +88,7 @@ vim /etc/sysconfig/jenkins
 $JENKINS_USER="root"
 ```
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112907.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112907.png" style="zoom:80%;" />
 
 **修改Jenkins相关文件夹用户权限**
 
@@ -120,13 +120,13 @@ ps -ef | grep jenkins
 
 :::
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113002.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113002.png" style="zoom:80%;" />
 
 #### 安装必要的jenkins插件
 
 **Git Parameter Plug-In**
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115111335.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115111335.png" style="zoom:80%;" />
 
 在后续的自动化部署中, 我们需要通过参数, 设置不同的分支, 对不同的分支进行打包, 需要这个插件的支持
 
@@ -134,12 +134,12 @@ ps -ef | grep jenkins
 
 ![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112122.png)
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113049.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113049.png" style="zoom:80%;" />
 
 在部署spring boot 项目的时候, 我们需要创建maven项目, 在安装了这个插件之后, 在创建项目的时候, 如果没有这个插件, 在创建项目的时候就没有 `构建一个maven项目`的选项
 
 **Publish Over SSH**
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113030.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113030.png" style="zoom:80%;" />
 有的时候我们在A机器上搭建的jenkins 但是却可能是在B机器上部署项目, 需要`Publish Over SSH`的支持
 
 ::: warning
@@ -183,7 +183,7 @@ ln -s ./npm /usr/bin/npm
 4. 安装`maven`, 并在`/etc/profile` 中配置
 
 ## 6.0 配置
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112426.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112426.png" style="zoom:80%;" />
 
 在系统配置中,配置要推送到远程服务器的密码和地址, 填写**内网**地址
 
@@ -191,31 +191,31 @@ ln -s ./npm /usr/bin/npm
 
 在全局配置工具中, 配置 `jdk`, `maven`, `git`, `node` 的安装路径
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112618.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115112618.png" style="zoom:80%;" />
 
 ## 7.0 部署 前端VUE项目
 > 部署场景, 在A机器进行webpack打包, 将打包后的文件,发送到B机器上指定的文件夹, 通过nginx代理实现访问
 
 1. 创建一个自由风格的软件项目
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113119.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113119.png" style="zoom:80%;" />
 
 2.填写项目描述
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113151.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113151.png" style="zoom:80%;" />
 
 3. 选择参数化构建过程, 后续可以选择不同分支进行打包
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113138.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113138.png" style="zoom:80%;" />
 
 4. 选择不同的版本控制工具 svn 和 git都可以, 这里我们使用git
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113203.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113203.png" style="zoom:80%;" />
 需要添加 自己的用户和密码, 不然会出现下面的情况
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113215.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113215.png" style="zoom:80%;" />
 
 5. 在构建环境中选择 `Send files or execute commands over SSH after the build runs`
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113235.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113235.png" style="zoom:80%;" />
 > 这里的配置为, 在本地构建完成之后, 我们需要将哪些文件发送到目标主机上, 发送到目标主机上, 并执行什么命令
 
 ```
@@ -226,7 +226,7 @@ rm -rf dist.tar.gz
 > `/home/project/web/test`  为目标主机nginx 配置过的目录
 
 6. 在构建中选中 `Execute Shell`
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113314.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113314.png" style="zoom:80%;" />
 并配置构建时执行的命令
 
 ``` shell
@@ -241,20 +241,20 @@ tar -zcvf dist.tar.gz *
 ## 8.0 部署 spring boot 项目
 1. 新建任务, 创建maven 项目
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113327.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113327.png" style="zoom:80%;" />
 
 2. 填写项目描述, 配置参数构建
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113334.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113334.png" style="zoom:80%;" />
 
 
 3. 配置源码管理
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113342.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113342.png" style="zoom:80%;" />
 
 4. 配置构建环境 ssh server
 
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113352.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113352.png" style="zoom:80%;" />
 
 ```shell
 BUILD_ID=DONTKILLME
@@ -324,7 +324,7 @@ echo $PATH
 ## 12.0 发布失败回退版本
 
 设置, 增加构建参数
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113805.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200115113805.png" style="zoom:80%;" />
 
 ```shell
 case $Status in

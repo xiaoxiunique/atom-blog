@@ -4,19 +4,19 @@
 
 > File - Settings - Appearance & Behavior - System Settings
 
-![setting-multiple.png](http://193.112.98.8/atomImg/setting/setting-multiple.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-multiple.png" alt="setting-multiple.png" style="zoom:100%;" />
 
 ### `0x02` 修改 IDEA 默认编码 -> UTF-8
 
 > File - Settings - Editor - File Encodings
 
-![setting-encoding.png](http://193.112.98.8/atomImg/setting/setting-encoding.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-encoding.png" alt="setting-encoding.png" style="zoom:100%;" />
 
 ### `0x03` 设置统一编译器和编译版本
 
 > File - Setting - Build - Compiler - Java Compiler
 
-![setting-compiler.png](http://193.112.98.8/atomImg/setting/setting-compiler.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-compiler.png" alt="setting-compiler.png" style="zoom:100%;" />
 
 ### `0x04` 设置类注释
 
@@ -31,7 +31,7 @@
 */
 ```
 
-![setting-class-comment.png](http://193.112.98.8/atomImg/setting/setting-class-comment.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-class-comment.png" alt="setting-class-comment.png" style="zoom:100%;" />
 
 `$$end$$` 可以设置光标结束的位置
 
@@ -39,7 +39,7 @@
 
 > File - Editor- General - Auto Import
 
-![setting-auto-import.png](http://193.112.98.8/atomImg/setting/setting-auto-import.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-auto-import.png" alt="setting-auto-import.png" style="zoom:100%;" />
 
 ### `0x06` 内存使用量展示
 
@@ -47,7 +47,7 @@
 >
 > File - Settings - Appearance & Behavior
 
-![setting-use-memory.png](http://193.112.98.8/atomImg/setting/setting-use-memory.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-use-memory.png" alt="setting-use-memory.png" style="zoom:100%;" />
 
 ![](http://images.atomblogs.com/atom/20190831212401.png?img)
 
@@ -57,7 +57,7 @@
 >
 > File - Settings - Editor - General
 
-![setting-enable-hover-tip.png](http://193.112.98.8/atomImg/setting/setting-enable-hover-tip.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-enable-hover-tip.png" alt="setting-enable-hover-tip.png" style="zoom:100%;" />
 
 ### `0x08` Ctrl+鼠标滚轴修改字体大小
 
@@ -65,7 +65,7 @@
 >
 > File-->Settings-->Editor-->General。
 
-![setting-mouse-change-font.png](http://193.112.98.8/atomImg/setting/setting-mouse-change-font.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-mouse-change-font.png" alt="setting-mouse-change-font.png" style="zoom:80%;" />
 
 ### `0x09` 显示多行 Tab
 
@@ -73,25 +73,25 @@
 >
 > File - Settings - Editor - General - Editor Tabs
 
-![setting-multiple-tab.png](http://193.112.98.8/atomImg/setting/setting-multiple-tab.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-multiple-tab.png" alt="setting-multiple-tab.png" style="zoom:80%;" />
 
 ### `0x0A` 设置字体, 行距 让代码看着更舒服
 
 > File - Settings - Editor - Font
 
-![setting-change-font-padding.png](http://193.112.98.8/atomImg/setting/setting-change-font-padding.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-change-font-padding.png" alt="setting-change-font-padding.png" style="zoom:80%;" />
 
 ### `0x0B` IDEA GIT 配置
 
 > File - Settings - Version Control - Git
 
-![setting-git-config.png](http://193.112.98.8/atomImg/setting/setting-git-config.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-git-config.png" alt="setting-git-config.png" style="zoom:80%;" />
 
 ### `0X0C` IDEA MAVEN 配置
 
 > File - Settings - Build - Build Tools - Maven
 
-![setting-maven-setting.png](http://193.112.98.8/atomImg/setting/setting-maven-setting.png)
+<img src="http://193.112.98.8/atomImg/setting/setting-maven-setting.png" alt="setting-maven-setting.png" style="zoom:80%;" />
 
 maven 阿里镜像配置
 

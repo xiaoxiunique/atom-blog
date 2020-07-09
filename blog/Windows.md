@@ -1,4 +1,4 @@
-![img](../.vuepress/public/69f2db0e372074441ceb4f2fcf96d31d.png)
+<img src="../.vuepress/public/69f2db0e372074441ceb4f2fcf96d31d.png" alt="img" style="zoom:100%;" />
 
 ### Sqoop
 

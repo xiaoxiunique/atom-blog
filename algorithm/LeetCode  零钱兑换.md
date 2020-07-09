@@ -54,7 +54,7 @@
 
 等我等级够了，再去了解吧。先<u>粘贴</u>一份代码
 
-![image-20200403010054587](https://gitee.com/xiaoxiunique/picgo-image/raw/master/image-20200403010054587.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/image-20200403010054587.png" alt="image-20200403010054587" style="zoom:100%;" />
 
 ```java
 class Solution {

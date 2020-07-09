@@ -20,7 +20,7 @@
 
 ### 五毒神掌 :ox::beers:
 
-![img](../.vuepress/public/v2-03b4ab34fbfdce231d365ae8be34cddd_720w.jpg)
+<img src="../.vuepress/public/v2-03b4ab34fbfdce231d365ae8be34cddd_720w.jpg" alt="img" style="zoom:80%;" />
 
 - 1️⃣  5 分钟 读题 + 思考 
 - 2️⃣ 直接看解法：注意！多解法，比较解法优劣
@@ -35,7 +35,7 @@
 
 ### 数据结构
 
-![img](../.vuepress/public/v2-add2c307e29f5103811ff7f059bb0ed0_720w.jpg)
+<img src="../.vuepress/public/v2-add2c307e29f5103811ff7f059bb0ed0_720w.jpg" alt="img" style="zoom:80%;" />
 
 - 一维数据结构
 

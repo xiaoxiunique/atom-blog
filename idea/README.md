@@ -1,4 +1,4 @@
-![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200226114101.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/20200226114101.png" style="zoom:80%;" />
 
 ![](https://img.shields.io/github/stars/xiaoxiunique/tool-tips?style=social)![](https://img.shields.io/github/forks/xiaoxiunique/tool-tips?style=social)![](https://img.shields.io/github/watchers/xiaoxiunique/tool-tips?style=social)
 
