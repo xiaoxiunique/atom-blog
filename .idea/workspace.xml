@@ -153,20 +153,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939366088" />
-    <state x="870" y="472" key="VCS.ChangelistChooser" timestamp="1594522643363">
+    <state x="870" y="472" key="VCS.ChangelistChooser" timestamp="1594539407268">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="870" y="472" key="VCS.ChangelistChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1594522643363" />
+    <state x="870" y="472" key="VCS.ChangelistChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1594539407268" />
     <state x="548" y="104" width="823" height="831" key="find.popup" timestamp="1593939470664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="411" y="92" width="617" height="735" key="find.popup/0.0.1440.920@0.0.1440.920" timestamp="1588005859796" />
     <state x="548" y="104" width="823" height="831" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939470664" />
-    <state x="511" y="236" width="896" height="767" key="search.everywhere.popup" timestamp="1593939500789">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="545" y="252" width="956" height="821" key="search.everywhere.popup" timestamp="1594539411827">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="383" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1440.920/0.-1440.2048.1112@0.0.1440.920" timestamp="1589727102131" />
     <state x="383" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1440.920@0.0.1440.920" timestamp="1588162625779" />
+    <state x="545" y="252" width="956" height="821" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1594539411827" />
     <state x="511" y="236" width="896" height="767" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939500789" />
   </component>
 </project>
