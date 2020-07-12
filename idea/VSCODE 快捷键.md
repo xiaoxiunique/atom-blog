@@ -1,3 +1,7 @@
+<img src="../.vuepress/public/image-20200712235658055.png" alt="image-20200712235658055" style="zoom:50%;" />
+
+
+
 ## General
 
 | 命令 | 作用 | 演示 |
