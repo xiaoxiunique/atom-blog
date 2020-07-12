@@ -3,6 +3,8 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+cd .vuepress/dist
+
 git add -A
 git commit -m 'deploy'
 
