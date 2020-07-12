@@ -4,13 +4,13 @@
 
 **在相同内容后生成光标，一个一个选择**  [点击图片可放大]
 
-![idea_alt_j](../.vuepress/public/idea_alt_j-1589727619502.gif)
+<img src="../.vuepress/public/idea_alt_j-1589727619502.gif" alt="idea_alt_j" style="zoom:80%;" />
 
 
 
 **在所有的相同的内容后添加光标，一步到位**   [点击图片可放大]
 
-<img src="../.vuepress/public/idea_alt_shift_ctrl_j.gif" alt="idea_alt_shift_ctrl_j" style="zoom:100%;" />
+<img src="../.vuepress/public/idea_alt_shift_ctrl_j.gif" alt="idea_alt_shift_ctrl_j" style="zoom: 80%;" />
 
 
 
@@ -26,7 +26,7 @@
 
 **数列光标**   [点击图片可放大]
 
-<img src="../.vuepress/public/idea_alt_mouse_move.gif" alt="idea_alt_mouse_move" style="zoom:101%;" />
+<img src="../.vuepress/public/idea_alt_mouse_move.gif" alt="idea_alt_mouse_move" style="zoom: 80%;" />
 
 
 
@@ -54,7 +54,7 @@
 
 > ctrl + alt + enter 将光标移动到当前行的上一行
 
-![idea_modify_comment](../.vuepress/public/idea_modify_comment.gif)
+<img src="../.vuepress/public/idea_modify_comment.gif" alt="idea_modify_comment" style="zoom:80%;" />
 
 
 
@@ -62,7 +62,7 @@
 
 ## 批量添加 Swagger 属性注释
 
-![image-20200518231043105](../.vuepress/public/image-20200518231043105.png)
+<img src="../.vuepress/public/image-20200518231043105.png" alt="image-20200518231043105" style="zoom:80%;" />
 
 将上图左侧只有注释的类，添加上 swagger 信息
 

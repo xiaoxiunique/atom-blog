@@ -226,7 +226,7 @@ ctrl + shift + F9
 ctrl + shift + i
 ```
 
-![asdf](http://193.112.98.8/atomImg/key/ctrl-shift-i.png)
+<img src="http://193.112.98.8/atomImg/key/ctrl-shift-i.png" alt="asdf" style="zoom:80%;" />
 
 比较强大的几个快捷键之一 `Ctrl + ~`(感叹号旁边的按键)
 
@@ -242,17 +242,17 @@ ctrl + ~
 
 可以设置一些常用的配色, 字体样式, 可以一键切换
 
-![asdf](http://193.112.98.8/atomImg/key/ctrl-~-change-background.gif)
+<img src="http://193.112.98.8/atomImg/key/ctrl-~-change-background.gif" alt="asdf" style="zoom:80%;" />
 
 **2. `Code Style Scheme`**
 
 **3. `Keymap` (快捷键列表)**
 
-![asdf](http://193.112.98.8/atomImg/key/ctrl-~-keymap.gif)
+<img src="http://193.112.98.8/atomImg/key/ctrl-~-keymap.gif" alt="asdf" style="zoom:80%;" />
 
 **4. View Mode (显示模式)**
 
-![asdf](http://193.112.98.8/atomImg/key/ctrl-~-view-model.gif)
+<img src="http://193.112.98.8/atomImg/key/ctrl-~-view-model.gif" alt="asdf" style="zoom:80%;" />
 
 **5. Look and Feel (设置软件主题)**
 

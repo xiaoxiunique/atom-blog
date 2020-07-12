@@ -1,18 +1,14 @@
 ### 通俗的理解 IO 多路复用
 
-![image-20200320134331937](../.vuepress/public/image-20200320134331937.png)
+<img src="../.vuepress/public/image-20200320134331937.png" alt="image-20200320134331937" style="zoom:100%;" />
 
 ### Redis 基本数据类型
 
 - string
 
-  <!-- <img src="../.vuepress/public/16458d666d851a12" alt="img" style="zoom:80%;" /> -->
-
 - hash
 
 - list
-
-  <!-- <img src="../.vuepress/public/1645918c2cdf772e" alt="img" style="zoom:80%;" /> -->
 
 - set
 
@@ -24,7 +20,7 @@
 
 ### Redis 缓存雪崩
 
-![image-20200424100104787](../.vuepress/public/image-20200424100104787.png)
+<img src="../.vuepress/public/image-20200424100104787.png" alt="image-20200424100104787" style="zoom:100%;" />
 
 ### 缓存穿透
 

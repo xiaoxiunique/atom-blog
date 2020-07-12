@@ -41,7 +41,7 @@ var compressString = function(S) {
 
 - 认真读题，**若压缩后的字符串没有变短，则还是返回原来的长度**。
 
-	![](https://gitee.com/xiaoxiunique/picgo-image/raw/master/carbon (1).png)
+	<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/carbon (1).png" style="zoom:80%;" />
 
 - 判断长度的时候应该是 长度 - 1
 

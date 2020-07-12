@@ -97,11 +97,7 @@
 
 可以查看两个数据库之间的差距, 并生成对应的 `sql`
 
-![](https://raw.githubusercontent.com/xiaoxiunique/Web-Tip/master/20191119085055.png)
-
-![](https://raw.githubusercontent.com/xiaoxiunique/Web-Tip/master/20191119085358.png)
-
 点击`Migrate Left` , 生成转化为右侧表对应的`Sql`
 
-![](https://raw.githubusercontent.com/xiaoxiunique/Web-Tip/master/20191119085648.png)
+
 

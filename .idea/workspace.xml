@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb6a6a1a-6533-42aa-a569-0ffa5856d049" name="Default Changelist" comment="" />
+    <list default="true" id="bb6a6a1a-6533-42aa-a569-0ffa5856d049" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode  字符串转换整数.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode  字符串转换整数.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode  相交链表.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode  相交链表.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode  零钱兑换.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode  零钱兑换.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode 三数之和.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode 三数之和.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode 两数之和.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode 两数之和.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode 买卖股票的最佳时机.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode 买卖股票的最佳时机.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode 删除链表中的元素.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode 删除链表中的元素.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode 删除链表中的重复元素2.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode 删除链表中的重复元素2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode 字符串压缩.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode 字符串压缩.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode 括号生成.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode 括号生成.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode 旋转数组.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode 旋转数组.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode 最小栈.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode 最小栈.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/LeetCode 第70号 爬楼梯 问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/LeetCode 第70号 爬楼梯 问题.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/GridFlow 快捷键.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/GridFlow 快捷键.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/Redis.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/Redis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/Windows.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/Windows.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/插件模型.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designPattern/创建型 原型模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/designPattern/创建型 原型模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designPattern/创建型 建造者模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/designPattern/创建型 建造者模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designPattern/结构型 代理模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/designPattern/结构型 代理模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designPattern/行为型 模板模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/designPattern/行为型 模板模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designPattern/行为型 策略模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/designPattern/行为型 策略模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designPattern/行为型 观察者模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/designPattern/行为型 观察者模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/Jenkins.md" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Jenkins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/Linux.md" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Linux.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/devops/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/Vim.md" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Vim.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/centos 7 安装 mongodb.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/idea/IDEA 多光标操作集锦.md" beforeDir="false" afterPath="$PROJECT_DIR$/idea/IDEA 多光标操作集锦.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idea/IDEA 常用快捷键.md" beforeDir="false" afterPath="$PROJECT_DIR$/idea/IDEA 常用快捷键.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idea/IDEA 常用设置.md" beforeDir="false" afterPath="$PROJECT_DIR$/idea/IDEA 常用设置.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idea/IDEA 新字体 JetBrainsMono.md" beforeDir="false" afterPath="$PROJECT_DIR$/idea/IDEA 新字体 JetBrainsMono.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idea/IDEA 版本控制.md" beforeDir="false" afterPath="$PROJECT_DIR$/idea/IDEA 版本控制.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idea/IDEA 装机必备插件.md" beforeDir="false" afterPath="$PROJECT_DIR$/idea/IDEA 装机必备插件.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idea/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/idea/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/多线程 预备知识.md" beforeDir="false" afterPath="$PROJECT_DIR$/java/多线程 预备知识.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +97,7 @@
       <workItem from="1593392579238" duration="1739000" />
       <workItem from="1593939293408" duration="924000" />
       <workItem from="1594169377929" duration="2000" />
+      <workItem from="1594522540213" duration="249000" />
     </task>
     <servers />
   </component>
@@ -73,13 +113,6 @@
               <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
                   <entry key="roots">
                     <value>
                       <list>
@@ -120,6 +153,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939366088" />
+    <state x="870" y="472" key="VCS.ChangelistChooser" timestamp="1594522643363">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="870" y="472" key="VCS.ChangelistChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1594522643363" />
     <state x="548" y="104" width="823" height="831" key="find.popup" timestamp="1593939470664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

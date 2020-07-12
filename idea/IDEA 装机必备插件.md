@@ -18,28 +18,28 @@
 
 在安装完成之后, 在工具栏中就会出现阿里云的按钮, **点击按钮**
 
-![](http://193.112.98.8/atomImg/plugins/20190831235312.png?img)
+<img src="http://193.112.98.8/atomImg/plugins/20190831235312.png?img" style="zoom:100%;" />
 
 然后点击 `Deploy to Host`, 然后下方就会出现添加主机页面
-![](http://193.112.98.8/atomImg/plugins/20190831235513.png?img)
+<img src="http://193.112.98.8/atomImg/plugins/20190831235513.png?img" style="zoom:100%;" />
 
 点击 `Add Host`
 
-![](http://193.112.98.8/atomImg/plugins/20190831235536.png?img)
+<img src="http://193.112.98.8/atomImg/plugins/20190831235536.png?img" style="zoom:100%;" />
 
 以我自己的[博客](www.atomblogs.com)为例, 输入完配置之后, 点击 `Test Connection`, 出现 `Succeeded`, 点击 `add`, 代表添加成功
 
-![](http://193.112.98.8/atomImg/plugins/20190831235554.png?img)
+<img src="http://193.112.98.8/atomImg/plugins/20190831235554.png?img" style="zoom:100%;" />
 
 然后再点击 `Deploy to Host`
 
-![](http://193.112.98.8/atomImg/plugins/20190831235602.png?img)
+<img src="http://193.112.98.8/atomImg/plugins/20190831235602.png?img" style="zoom:100%;" />
 
 点击`Run`, `idea` 便会, 先使用`maven`打包, 后发送到服务器的指定位置
 
-![](http://193.112.98.8/atomImg/plugins/20190831235612.png?img)
+<img src="http://193.112.98.8/atomImg/plugins/20190831235612.png?img" style="zoom:100%;" />
 
-![](http://193.112.98.8/atomImg/plugins/20190831235621.png?img)
+<img src="http://193.112.98.8/atomImg/plugins/20190831235621.png?img" style="zoom:100%;" />
 
 后续还可以 监听启动日志, 很简单, 就是 `Advanced` 里面, 大家看看就知道了,
 后续有时间再完善笔记吧
@@ -68,7 +68,7 @@ Alibaba Java Coding Guidelines
 
   > 如上所示, 定义了一个 `String` 类型的变量 `MyStudent`, 而在编辑器中就会出现如下效果
 
-  ![](http://193.112.98.8/atomImg/plugins/alibaba_lowerCameCase.png)
+  <img src="http://193.112.98.8/atomImg/plugins/alibaba_lowerCameCase.png" style="zoom:80%;" />
 
   当鼠标移到变量上时, 就会自动提示 不符合 `lowerCamelCase`命名风格
 
@@ -86,7 +86,7 @@ Alibaba Java Coding Guidelines
 
   > 当我们初学 `java`时, 很有可能会犯这样的错误, 这里很明显会报空指针异常, 而在编辑器中
 
-  ![](http://193.112.98.8/atomImg/plugins/alibaba_equals.png)
+  <img src="http://193.112.98.8/atomImg/plugins/alibaba_equals.png" style="zoom:80%;" />
 
   > 安装插件之后, 编辑器已经给出详细提示,`"test“` 应该做为 `equals`方法的调用方, 并给出了原因, 应为这样很容易导致空指针异常, 并给出了例子
 
@@ -94,7 +94,7 @@ Alibaba Java Coding Guidelines
 
 > 比如我创建了一个测试类 `test.java`, 这时运行规范实时扫描 `ctrl + shift + alt + j`, 就会出现如下提示
 
-![](http://images.atomblogs.com/20190917091406.png)
+
 
 ### **翻译插件**
 
@@ -181,7 +181,7 @@ Lombok pom.xml 文件配置
 
 > 快速的讲一个 `json`转换为一个实体 安装完插件后 `alt + s` 放入正确的 `json`格式
 
-![](http://193.112.98.8/atomImg/plugins/gson_use.gif)
+<img src="http://193.112.98.8/atomImg/plugins/gson_use.gif" style="zoom:80%;" />
 
 ### VisualVm Launcher
 

@@ -2,7 +2,7 @@
 
 ### 移动光标
 
-![image-20200228142848237](https://gitee.com/xiaoxiunique/picgo-image/raw/master/image-20200228142848237.png)
+<img src="https://gitee.com/xiaoxiunique/picgo-image/raw/master/image-20200228142848237.png" alt="image-20200228142848237" style="zoom:80%;" />
 
 ### 屏幕向前滚动一页 
 

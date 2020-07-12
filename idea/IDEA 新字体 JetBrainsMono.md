@@ -4,9 +4,9 @@
 
 对比之前一直在使用  `Consolas` 字体
 
-![1582686169279](../.vuepress/public/1582686169279.png)
+<img src="../.vuepress/public/1582686169279.png" alt="1582686169279" style="zoom:100%;" />
 
-![1582686399395](../.vuepress/public/1582686399395.png)
+<img src="../.vuepress/public/1582686399395.png" alt="1582686399395" style="zoom:100%;" />
 
 
 
@@ -20,7 +20,7 @@
 
 ### Windows 安装
 
-![1582686953731](../.vuepress/public/1582686953731.png)
+<img src="../.vuepress/public/1582686953731.png" alt="1582686953731" style="zoom:100%;" />
 
 - 下载后，解压文件
 - 直接双击扩展名为 `tff` 后缀的文件
@@ -33,4 +33,4 @@
 
 完成上述过程后，其他软件也可以使用 比如 `VsCode，DataGrid` 等
 
-![1582687165547](../.vuepress/public/1582687165547.png)
+<img src="../.vuepress/public/1582687165547.png" alt="1582687165547" style="zoom:100%;" />

@@ -9,7 +9,7 @@
 
 ### 利用两个栈
 
-![image-20200317201851102](../.vuepress/public/image-20200317201851102.png)
+<img src="../.vuepress/public/image-20200317201851102.png" alt="image-20200317201851102" style="zoom: 80%;" />
 
 查看上图，需要理解当 Stack 中入栈元素为 `5、6、4、2、7、9、1、3` 最小栈中对应元素为 `5、4、2、1`
 
@@ -100,4 +100,4 @@ class MinStack {
 
 - 需要注意，在判断元素大小的时候，需要考虑到等于的情况。
 - 注意条件判断问题。
-- 使用一个栈的方法时需要注意，需要先处理最小值问题，在入栈本来的元素，顺序不可颠倒![min_stack_js](../.vuepress/public/min_stack_js.png)
+- 使用一个栈的方法时需要注意，需要先处理最小值问题，在入栈本来的元素，顺序不可颠倒<img src="../.vuepress/public/min_stack_js.png" alt="min_stack_js" style="zoom:80%;" />
