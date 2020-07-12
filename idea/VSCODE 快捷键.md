@@ -179,3 +179,17 @@
 | F11 / Shift+F11 | Step into/out     |      |
 | F10             | Step over         |      |
 | Ctrl+K Ctrl+I   | Show hover        |      |
+
+
+
+Integrated terminal
+
+| 命令            | 作用              | 演示 |
+| --------------- | ----------------- | ---- |
+| Ctrl+` | Show integrated terminal | |
+| Ctrl+Shift+` | Create new terminal | |
+| Ctrl+C | Copy selection | |
+| Ctrl+V | Paste into active terminal | |
+| Ctrl+ :arrow_up: / :arrow_down: | Scroll up/down | |
+| Shift+PgUp / PgDn | Scroll page up/down | |
+| Ctrl+Home / End | Scroll to top/bottom | |
