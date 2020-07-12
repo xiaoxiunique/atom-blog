@@ -40,3 +40,72 @@
 | Ctrl+/                                | Toggle line comment                |      |
 | Shift+Alt+A                           | Toggle block comment               |      |
 | Alt+Z                                 | Toggle word wrap                   |      |
+
+
+
+## Navigation
+
+| 命令                          | 作用                            | 演示 |
+| ----------------------------- | ------------------------------- | ---- |
+| Ctrl+T                        | Show all Symbols                |      |
+| Ctrl+G                        | Go to Line...                   |      |
+| Ctrl+P                        | Go to File...                   |      |
+| Ctrl+Shift+O                  | Go to Symbol...                 |      |
+| Ctrl+Shift+M                  | Show Problems panel             |      |
+| F8                            | Go to next error or warning     |      |
+| Shift+F8                      | Go to previous error or warning |      |
+| Ctrl+Shift+Tab                | Navigate editor group history   |      |
+| Alt+:arrow_up: / :arrow_down: | Go back / forward               |      |
+| Ctrl+M                        | Toggle Tab moves focus          |      |
+
+
+
+## Search and replace
+
+| 命令          | 作用                                       | 演示 |
+| ------------- | ------------------------------------------ | ---- |
+| Ctrl+F        | Find                                       |      |
+| Ctrl+H        | Replace                                    |      |
+| F3 / Shift+F3 | Find next/previous                         |      |
+| Alt+Enter     | Select all occurences of Find match        |      |
+| Ctrl+D        | Add selection to next Find match           |      |
+| Ctrl+K Ctrl+D | Move last selection to next Find match     |      |
+| Alt+C / R / W | Toggle case-sensitive / regex / whole word |      |
+
+
+
+## Multi-cursor and selection
+
+| 命令                               | 作用                                        | 演示 |
+| ---------------------------------- | ------------------------------------------- | ---- |
+| Alt+Click                          | Insert cursor                               |      |
+| Ctrl+Alt+:arrow_up: / :arrow_down: | Insert cursor above / below                 |      |
+| Ctrl+U                             | Undo last cursor operation                  |      |
+| Shift+Alt+I                        | Insert cursor at end of each line selected  |      |
+| Ctrl+L                             | Select current line                         |      |
+| Ctrl+Shift+L                       | Select all occurrences of current selection |      |
+| Ctrl+F2                            | Select all occurrences of current word      |      |
+| Shift+Alt+ :arrow_right:           | Expand selection                            |      |
+| Shift+Alt+ :arrow_left:            | Shrink selection                            |      |
+| Shift+Alt + (drag mouse)           | Column (box) selection                      |      |
+| Ctrl+Shift+Alt+ (arrow key)        | Column (box) selection                      |      |
+| Ctrl+Shift+Alt+PgUp/PgDn           | Column (box) selection page up/down         |      |
+
+
+
+## Rich languages editing
+
+| 命令             | 作用                        | 演示 |
+| ---------------- | --------------------------- | ---- |
+| Ctrl+Space       | Trigger suggestion          |      |
+| Ctrl+Shift+Space | Trigger parameter hints     |      |
+| Shift+Alt+F      | Format document             |      |
+| Ctrl+K Ctrl+F    | Format selection            |      |
+| F12              | Go to Definition            |      |
+| Alt+F12          | Peek Definition             |      |
+| Ctrl+K F12       | Open Definition to the side |      |
+| Ctrl+.           | Quick Fix                   |      |
+| Shift+F12        | Show References             |      |
+| F2               | Rename Symbol               |      |
+| Ctrl+K Ctrl+X    | Trim trailing whitespace    |      |
+| Ctrl+K M         | Change file language        |      |
