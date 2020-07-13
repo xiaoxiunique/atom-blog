@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb6a6a1a-6533-42aa-a569-0ffa5856d049" name="Default Changelist" comment="" />
+    <list default="true" id="bb6a6a1a-6533-42aa-a569-0ffa5856d049" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +60,7 @@
       <workItem from="1593392579238" duration="1739000" />
       <workItem from="1593939293408" duration="924000" />
       <workItem from="1594169377929" duration="2000" />
+      <workItem from="1594522540213" duration="249000" />
     </task>
     <servers />
   </component>
@@ -73,13 +76,6 @@
               <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
                   <entry key="roots">
                     <value>
                       <list>
@@ -90,6 +86,11 @@
                 </map>
               </option>
             </State>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <State />
           </value>
         </entry>
         <entry key="MAIN">
@@ -116,20 +117,33 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="249" y="277" width="902" height="349" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1440.920@0.0.1440.920" timestamp="1588005852367" />
+    <state x="358" y="220" key="CommitChangelistDialog2" timestamp="1594556872971">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="358" y="220" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1594556872971" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593939366088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939366088" />
+    <state x="870" y="472" key="VCS.ChangelistChooser" timestamp="1594539407268">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="870" y="472" key="VCS.ChangelistChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1594539407268" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1594556860833">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1594556860833" />
     <state x="548" y="104" width="823" height="831" key="find.popup" timestamp="1593939470664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="411" y="92" width="617" height="735" key="find.popup/0.0.1440.920@0.0.1440.920" timestamp="1588005859796" />
     <state x="548" y="104" width="823" height="831" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939470664" />
-    <state x="511" y="236" width="896" height="767" key="search.everywhere.popup" timestamp="1593939500789">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="545" y="252" width="956" height="821" key="search.everywhere.popup" timestamp="1594539411827">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="383" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1440.920/0.-1440.2048.1112@0.0.1440.920" timestamp="1589727102131" />
     <state x="383" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1440.920@0.0.1440.920" timestamp="1588162625779" />
+    <state x="545" y="252" width="956" height="821" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1594539411827" />
     <state x="511" y="236" width="896" height="767" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1593939500789" />
   </component>
 </project>
