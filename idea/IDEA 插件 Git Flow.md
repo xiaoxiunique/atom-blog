@@ -2,6 +2,8 @@
 
 
 
+[Git Flow Integration](https://plugins.jetbrains.com/plugin/7315-git-flow-integration)
+
 ## 插件作用
 
 集成 [Git Flow](https://medium.com/@rafavinnce/gitflow-branch-guide-8a523360c053) 让我们更加专注在 开发 这件事上。
