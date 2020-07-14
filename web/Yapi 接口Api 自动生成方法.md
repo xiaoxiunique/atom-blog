@@ -7,7 +7,7 @@ const axios = require("axios");
 
 
 const CONFIG = {
-  REQUEST_TOKEN: "_yapi_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjcwLCJpYXQiOjE1OTM2MTY1NzIsImV4cCI6MTU5NDIyMTM3Mn0.jfGXwoKwY1s5fO1t8E6uYVEFTA-jx34dGdEGvXYzhLw; _yapi_uid=70",
+  REQUEST_TOKEN: "",
   SERVICE_NAME: "user",
   API_NAME: "honorScoreAPI",
 };
@@ -17,7 +17,7 @@ const CONFIG = {
   var config = {
     method: "get",
     url:
-      "http://yapi.i.xgimi.com/api/interface/list_cat?page=1&limit=20&catid=1823",
+      "[yapi-server]/api/interface/list_cat?page=1&limit=20&catid=1823",
     headers: {
       Cookie: CONFIG.REQUEST_TOKEN
     },
@@ -29,7 +29,7 @@ const CONFIG = {
     const content = await axios({
       method: "get",
       url:
-          "http://yapi.i.xgimi.com/api/interface/get?id=" + apiId,
+          "[yapi-server]/api/interface/get?id=" + apiId,
       headers: {
         Cookie: CONFIG.REQUEST_TOKEN
       },
@@ -86,10 +86,12 @@ async function generateApi(content) {
       ${params}
     };
   
-    return await this.${content.data.method === "POST" ? "post" : "get"}({
+    const result = await this.${content.data.method === "POST" ? "post" : "get"}({
       apiUrl: '${content.data.path}',
       params,
     });
+    
+    return result && result.data;
   }`;
 
   const api = beautify(apiTemplte, {
