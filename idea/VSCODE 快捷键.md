@@ -4,7 +4,7 @@
 
 | 命令 | 作用 | 演示 |
 | ---- | ---- | ---- |
-|   Ctrl+Shift+P, F1   |    Show Command Palette   |      |
+|   Ctrl+Shift+P, F1   | 显示命令面板   |      |
 |   Ctrl+P    |   Quick Open, Go to File…   |      |
 |   Ctrl+Shift+N   |    New window/instance   |      |
 |   Ctrl+Shift+W    |   Close window/instance   |      |
