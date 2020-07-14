@@ -5,193 +5,193 @@
 | 命令 | 作用 | 演示 |
 | ---- | ---- | ---- |
 |   Ctrl+Shift+P, F1   | 显示命令面板   |      |
-|   Ctrl+P    |   Quick Open, Go to File…   |      |
-|   Ctrl+Shift+N   |    New window/instance   |      |
-|   Ctrl+Shift+W    |   Close window/instance   |      |
-|   Ctrl+,   |    User Settings   |      |
-|   Ctrl+K Ctrl+S    |    Keyboard Shortcuts   |      |
+|   Ctrl+P    |   快速打开，转到文件   |      |
+|   Ctrl+Shift+N   | 新建窗口/实例   |      |
+|   Ctrl+Shift+W    |   关闭窗口/实例   |      |
+|   Ctrl+,   | 用户设置   |      |
+|   Ctrl+K Ctrl+S    | 键盘快捷键   |      |
 
 
 
 ## Basic editing
 
-| 命令                                  | 作用                               | 演示 |
-| ------------------------------------- | ---------------------------------- | ---- |
-| Ctrl+X                                | Cut line (empty selection)         |      |
-| Ctrl+C                                | Copy line (empty selection)        |      |
-| Alt+ :arrow_up: / :arrow_down:        | Move line up/down                  |      |
-| Shift+Alt + :arrow_up: / :arrow_down: | Copy line up/down                  |      |
-| Ctrl+Shift+K                          | Delete line                        |      |
-| Ctrl+Enter                            | Insert line below                  |      |
-| Ctrl+Shift+Enter                      | Insert line above                  |      |
-| Ctrl+Shift+\                          | Jump to matching bracket           |      |
-| Ctrl+] / [                            | Indent/outdent line                |      |
-| Home /                                | End Go to beginning/end of line    |      |
-| Ctrl+Home                             | Go to beginning of file            |      |
-| Ctrl+End                              | Go to end of file                  |      |
-| Ctrl+:arrow_up: / :arrow_down:        | Scroll line up/down                |      |
-| Alt+PgUp / PgDn                       | Scroll page up/down                |      |
-| Ctrl+Shift+[                          | Fold (collapse) region             |      |
-| Ctrl+Shift+]                          | Unfold (uncollapse) region         |      |
-| Ctrl+K Ctrl+[                         | Fold (collapse) all subregions     |      |
-| Ctrl+K Ctrl+]                         | Unfold (uncollapse) all subregions |      |
-| Ctrl+K Ctrl+0                         | Fold (collapse) all regions        |      |
-| Ctrl+K Ctrl+J                         | Unfold (uncollapse) all regions    |      |
-| Ctrl+K Ctrl+C                         | Add line comment                   |      |
-| Ctrl+K Ctrl+U                         | Remove line comment                |      |
-| Ctrl+/                                | Toggle line comment                |      |
-| Shift+Alt+A                           | Toggle block comment               |      |
-| Alt+Z                                 | Toggle word wrap                   |      |
+| 命令                                  | 作用                   | 演示 |
+| ------------------------------------- | ---------------------- | ---- |
+| Ctrl+X                                | 剪切行(空选择)         |      |
+| Ctrl+C                                | 复制行(空选择)         |      |
+| Alt+ :arrow_up: / :arrow_down:        | 向上/向下移动队列      |      |
+| Shift+Alt + :arrow_up: / :arrow_down: | 向上/向下复制行        |      |
+| Ctrl+Shift+K                          | 删除行                 |      |
+| Ctrl+Enter                            | 在下面插入一行         |      |
+| Ctrl+Shift+Enter                      | 在上面插入一行         |      |
+| Ctrl+Shift+\                          | 跳到匹配的 bracket 上  |      |
+| Ctrl+] / [                            | 缩进/缩进线            |      |
+| Home /                                | 到行的开头/结尾        |      |
+| Ctrl+Home                             | 转到文件的开头         |      |
+| Ctrl+End                              | 转到文件结束处         |      |
+| Ctrl+:arrow_up: / :arrow_down:        | 向上/向下滚动          |      |
+| Alt+PgUp / PgDn                       | 向上/向下滚动页面      |      |
+| Ctrl+Shift+[                          | 褶皱(塌陷)区           |      |
+| Ctrl+Shift+]                          | 展开(未崩溃)区域       |      |
+| Ctrl+K Ctrl+[                         | 所有次区域折叠(崩溃)   |      |
+| Ctrl+K Ctrl+]                         | 展开(不崩溃)所有次区域 |      |
+| Ctrl+K Ctrl+0                         | 折叠(折叠)所有区域     |      |
+| Ctrl+K Ctrl+J                         | 展开(不崩溃)所有区域   |      |
+| Ctrl+K Ctrl+C                         | 添加行注释             |      |
+| Ctrl+K Ctrl+U                         | 删除行注释             |      |
+| Ctrl+/                                | 切换行注释             |      |
+| Shift+Alt+A                           | 切换块注释             |      |
+| Alt+Z                                 | 切换自动换行           |      |
 
 
 
-## Navigation
+## 导航 Navigation
 
-| 命令                          | 作用                            | 演示 |
-| ----------------------------- | ------------------------------- | ---- |
-| Ctrl+T                        | Show all Symbols                |      |
-| Ctrl+G                        | Go to Line...                   |      |
-| Ctrl+P                        | Go to File...                   |      |
-| Ctrl+Shift+O                  | Go to Symbol...                 |      |
-| Ctrl+Shift+M                  | Show Problems panel             |      |
-| F8                            | Go to next error or warning     |      |
-| Shift+F8                      | Go to previous error or warning |      |
-| Ctrl+Shift+Tab                | Navigate editor group history   |      |
-| Alt+:arrow_up: / :arrow_down: | Go back / forward               |      |
-| Ctrl+M                        | Toggle Tab moves focus          |      |
-
-
-
-## Search and replace
-
-| 命令          | 作用                                       | 演示 |
-| ------------- | ------------------------------------------ | ---- |
-| Ctrl+F        | Find                                       |      |
-| Ctrl+H        | Replace                                    |      |
-| F3 / Shift+F3 | Find next/previous                         |      |
-| Alt+Enter     | Select all occurences of Find match        |      |
-| Ctrl+D        | Add selection to next Find match           |      |
-| Ctrl+K Ctrl+D | Move last selection to next Find match     |      |
-| Alt+C / R / W | Toggle case-sensitive / regex / whole word |      |
+| 命令                          | 作用                 | 演示 |
+| ----------------------------- | -------------------- | ---- |
+| Ctrl+T                        | 显示所有符号         |      |
+| Ctrl+G                        | 条转行               |      |
+| Ctrl+P                        | 搜索文件             |      |
+| Ctrl+Shift+O                  | Go to Symbol...      |      |
+| Ctrl+Shift+M                  | 显示问题面板         |      |
+| F8                            | 转到下一个错误或警告 |      |
+| Shift+F8                      | 转到以前的错误或警告 |      |
+| Ctrl+Shift+Tab                | 浏览编辑器组历史记录 |      |
+| Alt+:arrow_up: / :arrow_down: | 向后/向前            |      |
+| Ctrl+M                        | 切换 Tab 移动焦点    |      |
 
 
 
-## Multi-cursor and selection
+## 搜索和替换 Search and replace
 
-| 命令                               | 作用                                        | 演示 |
-| ---------------------------------- | ------------------------------------------- | ---- |
-| Alt+Click                          | Insert cursor                               |      |
-| Ctrl+Alt+:arrow_up: / :arrow_down: | Insert cursor above / below                 |      |
-| Ctrl+U                             | Undo last cursor operation                  |      |
-| Shift+Alt+I                        | Insert cursor at end of each line selected  |      |
-| Ctrl+L                             | Select current line                         |      |
-| Ctrl+Shift+L                       | Select all occurrences of current selection |      |
-| Ctrl+F2                            | Select all occurrences of current word      |      |
-| Shift+Alt+ :arrow_right:           | Expand selection                            |      |
-| Shift+Alt+ :arrow_left:            | Shrink selection                            |      |
-| Shift+Alt + (drag mouse)           | Column (box) selection                      |      |
-| Ctrl+Shift+Alt+ (arrow key)        | Column (box) selection                      |      |
-| Ctrl+Shift+Alt+PgUp/PgDn           | Column (box) selection page up/down         |      |
+| 命令          | 作用                             | 演示 |
+| ------------- | -------------------------------- | ---- |
+| Ctrl+F        | 查找                             |      |
+| Ctrl+H        | 替换                             |      |
+| F3 / Shift+F3 | 查找下一个/上一个                |      |
+| Alt+Enter     | 选择查找匹配的所有事件           |      |
+| Ctrl+D        | 将选定内容添加到下一个查找匹配项 |      |
+| Ctrl+K Ctrl+D | 将最后选择移动到下一个查找匹配项 |      |
+| Alt+C / R / W | 切换区分大小写/正则表达式/整字   |      |
 
 
 
-## Rich languages editing
+## 多光标和选择 Multi-cursor and selection
 
-| 命令             | 作用                        | 演示 |
-| ---------------- | --------------------------- | ---- |
-| Ctrl+Space       | Trigger suggestion          |      |
-| Ctrl+Shift+Space | Trigger parameter hints     |      |
-| Shift+Alt+F      | Format document             |      |
-| Ctrl+K Ctrl+F    | Format selection            |      |
-| F12              | Go to Definition            |      |
-| Alt+F12          | Peek Definition             |      |
-| Ctrl+K F12       | Open Definition to the side |      |
-| Ctrl+.           | Quick Fix                   |      |
-| Shift+F12        | Show References             |      |
-| F2               | Rename Symbol               |      |
-| Ctrl+K Ctrl+X    | Trim trailing whitespace    |      |
-| Ctrl+K M         | Change file language        |      |
-
-
-
-## Editor management
-
-| 命令                                      | 作用                                    | 演示 |
-| ----------------------------------------- | --------------------------------------- | ---- |
-| Ctrl+F4, Ctrl+W                           | Close editor                            |      |
-| Ctrl+K F                                  | Close folder                            |      |
-| Ctrl+\                                    | Split editor                            |      |
-| Ctrl+ 1 / 2 / 3                           | Focus into 1st, 2nd or 3rd editor group |      |
-| Ctrl+K Ctrl+ :arrow_left: / :arrow_right: | Focus into previous/next editor group   |      |
-| Ctrl+Shift+PgUp / PgDn                    | Move editor left/right                  |      |
-| Ctrl+K :arrow_left: / :arrow_right:       | Move active editor group                |      |
+| 命令                               | 作用                       | 演示 |
+| ---------------------------------- | -------------------------- | ---- |
+| Alt+Click                          | 插入光标                   |      |
+| Ctrl+Alt+:arrow_up: / :arrow_down: | 将光标插入上面/下面        |      |
+| Ctrl+U                             | 撤消上次光标操作           |      |
+| Shift+Alt+I                        | 在选定的每一行末尾插入光标 |      |
+| Ctrl+L                             | 选择当前行                 |      |
+| Ctrl+Shift+L                       | 选择当前选择的所有匹配项   |      |
+| Ctrl+F2                            | 选择当前单词的所有出现次数 |      |
+| Shift+Alt+ :arrow_right:           | 扩展选择范围               |      |
+| Shift+Alt+ :arrow_left:            | 缩小选择                   |      |
+| Shift+Alt + (drag mouse)           | 列(框)选择                 |      |
+| Ctrl+Shift+Alt+ (arrow key)        | 列(框)选择                 |      |
+| Ctrl+Shift+Alt+PgUp/PgDn           | 列(框)选择页向上/向下      |      |
 
 
 
-## File management 
+## 丰富的语言编辑 Rich languages editing
 
-| 命令           | 作用                                    | 演示 |
-| -------------- | --------------------------------------- | ---- |
-| Ctrl+N         | New File                                |      |
-| Ctrl+O         | Open File...                            |      |
-| Ctrl+S         | Save                                    |      |
-| Ctrl+Shift+S   | Save As...                              |      |
-| Ctrl+K S       | Save All                                |      |
-| Ctrl+F4        | Close                                   |      |
-| Ctrl+K Ctrl+W  | Close All                               |      |
-| Ctrl+Shift+T   | Reopen closed editor                    |      |
-| Ctrl+K Enter   | Keep preview mode editor open           |      |
-| Ctrl+Tab       | Open next                               |      |
-| Ctrl+Shift+Tab | Open previous                           |      |
-| Ctrl+K P       | Copy path of active file                |      |
-| Ctrl+K R       | Reveal active file in Explorer          |      |
-| Ctrl+K O       | Show active file in new window/instance |      |
+| 命令             | 作用           | 演示 |
+| ---------------- | -------------- | ---- |
+| Ctrl+Space       | 触发建议       |      |
+| Ctrl+Shift+Space | 触发参数提示   |      |
+| Shift+Alt+F      | 格式文件       |      |
+| Ctrl+K Ctrl+F    | 格式选择       |      |
+| F12              | 转到定义       |      |
+| Alt+F12          | 查看定义       |      |
+| Ctrl+K F12       | 打开定义到一边 |      |
+| Ctrl+.           | 快速修复       |      |
+| Shift+F12        | 显示参考文献   |      |
+| F2               | 重命名符号     |      |
+| Ctrl+K Ctrl+X    | 平衡尾随空格   |      |
+| Ctrl+K M         | 更改文件语言   |      |
 
 
 
-## Display
+## 编辑管理 Editor management
 
-| 命令         | 作用                                       | 演示 |
-| ------------ | ------------------------------------------ | ---- |
-| F11          | Toggle full screen                         |      |
-| Shift+Alt+0  | Toggle editor layout (horizontal/vertical) |      |
-| Ctrl+ = / -  | Zoom in/out                                |      |
-| Ctrl+B       | Toggle Sidebar visibility                  |      |
-| Ctrl+Shift+E | Show Explorer / Toggle focus               |      |
-| Ctrl+Shift+F | Show Search                                |      |
-| Ctrl+Shift+G | Show Source Control                        |      |
-| Ctrl+Shift+D | Show Debug                                 |      |
-| Ctrl+Shift+X | Show Extensions                            |      |
-| Ctrl+Shift+H | Replace in files                           |      |
-| Ctrl+Shift+J | Toggle Search details                      |      |
-| Ctrl+Shift+U | Show Output panel                          |      |
-| Ctrl+Shift+V | Open Markdown preview                      |      |
-| Ctrl+K V     | Open Markdown preview to the side          |      |
-| Ctrl+K Z     | Zen Mode (Esc Esc to exit)                 |      |
+| 命令                                      | 作用                           | 演示 |
+| ----------------------------------------- | ------------------------------ | ---- |
+| Ctrl+F4, Ctrl+W                           | 关闭编辑器                     |      |
+| Ctrl+K F                                  | 关闭文件夹                     |      |
+| Ctrl+\                                    | 分割编辑器                     |      |
+| Ctrl+ 1 / 2 / 3                           | 集中到第一、第二或第三编辑小组 |      |
+| Ctrl+K Ctrl+ :arrow_left: / :arrow_right: | 关注上一个/下一个编辑器组      |      |
+| Ctrl+Shift+PgUp / PgDn                    | 左/右移动编辑器                |      |
+| Ctrl+K :arrow_left: / :arrow_right:       | 移动活动编辑器组               |      |
 
 
 
-## Debug
+## 文件管理 File management 
+
+| 命令           | 作用                        | 演示 |
+| -------------- | --------------------------- | ---- |
+| Ctrl+N         | 新建文件                    |      |
+| Ctrl+O         | 打开文件                    |      |
+| Ctrl+S         | 保存                        |      |
+| Ctrl+Shift+S   | 另存为                      |      |
+| Ctrl+K S       | 保存所有                    |      |
+| Ctrl+F4        | 关闭窗口                    |      |
+| Ctrl+K Ctrl+W  | 关闭所有窗口                |      |
+| Ctrl+Shift+T   | 重新打开已关闭的编辑器      |      |
+| Ctrl+K Enter   | 保持预览模式编辑器打开      |      |
+| Ctrl+Tab       | 打开下一个                  |      |
+| Ctrl+Shift+Tab | 打开上一个                  |      |
+| Ctrl+K P       | Copy path of active file    |      |
+| Ctrl+K R       | 在资源管理器中显示活动文件  |      |
+| Ctrl+K O       | 在新窗口/实例中显示活动文件 |      |
+
+
+
+## 展示 Display
+
+| 命令         | 作用                      | 演示 |
+| ------------ | ------------------------- | ---- |
+| F11          | 全屏切换                  |      |
+| Shift+Alt+0  | 切换编辑器布局(水平/垂直) |      |
+| Ctrl+ = / -  | 放大/缩小                 |      |
+| Ctrl+B       | 切换边栏可见性            |      |
+| Ctrl+Shift+E | 显示资源管理器/切换焦点   |      |
+| Ctrl+Shift+F | 显示搜索                  |      |
+| Ctrl+Shift+G | 显示源代码控制            |      |
+| Ctrl+Shift+D | 显示调试                  |      |
+| Ctrl+Shift+X | 显示扩展                  |      |
+| Ctrl+Shift+H | 替换文件                  |      |
+| Ctrl+Shift+J | 切换搜索细节              |      |
+| Ctrl+Shift+U | 显示输出面板              |      |
+| Ctrl+Shift+V | 打开 Markdown 预览        |      |
+| Ctrl+K V     | 打开侧面的 Markdown 预览  |      |
+| Ctrl+K Z     | Zen Mode                  |      |
+
+
+
+## 调试 Debug
+
+| 命令            | 作用          | 演示 |
+| --------------- | ------------- | ---- |
+| F9              | 切换断点      |      |
+| F5              | 开始/继续     |      |
+| Shift+F5        | 停止          |      |
+| F11 / Shift+F11 | Step into/out |      |
+| F10             | Step over     |      |
+| Ctrl+K Ctrl+I   | 显示盘旋      |      |
+
+
+
+### 综合终端 Integrated terminal
 
 | 命令            | 作用              | 演示 |
 | --------------- | ----------------- | ---- |
-| F9              | Toggle breakpoint |      |
-| F5              | Start/Continue    |      |
-| Shift+F5        | Stop              |      |
-| F11 / Shift+F11 | Step into/out     |      |
-| F10             | Step over         |      |
-| Ctrl+K Ctrl+I   | Show hover        |      |
-
-
-
-Integrated terminal
-
-| 命令            | 作用              | 演示 |
-| --------------- | ----------------- | ---- |
-| Ctrl+` | Show integrated terminal | |
-| Ctrl+Shift+` | Create new terminal | |
-| Ctrl+C | Copy selection | |
-| Ctrl+V | Paste into active terminal | |
-| Ctrl+ :arrow_up: / :arrow_down: | Scroll up/down | |
-| Shift+PgUp / PgDn | Scroll page up/down | |
-| Ctrl+Home / End | Scroll to top/bottom | |
+| Ctrl+` | 显示集成终端 | |
+| Ctrl+Shift+` | 创建新的终端 | |
+| Ctrl+C | 复制选择 | |
+| Ctrl+V | 粘贴到活动终端 | |
+| Ctrl+ :arrow_up: / :arrow_down: | 向上/向下滚动 | |
+| Shift+PgUp / PgDn | 向上/向下滚动页面 | |
+| Ctrl+Home / End | 滚动到顶部/底部 | |
