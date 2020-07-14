@@ -8,21 +8,17 @@
 
 ## 安装
 
-<img src="../.vuepress/public/image-20200714115628411.png" alt="image-20200714115628411" style="zoom:100%;" />
-
-
+<img src="../.vuepress/public/image-20200714124809715.png" alt="image-20200714124809715" style="zoom:100%;" />
 
 ## 使用
 
 最开始还没有初始化的时候，点击右下脚 GitFlow init
 
-<img src="../.vuepress/public/image-20200714120054719.png" alt="image-20200714120054719" style="zoom:100%;" />
+<img src="../.vuepress/public/image-20200714125126171.png" alt="image-20200714125126171" style="zoom:100%;" />
 
 直接 默认 设置就好，点击 Ok 之后，就可以开始使用了。
 
-
-
-<img src="../.vuepress/public/image-20200714115831509.png" alt="image-20200714115831509" style="zoom:100%;" />
+![image-20200714125309887](../.vuepress/public/image-20200714125309887.png)
 
 
 
