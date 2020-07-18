@@ -80,8 +80,30 @@ hotfix：等不及release版本就必须马上修复master上线。从master出�
 
 
 
-### 日志打印规范
+### 关系图测试
+
+```sequence
+电脑 -> atips.cn: 测试
+atips.cn -> vuepress: 请求数据
+vuepress --> atips.cn: 返回数据
+vuepress --> 电脑: 返回数据
+```
 
 
 
-### Redis 命名规范
+### 流程图测试
+
+```flow
+st=>start: 开始
+op=>operation: 操作
+op1=>operation: 操作2
+isTrue=>condition: 条件
+sub1=>subroutine: 子模块
+io=>inputoutput: 输入输出
+ed=>end: 结束
+
+st->op->io->isTrue
+isTrue(yes)->ed
+isTrue(no)->sub1(right)->ed
+```
+
