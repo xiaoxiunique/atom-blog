@@ -10,6 +10,4 @@
 
 ## 设置
 
-看图，不多 BB
-
-<img src="../.vuepress/public/image-20200622092348889.png" alt="image-20200622092348889" style="zoom:100%;" />
+看图<img src="../.vuepress/public/image-20200622092348889.png" alt="image-20200622092348889" style="zoom:100%;" />
