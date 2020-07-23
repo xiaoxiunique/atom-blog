@@ -40,6 +40,18 @@
 
 :seven: [IDEA Mac 和 Windows 快捷键对比](https://atips.cn/idea/IDEA%20Windows%20Mac%20%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%AF%B9%E6%AF%94.html)
 
+:eight: [IDEA 插件 Git Flow](https://atips.cn/idea/IDEA%20%E6%8F%92%E4%BB%B6%20Git%20Flow.html)
+
+:nine: [IDEA Windows Terminal 配置](https://atips.cn/idea/IDEA%20Windows%20Terminal%20%E9%85%8D%E7%BD%AE.html)
+
+:keycap_ten: [DataGrip 快捷键](https://atips.cn/idea/DataGrip%20%E5%BF%AB%E6%8D%B7%E9%94%AE.html)
+
+😀 [VsCode 快捷键](https://atips.cn/idea/VSCODE%20%E5%BF%AB%E6%8D%B7%E9%94%AE.html)
+
+😁 [VsCode 插件 PlantUML](https://atips.cn/idea/VsCode%20%E6%8F%92%E4%BB%B6%20PlantUML.html)
+
+
+
 #### 条件断点 调试效率翻倍 :star::star::star::star::star:
 
 在选择断点后, 在断点处右键添加断点条件. 调试效率翻倍 [点击查看 GIF 动图](http://193.112.98.8/atomImg/key/debug-breakpoint.gif)
