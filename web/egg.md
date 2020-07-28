@@ -409,3 +409,71 @@ nodeinstall --install-alinode ^5
 
 
 而后启动后，就可以在 alinode 添加了
+
+
+
+
+
+## Egg 集成 alioss
+
+
+
+plugin.js
+
+```js
+exports.oss = {
+  enable: true,
+  package: 'egg-oss'
+};
+```
+
+
+
+config.default.js
+
+```js
+  config.oss = {
+    client: {
+      accessKeyId: process.env['oss.client.accessKeyId'],
+      accessKeySecret: process.env['secret.oss.client.accessKeySecret'],
+      bucket: process.env['oss.client.bucket'],
+      endpoint: process.env['oss.client.endpoint'],
+      timeout: process.env['oss.client.timeout'],
+    },
+  };
+```
+
+
+
+AliyunController.js
+
+```js
+async upload() {
+    const ctx = this.ctx;
+
+    const file = ctx.request.files[0];
+    const name = 'egg-oss-demo/' + path.basename(file.filename);
+    let result;
+    try {
+      result = await ctx.oss.put(name, file.filepath);
+    } finally {
+      await fs.unlink(file.filepath);
+    }
+
+    if (result) {
+      console.log('get oss object: %j', object);
+      ctx.unsafeRedirect(result.url);
+    } else {
+      ctx.body = 'please select a file to upload！';
+    }
+  }
+```
+
+
+
+通过 URL 连接上传
+
+```
+
+```
+
