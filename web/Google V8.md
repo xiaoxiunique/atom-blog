@@ -88,3 +88,15 @@ DogFactory.call(dog,'Dog','Black')
 - 首先，创建了一个空白对象 dog；
 - 然后，将 DogFactory 的 prototype 属性设置为 dog 的原型对象，这就是给 dog 对象设置原型对象的关键一步，我们后面来介绍；
 - 最后，再使用 dog 来调用 DogFactory，这时候 DogFactory 函数中的 this 就指向了对象 dog，然后在 DogFactory 函数中，利用 this 对对象 dog 执行属性填充操作，最终就创建了对象 dog。
+
+
+
+## Java Script 运行时环境
+
+![img](../.vuepress/public/9ad5d32bce98aad219c9f73513ac6349.jpg)
+
+宿主环境和 V8 的关系
+
+
+
+![img](../.vuepress/public/e541d8611b725001509bfcd6797f492f.jpg)
