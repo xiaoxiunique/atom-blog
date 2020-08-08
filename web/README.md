@@ -1,6 +1,6 @@
 
 
-![](../.vuepress/public/v8-outline.svg)
+![](http://img.atips.cn/atom-blog/v8-outline.svg)
 
-<img src="../.vuepress/public/image-20200517111012504.png" alt="image-20200517111012504" style="zoom:100%;" />
+<img src="img.atips.cn/atom-blog/image-20200517111012504.png" alt="image-20200517111012504" style="zoom:100%;" />
 
