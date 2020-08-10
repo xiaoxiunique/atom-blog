@@ -37,5 +37,3 @@ footer:
 
 
 
-![image-20200810114733690](../.vuepress/public/README/image-20200810114733690.png)
-
