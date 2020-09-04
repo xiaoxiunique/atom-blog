@@ -1,8 +1,9 @@
 [TOC]
 
-基本涵盖了在开发中用到的git命令，能满足日常需求。
+基本涵盖了在开发中用到的 git 命令，能满足日常需求。
 
 ## 配置
+
 ```bash
 # 查看全局配置列表
 git config -l
@@ -32,9 +33,8 @@ git config --global core.editor emacs
 git config --global merge.tool vimdiff
 ```
 
+## 生成 SSH_Key
 
-
-## 生成SSH_Key
 ```bash
 # 1、粘贴以下命令，替换为您的GitHub电子邮件地址
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -48,6 +48,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
 最后需要将生成的 SSH Key 添加到 `ssh config` 中
+
 ```bash
 # 1、编辑
 vim ~/.ssh/config
@@ -59,13 +60,10 @@ Host *
   IdentityFile ~/.ssh/id_rsa
 ```
 
-
-
-
-
-
 ## 初始化仓库
-`git init` 创建一个空的Git仓库或重新初始化一个现有的仓库
+
+`git init` 创建一个空的 Git 仓库或重新初始化一个现有的仓库
+
 ```bash
 # 会在当前目录生成.git
 git init
@@ -78,6 +76,7 @@ git init --bare
 ```
 
 ## 文件状态
+
 ```bash
 # 完整查看文件状态
 git status
@@ -90,6 +89,7 @@ git status --ignore-submodules
 ```
 
 ## 日志
+
 ```bash
 # 查看完整历史提交记录
 git log
@@ -122,8 +122,8 @@ git shortlog -e
 git blame README.md
 ```
 
-
 ## 克隆
+
 ```bash
 # https 协议
 git clone https://github.com/xjh22222228/git-manual.git
@@ -141,12 +141,10 @@ git clone --recursive git@github.com:xjh22222228/git-manual.git
 git clone --depth=1 https://github.com/xjh22222228/git-manual.git
 ```
 
-
-
-----
-
+---
 
 ## 查看分支
+
 ```bash
 # 查看所有分支
 git branch -a
@@ -165,6 +163,7 @@ git reflog show --date=iso master
 ```
 
 ## 切换分支
+
 ```bash
 # 2种方法，切换到master分支
 git checkout master
@@ -178,6 +177,7 @@ git checkout -t origin/dev
 ```
 
 ## 创建分支
+
 ```bash
 # 创建develop本地分支
 git branch develop
@@ -200,8 +200,8 @@ git add -A && git commit -m "提交"
 git push --set-upstream origin develop
 ```
 
-
 ## 删除分支
+
 ```bash
 # 删除本地分支
 git branch -d <branchName>
@@ -211,6 +211,7 @@ git push origin :<branchName>
 ```
 
 ## 重命名分支
+
 ```bash
 # 重命名当前分支, 通常情况下需要执行3步
 # 1、修改分支名称
@@ -225,13 +226,11 @@ git push -u origin new_branch
 git branch -m old_branch new_branch
 ```
 
-----
+---
 
 ## 代码合并
 
 <img src="../.vuepress/public/640.gif" alt="img" style="zoom:100%;" />
-
-
 
 合并代码，处理冲突
 
@@ -249,9 +248,8 @@ git merge feature/v1.0.0 develop
 git merge develop -q
 ```
 
-
-
 ## 暂存
+
 ```bash
 # 暂存所有
 git add -A
@@ -267,7 +265,9 @@ git add 1.txt 2.txt ...
 ```
 
 ## 删除
+
 git add 的反向操作
+
 ```bash
 # 删除1.txt 文件
 git rm 1.txt
@@ -280,6 +280,7 @@ git rm -r --cached .
 ```
 
 ## 提交
+
 ```bash
 # -m 提交的信息
 git commit -m "changes log"
@@ -298,6 +299,7 @@ git commit --amend -m "新的提交信息"
 ```
 
 ## 推送
+
 ```bash
 # 推送内容到主分支
 git push -u origin master
@@ -312,7 +314,7 @@ git push
 git push -f
 ```
 
-----
+---
 
 ## 拉取最新内容
 
@@ -334,11 +336,10 @@ git pull origin master:master
 git pull origin master
 ```
 
-
-
-----
+---
 
 ## 查看文件的改动
+
 ```bash
 # 查看所有文件改动
 git diff
@@ -354,9 +355,10 @@ git log README.md
 git show d68a1ef2407283516e8e4cb675b434505e39dc54 README.md
 ```
 
-----
+---
 
 ## 回滚版本
+
 ```bash
 # 回滚上一个版本
 git reset --hard HEAD^
@@ -371,17 +373,10 @@ git reset --hard 'commit id'
 git reflog
 ```
 
-
-
-
-
-
-
-
-
-----
+---
 
 ## 撤销
+
 ```bash
 # 撤销当前目录下所有文件的改动
 git checkout -- .
@@ -399,9 +394,8 @@ git reset <commit_id>
 git reset --hard <commit_id>
 ```
 
-
-
 ## 标签
+
 ```bash
 # 列出本地所有标签
 git tag
@@ -441,15 +435,10 @@ git checkout v1.1.0
 git show v1.1.0
 ```
 
-
-
-
-
-
-
-
 ## Rebase
-`git rebase` 主要作用可以将多个commit记录合并为一条
+
+`git rebase` 主要作用可以将多个 commit 记录合并为一条
+
 ```bash
 # 操作最近4次提交
 git rebase -i HEAD~4
@@ -464,9 +453,7 @@ git rebase --abort
 git rebase --continue
 ```
 
-参考：[git rebase将多次commit合并为一条](https://www.xiejiahe.com/blog/detail/5d550e8553d11b2c3ca05cbe)
-
-
+参考：[git rebase 将多次 commit 合并为一条](https://www.xiejiahe.com/blog/detail/5d550e8553d11b2c3ca05cbe)
 
 git rebase 会将当前分支的提交复制到指定的分支之上。
 
@@ -493,19 +480,19 @@ git rebase 会将当前分支的提交复制到指定的分支之上。
 
 <img src="../.vuepress/public/640-1589975005127.gif" alt="img" style="zoom:100%;" />
 
-
-
 ## GitFlow
 
 Git Flow 不是内置命令，需要单独安装
 
 **初始化** 每个仓库都必须初始化一次
+
 ```bash
 # 通常直接回车以完成默认设置
 git flow init
 ```
 
 **功能**
+
 ```bash
 # 开启新的功能
 git flow feature start v1.1.0
@@ -517,10 +504,10 @@ git flow feature publish v1.1.0
 git flow feature finish v1.1.0
 ```
 
-
 **打补丁**
 
-hotfix是针对 `master` 进行打补丁的
+hotfix 是针对 `master` 进行打补丁的
+
 ```bash
 # 开启新的 hotfix
 git flow hotfix start v1.1.0_hotifx
@@ -533,6 +520,7 @@ git flow hotfix finish v1.1.0_hotifx
 ```
 
 **发布**
+
 ```bash
 # 开启新的 release
 git flow release start v1.1.0
@@ -548,18 +536,12 @@ git flow release finish v1.1.0
 
 ![](media/git-flow.png)
 
-
-
 ---
 
-
-
-
-
-
-
 ## 子模块
-具体使用还可以看这里 [git submodule子模块使用教程](https://www.xiejiahe.com/blog/detail/5dbceefc0bb52b1c88c30853)
+
+具体使用还可以看这里 [git submodule 子模块使用教程](https://www.xiejiahe.com/blog/detail/5dbceefc0bb52b1c88c30853)
+
 ```bash
 # 添加子模块
 git submodule add https://github.com/xjh22222228/git-manual.git
@@ -581,13 +563,8 @@ git rm --cached common
 git commit -am "Remove a submodule" && git push
 ```
 
-
-
-
-
-
-
 ## 帮助
+
 ```bash
 # 详细打印所有git命令
 git help
@@ -599,10 +576,10 @@ git help -a
 git help -c
 ```
 
+## 清空 commit 历史
 
-
-## 清空commit历史
 假设当前分支是 `develop`
+
 ```bash
 # 1、新建一个新分支
 git checkout --orphan new_branch
@@ -616,15 +593,9 @@ git branch -m develop
 git push -f origin develop
 ```
 
-
-
-
-
 ## Reflog
 
 每个人都会犯错，但犯错其实没啥！有时候你可能感觉你把 git repo 完全搞坏了，让你想完全删了了事。
-
-
 
 git reflog 是一个非常有用的命令，可以展示已经执行过的所有动作的日志。包括合并、重置、还原，基本上包含你对你的分支所做的任何修改。
 
@@ -636,11 +607,8 @@ git reflog 是一个非常有用的命令，可以展示已经执行过的所有
 
 <img src="../.vuepress/public/640-1589975776044.gif" alt="img" style="zoom:100%;" />
 
-
-
-
-
 ## 其他
+
 ```bash
 # 查看git版本
 git --version
@@ -663,10 +631,10 @@ git config --global --unset credential.helper
 git rm -r --cached .
 ```
 
-
 ## 回到远程仓库的状态
 
 抛弃本地所有的修改，回到远程仓库的状态。
+
 ```sh
 git fetch --all && git reset --hard origin/master
 ```
@@ -682,9 +650,11 @@ git update-ref -d HEAD
 ## 查看冲突文件列表
 
 展示工作区的冲突文件列表
+
 ```sh
 git diff --name-only --diff-filter=U
 ```
+
 ## 展示工作区和暂存区的不同
 
 输出**工作区**和**暂存区**的 different (不同)。
@@ -694,6 +664,7 @@ git diff
 ```
 
 还可以展示本地仓库中任意两个 commit 之间的文件变动：
+
 ```sh
 git diff <commit-id> <commit-id>
 ```
@@ -701,6 +672,7 @@ git diff <commit-id> <commit-id>
 ## 展示暂存区和最近版本的不同
 
 输出**暂存区**和本地最近的版本 (commit) 的 different (不同)。
+
 ```sh
 git diff --cached
 ```
@@ -726,6 +698,7 @@ git branch --merged master | grep -v '^\*\|  master' | xargs -n 1 git branch -d
 ```
 
 ## 展示本地分支关联远程仓库的情况
+
 ```sh
 git branch -vv
 ```
@@ -733,11 +706,13 @@ git branch -vv
 ## 关联远程分支
 
 关联之后，`git branch -vv` 就可以展示关联的远程分支名了，同时推送到远程仓库直接：`git push`，不需要指定远程仓库了。
+
 ```sh
 git branch -u origin/mybranch
 ```
 
 或者在 push 时加上 `-u` 参数
+
 ```sh
 git push origin/mybranch -u
 ```
@@ -745,6 +720,7 @@ git push origin/mybranch -u
 ## 列出所有远程分支
 
 -r 参数相当于：remote
+
 ```sh
 git branch -r
 ```
@@ -752,6 +728,7 @@ git branch -r
 ## 列出本地和远程分支
 
 -a 参数相当于：all
+
 ```sh
 git branch -a
 ```
@@ -769,6 +746,7 @@ git remote prune origin
 ```
 
 ## 创建并切换到本地分支
+
 ```sh
 git checkout -b <branch-name>
 ```
@@ -808,6 +786,7 @@ git branch -m <new-branch-name>
 ```sh
 git tag
 ```
+
 展示当前分支的最近的 tag
 
 ```sh
@@ -827,8 +806,9 @@ git tag <version-number>
 ```
 
 默认 tag 是打在最近的一次 commit 上，如果需要指定 commit 打 tag：
+
 ```sh
-$ git tag -a <version-number> -m "v1.0 发布(描述)" <commit-id>
+git tag -a <version-number> -m "v1.0 发布(描述)" <commit-id>
 ```
 
 ## 推送标签到远程仓库
@@ -860,21 +840,25 @@ git push origin --delete tag <tagname>
 ## 切回到某个标签
 
 一般上线之前都会打 tag，就是为了防止上线后出现问题，方便快速回退到上一版本。下面的命令是回到某一标签下的状态：
+
 ```sh
 git checkout -b branch_name tag_name
 ```
 
 ## 放弃工作区的修改
+
 ```sh
 git checkout <file-name>
 ```
 
 放弃所有修改：
+
 ```sh
 git checkout .
 ```
 
 ## 恢复删除的文件
+
 ```sh
 git rev-list -n 1 HEAD -- <file_path> #得到 deleting_commit
 
@@ -910,6 +894,7 @@ git commit --amend
 ```
 
 ## 查看 commit 历史
+
 ```sh
 git log
 ```
@@ -956,6 +941,7 @@ git remote
 ```
 
 ## 查看两个星期内的改动
+
 ```sh
 git whatchanged --since='2 weeks ago'
 ```
@@ -983,6 +969,7 @@ git config --global alias.st status
 ## 存储当前的修改，但不用提交 commit
 
 详解可以参考[廖雪峰老师的 git 教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137602359178794d966923e5c4134bc8bf98dfb03aea3000)
+
 ```sh
 git stash
 ```
@@ -990,16 +977,19 @@ git stash
 ## 保存当前状态，包括 untracked 的文件
 
 untracked 文件：新建的文件
+
 ```sh
 git stash -u
 ```
 
 ## 展示所有 stashes
+
 ```sh
 git stash list
 ```
 
 ## 回到某个 stash 的状态
+
 ```sh
 git stash apply <stash@{n}>
 ```
@@ -1017,16 +1007,19 @@ git stash clear
 ```
 
 ## 从 stash 中拿出某个文件的修改
+
 ```sh
 git checkout <stash@{n}> -- <file-path>
 ```
 
 ## 展示所有 tracked 的文件
+
 ```sh
 git ls-files -t
 ```
 
 ## 展示所有 untracked 的文件
+
 ```sh
 git ls-files --others
 ```
@@ -1040,6 +1033,7 @@ git ls-files --others -i --exclude-standard
 ## 强制删除 untracked 的文件
 
 可以用来删除新建的文件。如果不指定文件文件名，则清空所有工作的 untracked 文件。`clean` 命令，**注意两点**：
+
 1. clean 后，删除的文件无法找回
 2. 不会影响 tracked 的文件的改动，只会删除 untracked 的文件
 
@@ -1056,11 +1050,13 @@ git clean <directory-name> -df
 ```
 
 ## 展示简化的 commit 历史
+
 ```sh
 git log --pretty=oneline --graph --decorate --all
 ```
 
 ## 把某一个分支到导出成一个文件
+
 ```sh
 git bundle create <file> <branch-name>
 ```
@@ -1107,16 +1103,19 @@ git config --global --list (全局)
 ```
 
 ## 展示忽略的文件
+
 ```sh
 git status --ignored
 ```
 
 ## commit 历史中显示 Branch1 有的，但是 Branch2 没有 commit
+
 ```sh
 git log Branch1 ^Branch2
 ```
 
 ## 在 commit log 中显示 GPG 签名
+
 ```sh
 git log --show-signature
 ```
@@ -1142,6 +1141,7 @@ git show <branch-name>:<file-name>
 ```
 
 ## clone 下来指定的单一分支
+
 ```sh
 git clone -b <branch-name> --single-branch https://github.com/user/repo.git
 ```
@@ -1188,7 +1188,6 @@ git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
 
 通过 grep 查找，given-text：所需要查找的字段
 
-
 ```sh
 git log --all --grep='<given-text>'
 ```
@@ -1223,35 +1222,30 @@ Host gitlab.com
 ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p    # 直接使用 shadowsocks 提供的 socks5 代理端口
 
 Host github.com
-ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p    
+ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p
 ```
 
+## 优雅的提交 Commit 信息
 
-## 一图详解
-
-![](./assets/git.png)
-
-## 优雅的提交Commit信息
-
-使用[Angular团队提交规范](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
+使用[Angular 团队提交规范](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
 
 主要有以下组成
 
-* 标题行: 必填, 描述主要修改类型和内容
-* 主题内容: 描述为什么修改, 做了什么样的修改, 以及开发的思路等等
-* 页脚注释: 放 Breaking Changes 或 Closed Issues
+- 标题行: 必填, 描述主要修改类型和内容
+- 主题内容: 描述为什么修改, 做了什么样的修改, 以及开发的思路等等
+- 页脚注释: 放 Breaking Changes 或 Closed Issues
 
 常用的修改项
 
-* type: commit 的类型
-* feat: 新特性
-* fix: 修改问题
-* refactor: 代码重构
-* docs: 文档修改
-* style: 代码格式修改, 注意不是 css 修改
-* test: 测试用例修改
-* chore: 其他修改, 比如构建流程, 依赖管理.
-* scope: commit 影响的范围, 比如: route, component, utils, build...
-* subject: commit 的概述
-* body: commit 具体修改内容, 可以分为多行
-* footer: 一些备注, 通常是 BREAKING CHANGE 或修复的 bug 的链接.
+- type: commit 的类型
+- feat: 新特性
+- fix: 修改问题
+- refactor: 代码重构
+- docs: 文档修改
+- style: 代码格式修改, 注意不是 css 修改
+- test: 测试用例修改
+- chore: 其他修改, 比如构建流程, 依赖管理.
+- scope: commit 影响的范围, 比如: route, component, utils, build...
+- subject: commit 的概述
+- body: commit 具体修改内容, 可以分为多行
+- footer: 一些备注, 通常是 BREAKING CHANGE 或修复的 bug 的链接.

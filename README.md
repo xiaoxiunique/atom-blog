@@ -12,7 +12,7 @@ footer:
 
 1. 精通 java 研发，比较熟悉 python、shell 研发，熟悉 c，web 前端（HTML、Css、Js、Angular 等），Android 研发，教了解 C++、R、PHP、IOS 研发。精通常见设计模式、集合、多线程开发，线程安全、五种 IO 模型，精通 JVM 的结构和原理。
 2. 精通 Spring、SpringMVC、Spring Boot、Spring Cloud、SpringData Jpa、Mybatis、Hibernate 等开源框架。
-3. 精通Restful 风格的接口、Dubbo 风格的接口设计和编写。
+3. 精通 Restful 风格的接口、Dubbo 风格的接口设计和编写。
 4. 有过报表，定时任务。自己实现单点登录，基于 CAS 企业级的单点登录，定制化视图，动换，傻瓜式部署开发经验。
 5. 熟悉 Storm、Hadoop 原理，Tomcat 集群，Nginx 高可用，FastDfs 集群，Redis 集群， Solr 集群，Apache 配置及部署；
 6. 熟悉常见的 Linux 命令，熟悉高并发分布式架构设计，熟悉云计算相关业务和运维。
@@ -35,6 +35,4 @@ footer:
 23. 研究过网络安全、对 Xss、Csrf、Sql 注入、Ddos 攻击、Dns 劫持、Arp 等有深入的理解；对密码学有较深入的研究，精通 web 登录的流程及底层原理；熟悉网络攻击工具
 24. 对算法（递归、动态规划、贪心算法、分治、回溯、DFS、BFS）及数据结构（数组、链表、堆栈、B 类书、二叉树、红黑树、优先队列）有较深入的了解
 
-
-
-![image-20200810114733690](../.vuepress/public/image-20200810114733690.a79557b0.png)
+<!-- ![image-20200810114733690](../.vuepress/public/image-20200810114733690.a79557b0.png) -->
