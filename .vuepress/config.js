@@ -1,13 +1,13 @@
-const { fs, path } = require('@vuepress/shared-utils')
+const { fs, path } = require('@vuepress/shared-utils');
 
 // 读取blog 文件目录下的内容
 let listBlogFiles = fs
   .readdirSync(path.resolve(__dirname, '../blog/'))
   .filter((f) => f !== 'README.md')
   .map((filename) => [filename.slice(0, -3), filename.slice(0, -3)])
-  .sort()
+  .sort();
 
-listBlogFiles = [['', '深度好文'], ...listBlogFiles]
+listBlogFiles = [['', '深度好文'], ...listBlogFiles];
 
 function getBlogSidebarList() {
   return [
@@ -17,7 +17,7 @@ function getBlogSidebarList() {
       sidebarDepth: 3,
       children: listBlogFiles,
     },
-  ]
+  ];
 }
 
 // 读取idea 文件下的内容
@@ -25,9 +25,9 @@ let listIdeaFiles = fs
   .readdirSync(path.resolve(__dirname, '../idea/'))
   .filter((f) => f !== 'README.md')
   .map((filename) => [filename.slice(0, -3), filename.slice(0, -3)])
-  .sort()
+  .sort();
 
-listIdeaFiles = [['', '开源项目'], ...listIdeaFiles]
+listIdeaFiles = [['', '开源项目'], ...listIdeaFiles];
 
 function getIdeaSidebar() {
   return [
@@ -37,7 +37,7 @@ function getIdeaSidebar() {
       sidebarDepth: 3,
       children: listIdeaFiles,
     },
-  ]
+  ];
 }
 
 // 读取devops 文件下的内容
@@ -45,9 +45,9 @@ let listDevOpsFiles = fs
   .readdirSync(path.resolve(__dirname, '../devops/'))
   .filter((f) => f !== 'README.md')
   .map((filename) => [filename.slice(0, -3), filename.slice(0, -3)])
-  .sort()
+  .sort();
 
-listDevOpsFiles = [['', '介绍'], ...listDevOpsFiles]
+listDevOpsFiles = [['', '介绍'], ...listDevOpsFiles];
 
 function getDevOpsSidebar() {
   return [
@@ -57,7 +57,7 @@ function getDevOpsSidebar() {
       sidebarDepth: 3,
       children: listDevOpsFiles,
     },
-  ]
+  ];
 }
 
 // 读取web 文件下的内容
@@ -65,9 +65,9 @@ let listWebFiles = fs
   .readdirSync(path.resolve(__dirname, '../web/'))
   .filter((f) => f !== 'README.md')
   .map((filename) => [filename.slice(0, -3), filename.slice(0, -3)])
-  .sort()
+  .sort();
 
-listWebFiles = [['', '介绍'], ...listWebFiles]
+listWebFiles = [['', '介绍'], ...listWebFiles];
 
 function getWebSidebar() {
   return [
@@ -77,7 +77,7 @@ function getWebSidebar() {
       sidebarDepth: 3,
       children: listWebFiles,
     },
-  ]
+  ];
 }
 
 // 读取设计模式文件下的内容
@@ -85,9 +85,9 @@ let listDesignPattern = fs
   .readdirSync(path.resolve(__dirname, '../designPattern/'))
   .filter((f) => f !== 'README.md')
   .map((filename) => [filename.slice(0, -3), filename.slice(0, -3)])
-  .sort()
+  .sort();
 
-listDesignPattern = [['', '设计原则'], ...listDesignPattern]
+listDesignPattern = [['', '设计原则'], ...listDesignPattern];
 
 function getDesignSidebar() {
   return [
@@ -97,7 +97,7 @@ function getDesignSidebar() {
       sidebarDepth: 3,
       children: listDesignPattern,
     },
-  ]
+  ];
 }
 
 // 读取数据结构与算法文件下的内容
@@ -105,9 +105,9 @@ let listAlgorithm = fs
   .readdirSync(path.resolve(__dirname, '../algorithm/'))
   .filter((f) => f !== 'README.md')
   .map((filename) => [filename.slice(0, -3), filename.slice(0, -3)])
-  .sort()
+  .sort();
 
-listAlgorithm = [['', '算法概览'], ...listAlgorithm]
+listAlgorithm = [['', '算法概览'], ...listAlgorithm];
 
 function getAlgorithmSidebar() {
   return [
@@ -117,7 +117,7 @@ function getAlgorithmSidebar() {
       sidebarDepth: 3,
       children: listAlgorithm,
     },
-  ]
+  ];
 }
 
 // 读取java文件下的内容
@@ -125,9 +125,9 @@ let listjava = fs
   .readdirSync(path.resolve(__dirname, '../java/'))
   .filter((f) => f !== 'README.md')
   .map((filename) => [filename.slice(0, -3), filename.slice(0, -3)])
-  .sort()
+  .sort();
 
-listjava = [['', '知识预览'], ...listjava]
+listjava = [['', '知识预览'], ...listjava];
 
 function getjavaSidebar() {
   return [
@@ -137,7 +137,27 @@ function getjavaSidebar() {
       sidebarDepth: 3,
       children: listjava,
     },
-  ]
+  ];
+}
+
+// 读取 a lot文件下的内容
+let listaLot = fs
+  .readdirSync(path.resolve(__dirname, '../alot/'))
+  .filter((f) => f !== 'README.md')
+  .map((filename) => [filename.slice(0, -3), filename.slice(0, -3)])
+  .sort();
+
+listaLot = [['', '一点点设计'], ...listaLot];
+
+function getListidebar() {
+  return [
+    {
+      title: 'Java',
+      collapsable: false,
+      sidebarDepth: 3,
+      children: listaLot,
+    },
+  ];
 }
 
 module.exports = {
@@ -152,6 +172,7 @@ module.exports = {
       { text: '设计模式📄', link: '/designPattern/' },
       { text: '数据结构与算法📑', link: '/algorithm/' },
       { text: 'Java😄', link: '/java/' },
+      { text: '。。。', link: '/alot/' },
       { text: '杂记📚', link: '/blog/' },
     ],
     sidebar: {
@@ -162,6 +183,7 @@ module.exports = {
       '/designPattern/': getDesignSidebar(),
       '/algorithm/': getAlgorithmSidebar(),
       '/java/': getjavaSidebar(),
+      '/alot/': getListidebar(),
     },
     lastUpdated: '最后编辑时间',
   },
@@ -184,4 +206,4 @@ module.exports = {
       },
     ],
   ],
-}
+};
