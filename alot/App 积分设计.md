@@ -1,8 +1,10 @@
 ### App 积分设计
 
-![image-20200720205312878](file:///Users/mac/atom.hu/self/code/atom-blog/.vuepress/public/image-20200720205312878.png?lastModify=1599239954)
+![image-20200720205312878](./../.vuepress/public/image-20200720205312878.png?lastModify=1599239954)
 
-![image-20200720205344332](file:///Users/mac/atom.hu/self/code/atom-blog/.vuepress/public/image-20200720205344332.png?lastModify=1599239954)
+
+
+![image-20200720205344332](./../.vuepress/public/image-20200720205344332.png?lastModify=1599239954)
 
 考虑会有哪些表？
 
