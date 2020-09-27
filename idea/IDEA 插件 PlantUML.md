@@ -2,9 +2,7 @@
 
 之前介绍过 使用 Vscode 画 UML，实际上 idea 中也有类似的插件 可以画 UML 图。
 
-[PlantUML语法](https://plantuml.com/zh/component-diagram)
-
-
+[PlantUML 语法](https://plantuml.com/zh/component-diagram)
 
 ### 安装
 
@@ -12,27 +10,19 @@
 
 在安装完官方的插件之后，还需要额外安装一个 [graphviz](https://graphviz.org/download/) ，不然有的复杂的用例图就没办法展示了。
 
-
-
 windows 安装
 
 ```bash
 choco install graphviz
 ```
 
-
-
 使用
 
-> 新建文件 - PlantUML File - 选择想要创建的类型 
+> 新建文件 - PlantUML File - 选择想要创建的类型
 
 ![image-20200925113919285](../.vuepress/public/image-20200925113919285.png)
 
-
-
 ### 流程图
-
-
 
 ![](../.vuepress/public/IM.png)
 
@@ -42,22 +32,20 @@ choco install graphviz
 start
 :触发自动添加好友;
 if (判断当前产品专家好友数是否超过 3000) then (超过)
-    :分配新的产品专家，并添加为好友;
-    note left
-     在这种情况下
-     会出现会话框有
-     两个产品专家的情况
-    end note
+:分配新的产品专家，并添加为好友;
+note left
+在这种情况下
+会出现会话框有
+两个产品专家的情况
+end note
 else (没有超过)
-    :直接添加好友;
+:直接添加好友;
 endif
 :处理完毕;
 stop
 @enduml
 
 :::
-
-
 
 ### 用例图
 
@@ -111,3 +99,39 @@ rectangle 社区 {
 ```
 
 :::
+
+### 类图
+
+@startuml
+package "ICP 接口隔离原则" #DDDDDD {
+interface ICache {
++Object get()
++void put()
++boolean delete()
+}
+
+interface IRefresh {
++boolean rebuild()
+}
+
+class CacheImpl {
++Object get()
++void put()
++boolean delete()
++boolean rebuild()
+}
+note left of CacheImpl
+将 get put delete rebuild 分别定义两个接口
+这样就达到了 ICP 接口隔离原则。
+
+end note
+
+note right of CacheImpl
+在不需要 使用 rebuild 的场景就不实现 IRefresh 接口就可以了
+end note
+
+ICache <|-- CacheImpl
+IRefresh <|-- CacheImpl
+
+}
+@enduml

@@ -12,8 +12,3 @@
 @enduml
 
 ### 扫码登录 用例图
-
-@startuml
-actor App 用户
-
-@enduml
