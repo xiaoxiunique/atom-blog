@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.4.0",
+    "markdown-it-plantuml": "^1.4.1",
     "moment": "^2.27.0",
     "vuepress": "^1.5.2",
     "vuepress-plugin-code-copy": "^1.0.6",

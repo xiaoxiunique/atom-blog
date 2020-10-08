@@ -205,5 +205,14 @@ module.exports = {
         },
       },
     ],
+    ['vuepress-plugin-baidu-tongji-analytics', {
+      key: '194be3ff940b36ed58a65fa8c8c6accb',
+      dev: true,
+      open: true
+    }]
   ],
+  extendMarkdown: (md) => {
+    md.set({ breaks: true });
+    md.use(require('markdown-it-plantuml'));
+  },
 };
