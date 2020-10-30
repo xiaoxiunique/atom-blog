@@ -21,7 +21,7 @@
   },
   "scripts": {
     "dev": "vuepress dev .",
-    "build": "vuepress build ."
+    "build": "vuepress build --max-stack-size=4096 ."
   },
   "repository": {
     "type": "git",
