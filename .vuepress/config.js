@@ -160,6 +160,26 @@ function getListidebar() {
   ];
 }
 
+// 读取 a lot文件下的内容
+let listCode = fs
+  .readdirSync(path.resolve(__dirname, '../code/'))
+  .filter((f) => f !== 'README.md')
+  .map((filename) => [filename.slice(0, -3), filename.slice(0, -3)])
+  .sort();
+
+listaLot = [['', ' 世界的开始'], ...listCode];
+
+function getCodeListSidebar() {
+  return [
+    {
+      title: 'Coder',
+      collapsable: false,
+      sidebarDepth: 3,
+      children: listCode,
+    },
+  ];
+}
+
 module.exports = {
   title: 'atips',
   description: 'atips',
@@ -194,6 +214,7 @@ module.exports = {
       '/algorithm/': getAlgorithmSidebar(),
       '/java/': getjavaSidebar(),
       '/alot/': getListidebar(),
+      '/code/': getCodeListSidebar(),
     },
     lastUpdated: '最后编辑时间',
   },

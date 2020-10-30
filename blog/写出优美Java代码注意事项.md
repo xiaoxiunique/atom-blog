@@ -1,4 +1,3 @@
-
 #### （1）尽量指定类、方法的 final 修饰符
 
 带有`final`修饰符的类是不可派生的。在 Java 核心 API 中，有许多应用 final 的例子，例如`java.lang.String`，整个类都是`final`的。为类指定`final`修饰符可以让类不可以被继承，为方法指定`final`修饰符可以让方法不可以被重写。如果指定了一个类为`final`，则该类所有的方法都是`final`的。`Java`编译器会寻找机会内联所有的`final`方法，内联对于提升`Java`运行效率作用重大，具体参见 Java 运行期优化。此举能够使性能平均提高 50%。
@@ -118,7 +117,7 @@ for (val = 0; val < 100000; val += 5)
 ```java
 for (int i = 1; i <= count; i++)
 {
-  Object obj = new Object();    
+  Object obj = new Object();
 }
 ```
 
@@ -262,7 +261,7 @@ public static void main(String[] args)
 
 `[I @18a992f`
 
-本意是想打印出数组内容，却有可能因为数组引用 is 为空而导致空指针异常。不过虽然对数组 toString()没有意义，但是对集合 toString()是可以打印出集合里面的内容的，因为集合的父类 AbstractCollections<E>重写了 Object 的 toString()方法。
+本意是想打印出数组内容，却有可能因为数组引用 is 为空而导致空指针异常。不过虽然对数组 toString()没有意义，但是对集合 toString()是可以打印出集合里面的内容的，因为集合的父类 AbstractCollections 重写了 Object 的 toString()方法。
 
 #### （31）不要对超出范围的基本数据类型做向下强制转型
 
@@ -307,19 +306,19 @@ public static void main(String[] args)
   for (int j = 0; j < loopTime; j++)
   {
       String str = String.valueOf(i);
-  }    
+  }
   System.out.println("String.valueOf()：" + (System.currentTimeMillis() - startTime) + "ms");
   startTime = System.currentTimeMillis();
   for (int j = 0; j < loopTime; j++)
   {
       String str = i.toString();
-  }    
+  }
   System.out.println("Integer.toString()：" + (System.currentTimeMillis() - startTime) + "ms");
   startTime = System.currentTimeMillis();
   for (int j = 0; j < loopTime; j++)
   {
       String str = i + "";
-  }    
+  }
   System.out.println("i + ""：" + (System.currentTimeMillis() - startTime) + "ms");
 }
 ```
