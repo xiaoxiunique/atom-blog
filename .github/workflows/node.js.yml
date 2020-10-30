@@ -25,4 +25,4 @@ jobs:
         PUBLISH_BRANCH: master
         PUBLISH_DIR: .vuepress/dist
       with:
-          emptyCommits: false
+          emptyCommits: false 
