@@ -22,7 +22,7 @@
   },
   "scripts": {
     "dev": "vuepress dev .",
-    "build": "node --stack-size=65000 vuepress build ."
+    "build": "vuepress build ."
   },
   "repository": {
     "type": "git",
