@@ -10,18 +10,20 @@
     "@vuepress/plugin-back-to-top": "^1.4.0",
     "markdown-it-plantuml": "^1.4.1",
     "moment": "^2.27.0",
+    "vue-router": "3.4.5",
     "vuepress": "^1.5.2",
     "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-img-lazy": "^1.0.2",
-    "vuepress-plugin-reading-progress": "^1.0.9"
+    "vuepress-plugin-reading-progress": "^1.0.9",
+    "vuetify": "^2.3.16"
   },
   "devDependencies": {
     "vuepress-plugin-medium-zoom": "^1.1.8",
     "vuepress-plugin-zooming": "^1.1.7"
   },
   "scripts": {
-    "docs:dev": "vuepress dev .",
-    "docs:build": "vuepress build ."
+    "dev": "vuepress dev .",
+    "build": "node --max_old_space_size=8000 --stack-size=65000 ./node_modules/vuepress/cli.js build"
   },
   "repository": {
     "type": "git",

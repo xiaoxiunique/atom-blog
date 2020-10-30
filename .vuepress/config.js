@@ -163,6 +163,15 @@ function getListidebar() {
 module.exports = {
   title: 'atips',
   description: 'atips',
+  head: [
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: `https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css`,
+      },
+    ],
+  ],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -174,6 +183,7 @@ module.exports = {
       { text: 'Java😄', link: '/java/' },
       { text: '。。。', link: '/alot/' },
       { text: '杂记📚', link: '/blog/' },
+      { text: 'Code', link: '/code/' },
     ],
     sidebar: {
       '/idea/': getIdeaSidebar(),
@@ -205,11 +215,14 @@ module.exports = {
         },
       },
     ],
-    ['vuepress-plugin-baidu-tongji-analytics', {
-      key: '194be3ff940b36ed58a65fa8c8c6accb',
-      dev: true,
-      open: true
-    }]
+    [
+      'vuepress-plugin-baidu-tongji-analytics',
+      {
+        key: '194be3ff940b36ed58a65fa8c8c6accb',
+        dev: true,
+        open: true,
+      },
+    ],
   ],
   extendMarkdown: (md) => {
     md.set({ breaks: true });
