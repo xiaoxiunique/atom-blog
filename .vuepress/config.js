@@ -167,7 +167,7 @@ let listCode = fs
   .map((filename) => [filename.slice(0, -3), filename.slice(0, -3)])
   .sort();
 
-listaLot = [['', ' 世界的开始'], ...listCode];
+listCode = [['', ' 世界的开始'], ...listCode];
 
 function getCodeListSidebar() {
   return [
@@ -180,7 +180,7 @@ function getCodeListSidebar() {
   ];
 }
 
-module.exports = {
+const conf = {
   title: 'atips',
   description: 'atips',
   head: [
@@ -250,3 +250,4 @@ module.exports = {
     md.use(require('markdown-it-plantuml'));
   },
 };
+module.exports = conf;
