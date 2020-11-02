@@ -1,26 +1,26 @@
 import axios from './../plugins/axios';
-
+import _ from 'lodash';
 class Base {
   constructor() {
+    // tools
+    this._ = _;
+
+    // plugins
+    this.axios = axios;
+
+    // params
     this.serverBaseURL = '';
+    this.pathURL = '';
     this.timeOut = 2000;
   }
 
-  async get({ path, params = {}, headers = {}, handleException = null }) {
-    const URL = this.serverBaseURL + path;
-
-    console.log('------- req URL -------', URL);
-    console.log('------- req params -------', JSON.stringify(params));
-
+  async get(params) {
+    const URL = this.serverBaseURL + this.pathURL;
     const result = await axios.get(URL, {
       method: 'GET',
       params,
-      headers,
     });
 
-    handleException && handleException(result);
-
-    console.log('------- res data -------', JSON.stringify(result));
     return result && result.data;
   }
 }

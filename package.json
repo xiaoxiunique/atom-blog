@@ -9,6 +9,7 @@
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.4.0",
     "axios": "^0.21.0",
+    "lodash": "^4.17.20",
     "markdown-it-plantuml": "^1.4.1",
     "moment": "^2.27.0",
     "vue-router": "3.4.5",

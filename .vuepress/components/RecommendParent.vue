@@ -1,8 +1,15 @@
 <template>
   <v-container>
     <v-list>
+      <v-list-item v-if="list.length === 0">
+        <v-progress-circular
+          :size="50"
+          color="amber"
+          indeterminate
+        ></v-progress-circular>
+      </v-list-item>
       <v-list-item v-for="item in list" :key="item.itemID">
-        <a :href="item.jumpURL" target="_blank">{{ item.title }}</a>
+        <slot v-bind:item="item"></slot>
       </v-list-item>
     </v-list>
   </v-container>
@@ -11,24 +18,18 @@
 <script>
 import RecommendAPI from './../api/recommend';
 export default {
-  name: 'New',
+  name: 'RecommendParentComponent',
   props: {},
   data() {
     return {
       list: [],
     };
   },
-  computed: {},
-  watch: {},
-  beforeCreate() {},
   created() {
-    this.getNews();
+    this.getList();
   },
-  beforeMount() {},
-  mounted() {},
-  destroyed() {},
   methods: {
-    async getNews() {
+    async getList() {
       const recommendAPI = new RecommendAPI();
       const result = await recommendAPI.getNewRecommend({});
       this.list = result;

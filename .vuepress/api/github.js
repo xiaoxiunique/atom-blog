@@ -7,13 +7,13 @@ class Github extends Base {
   }
 
   async getStaredList({ username, page }) {
-    console.log(2);
-    const rs = await this.get({
-      path: `/users/${username}/starred`,
-      headers: { Accept: 'application/vnd.github.v3+json' },
+    const URL = `${this.serverBaseURL}/users/${username}/starred`;
+
+    const rs = await this.axios.get(URL, {
       params: { per_page: 10, page },
+      headers: { Accept: 'application/vnd.github.v3+json' },
     });
-    return rs;
+    return rs && rs.data;
   }
 }
 
