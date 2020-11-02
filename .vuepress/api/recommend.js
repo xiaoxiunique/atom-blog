@@ -4,7 +4,7 @@ import ReqConfAPI from './reqConf';
 class Recommend extends Base {
   constructor(args) {
     super(args);
-    this.serverBaseURL = 'http://new.i.atips.cn/api/v1';
+    this.serverBaseURL = 'https://new.i.atips.cn/api/v1';
     this.pathURL = '/commonRecommands';
     this.reqConfAPI = new ReqConfAPI();
   }
