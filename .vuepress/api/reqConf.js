@@ -3,7 +3,7 @@ import Base from './base';
 class ReqConf extends Base {
   constructor(args) {
     super(args);
-    this.serverBaseURL = 'http://new.i.atips.cn/api/v1';
+    this.serverBaseURL = 'https://new.i.atips.cn/api/v1';
     this.pathURL = '/reqConfs';
   }
 
