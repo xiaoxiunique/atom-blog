@@ -25,7 +25,8 @@
   },
   "scripts": {
     "dev": "vuepress dev .",
-    "build": "node --max_old_space_size=8000 --stack-size=65000 ./node_modules/vuepress/cli.js build"
+    "build": "node --max_old_space_size=8000 --stack-size=65000 ./node_modules/vuepress/cli.js build",
+    "deploy": "sh gitee.sh"
   },
   "repository": {
     "type": "git",
