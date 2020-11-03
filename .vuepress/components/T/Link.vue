@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <a :href="linkURL"> {{ title }}</a>
+    <a :href="linkURL" target="_blank"> {{ title }}</a>
   </v-container>
 </template>
 
