@@ -1,12 +1,8 @@
 <template>
   <v-container>
-    <RecommendParent type="newRecommend">
+    <RecommendParent type="hotSearch">
       <template v-slot:default="data">
-        <TLink
-          :title="data.item.title"
-          :baseURL="data.item.baseURL"
-          :jumpURL="data.item.jumpURL"
-        ></TLink>
+        <TText :title="data.item.title"></TText>
       </template>
     </RecommendParent>
   </v-container>
@@ -14,12 +10,12 @@
 
 <script>
 import RecommendParent from './RecommendParent.vue';
-import TLink from './T/Link.vue';
+import TText from './T/Text.vue';
 export default {
-  name: 'TNew',
+  name: 'TZhihuHotWord',
   components: {
     RecommendParent,
-    TLink,
+    TText,
   },
 };
 </script>

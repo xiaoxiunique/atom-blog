@@ -19,7 +19,9 @@
 import RecommendAPI from './../api/recommend';
 export default {
   name: 'RecommendParentComponent',
-  props: {},
+  props: {
+    type: String,
+  },
   data() {
     return {
       list: [],
@@ -31,7 +33,7 @@ export default {
   methods: {
     async getList() {
       const recommendAPI = new RecommendAPI();
-      const result = await recommendAPI.getNewRecommend({});
+      const result = await recommendAPI.getNewRecommend({ type: this.type });
       this.list = result;
     },
   },

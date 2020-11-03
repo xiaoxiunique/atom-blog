@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <RecommendParent type="newRecommend">
+    <RecommendParent type="zhHotSearch">
       <template v-slot:default="data">
         <TLink
           :title="data.item.title"
@@ -16,7 +16,7 @@
 import RecommendParent from './RecommendParent.vue';
 import TLink from './T/Link.vue';
 export default {
-  name: 'TNew',
+  name: 'TZhihuRecommend',
   components: {
     RecommendParent,
     TLink,

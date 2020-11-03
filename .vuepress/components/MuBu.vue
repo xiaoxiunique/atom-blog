@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <RecommendParent type="newRecommend">
+    <RecommendParent type="mubuRecommend">
       <template v-slot:default="data">
         <TLink
           :title="data.item.title"

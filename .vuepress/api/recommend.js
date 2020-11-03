@@ -24,22 +24,18 @@ class Recommend extends Base {
   }
 
   convertData(list, parseJSON) {
+    debugger;
     const keys = Object.keys(parseJSON);
     return [...list].map((item) => {
       return keys.reduce((acc, key) => {
-        this._.set(acc, key, _.get(item, parseJSON[key]));
+        this._.set(acc, key, _.get(item, parseJSON[key]) || parseJSON[key]);
         return acc;
       }, {});
     });
   }
 
   async getNewRecommend(params) {
-    const NEW_RECOMMEND_TYPE = 'newRecommend';
-    params.type = NEW_RECOMMEND_TYPE;
-
-    const parseJSON = await this.reqConfAPI.getReqConfByType(
-      NEW_RECOMMEND_TYPE
-    );
+    const parseJSON = await this.reqConfAPI.getReqConfByType(params.type);
 
     const recommendList = await this.getRecommendByType(params);
     const rs = this.convertData(recommendList.data.content, parseJSON);

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <a :href="jumpURL"> {{ title }}</a>
+    <a :href="linkURL"> {{ title }}</a>
   </v-container>
 </template>
 
@@ -8,13 +8,18 @@
 export default {
   name: 'Link',
   props: {
-    title: String,
-    jumpURL: String,
+    title: Object,
+    jumpURL: Object | Number,
+    baseURL: Object,
   },
   data() {
     return {};
   },
-  computed: {},
+  computed: {
+    linkURL() {
+      return (this.baseURL || '') + this.jumpURL;
+    },
+  },
   watch: {},
   beforeCreate() {},
   created() {},
