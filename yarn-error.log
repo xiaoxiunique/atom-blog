@@ -1,0 +1,71 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Users/chuangang/.fig/bin:/Users/chuangang/.local/bin:/Users/chuangang/workspace/env:/Users/chuangang/.linkerd2/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EINVAL: invalid argument, mkdir '/Users/chuangang/ah/op/atom-blog/node_modules/@types/webpack-dev-server/node_modules'
+
+npm manifest: 
+  {
+    "name": "tool-tips",
+    "version": "1.0.0",
+    "description": "idea tools",
+    "main": "index.js",
+    "directories": {
+      "doc": "docs"
+    },
+    "dependencies": {
+      "@vuepress/plugin-back-to-top": "^1.4.0",
+      "axios": "^0.21.0",
+      "lodash": "^4.17.20",
+      "markdown-it-plantuml": "^1.4.1",
+      "moment": "^2.27.0",
+      "vue-router": "3.4.5",
+      "vuepress": "^1.5.2",
+      "vuepress-plugin-code-copy": "^1.0.6",
+      "vuepress-plugin-img-lazy": "^1.0.2",
+      "vuepress-plugin-reading-progress": "^1.0.9",
+      "vuetify": "^2.3.16"
+    },
+    "devDependencies": {
+      "vuepress-plugin-medium-zoom": "^1.1.8",
+      "vuepress-plugin-zooming": "^1.1.7"
+    },
+    "scripts": {
+      "dev": "vuepress dev .",
+      "build": "node --max_old_space_size=8000 --stack-size=65000 ./node_modules/vuepress/cli.js build",
+      "deploy": "sh gitee.sh"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/xiaoxiunique/tool-tips.git"
+    },
+    "keywords": [
+      "idea",
+      "tools",
+      "plugns"
+    ],
+    "author": "xiaoxiunqiue",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/xiaoxiunique/tool-tips/issues"
+    },
+    "homepage": "https://github.com/xiaoxiunique/tool-tips#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
