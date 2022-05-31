@@ -22,7 +22,7 @@ jobs:
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }}
         EXTERNAL_REPOSITORY: xiaoxiunique/xiaoxiunique.github.io #可以新建一个mybells.github.io仓库发布到master
-        PUBLISH_BRANCH: master
+        PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: .vuepress/dist
       with:
           emptyCommits: false 
