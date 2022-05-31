@@ -8,7 +8,7 @@ actionLink: /blog/
 footer:
 ---
 
-# 个人简历
+# 个人简历  
 
 1. 精通 java 研发，比较熟悉 python、shell 研发，熟悉 c，web 前端（HTML、Css、Js、Angular 等），Android 研发，教了解 C++、R、PHP、IOS 研发。精通常见设计模式、集合、多线程开发，线程安全、五种 IO 模型，精通 JVM 的结构和原理。
 2. 精通 Spring、SpringMVC、Spring Boot、Spring Cloud、SpringData Jpa、Mybatis、Hibernate 等开源框架。
